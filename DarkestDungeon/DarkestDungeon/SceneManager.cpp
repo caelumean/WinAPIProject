@@ -40,6 +40,7 @@ void SceneManager::Initialize()
 	mScenes[(UINT)eSceneType::NomadWagon] = new NomadWagonScene();
 	mScenes[(UINT)eSceneType::Graveyard] = new GraveyardScene();
 	mScenes[(UINT)eSceneType::Memoirs] = new MemoirsScene();
+	mScenes[(UINT)eSceneType::Play] = new PlayRuinsScene();
 
 	mActiveScene = mScenes[(UINT)eSceneType::Title];
 	//mActiveScene = mScenes[(UINT)eSceneType::Town];
