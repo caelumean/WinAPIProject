@@ -1,0 +1,68 @@
+﻿  Application.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Application.cpp(24,22): warning C4838: 'UINT'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Application.cpp(24,31): warning C4838: 'UINT'에서 'LONG'(으)로의 변환에는 축소 변환이 필요합니다.
+  Component.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  RuinBG.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Crusader.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp(31,19): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp(36,19): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp(41,19): warning C4244: '-=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp(46,19): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp(58,32): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp(58,20): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Entity.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameObject.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Image.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Input.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Layer.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  PlayScene.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Scene.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SceneManager.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Time.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Time.cpp(25,28): warning C4244: '초기화 중': 'LONGLONG'에서 'double'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TitleBG.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TitleScene.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Transform.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  yaResource.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  yaResources.cpp
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(21,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Math.h(22,6): warning C4244: '초기화 중': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  DarkestDungeon.vcxproj -> D:\WinAPIProject\DarkestDungeon\x64\Debug\DarkestDungeon.exe
