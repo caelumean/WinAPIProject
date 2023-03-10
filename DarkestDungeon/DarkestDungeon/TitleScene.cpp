@@ -1,4 +1,7 @@
 #include "TitleBG.h"
+#include "TitleHouse.h"
+#include "Logo.h"
+#include "StartButton.h"
 #include "TitleScene.h"
 #include "Input.h"
 #include "SceneManager.h"
@@ -17,6 +20,16 @@ void TitleScene::Initialize()
 	//¹è°æ
 	mTitleBG = new TitleBG();
 	AddGameObeject(mTitleBG, eLayerType::BackGround);
+	// house
+	mTitleHouse = new TitleHouse();
+	AddGameObeject(mTitleHouse, eLayerType::Shadow);
+	// Logo
+	mLogo = new Logo();
+	AddGameObeject(mLogo, eLayerType::UI);
+	// start Button
+	mStartButton = new StartButton();
+	AddGameObeject(mStartButton, eLayerType::UI);
+	
 
 	Scene::Initialize();
 }
@@ -26,6 +39,10 @@ void TitleScene::Update()
 	if (Input::GetKeyState(eKeyCode::N) == eKeyState::Down)
 	{
 		SceneManager::LoadScene(eSceneType::Town);
+	}
+	else if (Input::GetKeyState(eKeyCode::A) == eKeyState::Down)
+	{
+		SceneManager::LoadScene(eSceneType::Play);
 	}
 	Scene::Update();
 }

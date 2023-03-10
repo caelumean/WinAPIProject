@@ -150,6 +150,7 @@
     <ClInclude Include="GraveyardScene.h" />
     <ClInclude Include="GuildBG.h" />
     <ClInclude Include="GuildScene.h" />
+    <ClInclude Include="Logo.h" />
     <ClInclude Include="MemoirsBG.h" />
     <ClInclude Include="MemoirsScene.h" />
     <ClInclude Include="NomadWagonBG.h" />
@@ -177,6 +178,7 @@
     <ClInclude Include="ProvisionScene.h" />
     <ClInclude Include="StageCoachBG.h" />
     <ClInclude Include="StageCoachScene.h" />
+    <ClInclude Include="StartButton.h" />
     <ClInclude Include="SurvivalistBG.h" />
     <ClInclude Include="SurvivalistScene.h" />
     <ClInclude Include="targetver.h" />
@@ -185,6 +187,7 @@
     <ClInclude Include="TavernScene.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="TitleBG.h" />
+    <ClInclude Include="TitleHouse.h" />
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="TownBG.h" />
     <ClInclude Include="TownScene.h" />
@@ -203,6 +206,7 @@
     <ClCompile Include="GraveyardScene.cpp" />
     <ClCompile Include="GuildBG.cpp" />
     <ClCompile Include="GuildScene.cpp" />
+    <ClCompile Include="Logo.cpp" />
     <ClCompile Include="MemoirsBG.cpp" />
     <ClCompile Include="MemoirsScene.cpp" />
     <ClCompile Include="NomadWagonBG.cpp" />
@@ -227,12 +231,14 @@
     <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="StageCoachBG.cpp" />
     <ClCompile Include="StageCoachScene.cpp" />
+    <ClCompile Include="StartButton.cpp" />
     <ClCompile Include="SurvivalistBG.cpp" />
     <ClCompile Include="SurvivalistScene.cpp" />
     <ClCompile Include="TavernBG.cpp" />
     <ClCompile Include="TavernScene.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="TitleBG.cpp" />
+    <ClCompile Include="TitleHouse.cpp" />
     <ClCompile Include="TitleScene.cpp" />
     <ClCompile Include="TownBG.cpp" />
     <ClCompile Include="TownScene.cpp" />

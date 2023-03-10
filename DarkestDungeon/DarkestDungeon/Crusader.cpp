@@ -6,6 +6,8 @@
 #include "Transform.h"
 
 Crusader::Crusader()
+	:mTime(0.0f)
+	,mIdx(0)
 {
 }
 
@@ -15,7 +17,7 @@ Crusader::~Crusader()
 
 void Crusader::Initialize()
 {
-	mImage = Resources::Load<Image>(L"Heroes", L"..\\Resources\\Heroes\\crusader\\crusader_defend.bmp");
+	mImage = Resources::Load<Image>(L"Crusader", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
 	GameObject::Initialize();
 }
 
@@ -54,8 +56,23 @@ void Crusader::Render(HDC hdc)
 	GameObject::Render(hdc);
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
-	// 50 200
-	BitBlt(hdc, pos.x + 50, pos.y + 200, mImage->GetWidth(), mImage->GetHeight(), mImage->GetHdc(), 0, 0, SRCCOPY);
+
+	mTime += Time::DeltaTime();
+
+	if (mIdx >= 12)
+	{
+		mIdx = 0;
+	}
+
+	if (mTime > 0.1f)
+	{
+		mIdx++;
+		mTime = 0.0f;
+	}
+
+	TransparentBlt(hdc, pos.x, pos.y+380, 250, 300
+		, mImage->GetHdc(), (400 * mIdx), 0, 400, 590, RGB(255, 0, 255));
+
 }
 
 void Crusader::Release()

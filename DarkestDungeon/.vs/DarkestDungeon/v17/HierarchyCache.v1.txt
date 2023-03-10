@@ -3,9 +3,9 @@ i:{00000000-0000-0000-0000-000000000000}:DarkestDungeon.sln
 ++DarkestDungeon
 i:{00000000-0000-0000-0000-000000000000}:DarkestDungeon
 ++참조
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:{998F26FA-8337-4504-A383-DBF97886EA71}
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:{49637F7D-C377-47BB-AE5E-46EA4777D1F9}
 ++외부 종속성
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:{082F65A8-ACDE-4DF9-979E-6FE8A06B50DB}
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:{BA4FB324-4C61-4A0C-8F4C-6637194CE426}
 ++Contents
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents
 ++Background
@@ -16,18 +16,14 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene\Dungeon
 ++Ruins
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Dungeon\Ruins
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene\Dungeon\Ruins
-++RuinsBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.cpp
-++RuinsBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.h
-++SelectDungeonBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.cpp
-++SelectDungeonBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.h
 ++ProvisionBG.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionBG.cpp
 ++ProvisionBG.h
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionBG.h
+++SelectDungeonBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.cpp
+++SelectDungeonBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.h
 ++Title
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Title
 ++Town
@@ -35,19 +31,13 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene\Town
 ++Player
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Player
+++Crusader.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp
+++Crusader.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.h
 ++Scene
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Scene
-++PlayRuinsScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.cpp
-++PlayRuinsScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.h
-++SelectDungeonScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.cpp
-++SelectDungeonScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.h
-++ShopScene.cpp
-++ShopScene.h
 ++TitleScene.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleScene.cpp
 ++TitleScene.h
@@ -82,20 +72,22 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Input
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Layer
 ++Resource
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Resource
+++Image.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Image.cpp
+++Image.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Image.h
+++yaResource.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResource.cpp
+++yaResource.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResource.h
+++yaResources.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResources.cpp
+++yaResources.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResources.h
 ++Time
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Time
 ++main
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:main
-++Client.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Client.h
-++framework.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\framework.h
-++main.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\main.cpp
-++Resource.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Resource.h
-++targetver.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\targetver.h
 ++리소스 파일
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:리소스 파일
 ++ammintrin.h
@@ -618,6 +610,10 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\YVALS_CORE.H
 ++zmmintrin.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\ZMMINTRIN.H
+++RuinsBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.cpp
+++RuinsBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.h
 ++TitleBG.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleBG.cpp
 ++TitleBG.h
@@ -666,10 +662,14 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownBG.cpp
 ++TownBG.h
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownBG.h
-++Crusader.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp
-++Crusader.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.h
+++ProvisionScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.cpp
+++ProvisionScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.h
+++SelectDungeonScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.cpp
+++SelectDungeonScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.h
 ++AbbeyScene.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyScene.cpp
 ++AbbeyScene.h
@@ -738,18 +738,6 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Layer.cpp
 ++Layer.h
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Layer.h
-++Image.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Image.cpp
-++Image.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Image.h
-++yaResource.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResource.cpp
-++yaResource.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResource.h
-++yaResources.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResources.cpp
-++yaResources.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\yaResources.h
 ++Scene.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Scene.cpp
 ++Scene.h
@@ -762,13 +750,63 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Time.cpp
 ++Time.h
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Time.h
+++Client.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Client.h
+++framework.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\framework.h
+++main.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\main.cpp
+++Resource.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Resource.h
+++targetver.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\targetver.h
 ++DarkestDungeon.ico
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\DarkestDungeon.ico
 ++DarkestDungeon.rc
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\DarkestDungeon.rc
 ++small.ico
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\small.ico
-++ProvisionScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.cpp
-++ProvisionScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.h
+++PlayRuinsScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.cpp
+++PlayRuinsScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.h
+++atomic
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\ATOMIC
+++cmath
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CMATH
+++ctime
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CTIME
+++functional
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\FUNCTIONAL
+++memory
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\MEMORY
+++time.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\TIME.H
+++typeinfo
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\TYPEINFO
+++unordered_map
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\UNORDERED_MAP
+++vcruntime_typeinfo.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\VCRUNTIME_TYPEINFO.H
+++xatomic_wait.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XATOMIC_WAIT.H
+++xbit_ops.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XBIT_OPS.H
+++xhash
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XHASH
+++xthreads.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XTHREADS.H
+++xtimec.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XTIMEC.H
+++Logo.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Logo.h
+++Logo.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Logo.cpp
+++StartButton.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StartButton.h
+++StartButton.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StartButton.cpp
+++TitleHouse.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleHouse.h
+++TitleHouse.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleHouse.cpp

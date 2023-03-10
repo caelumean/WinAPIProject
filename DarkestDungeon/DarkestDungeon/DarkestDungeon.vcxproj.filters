@@ -230,6 +230,15 @@
     <ClInclude Include="ProvisionBG.h">
       <Filter>Contents\Background\Dungeon</Filter>
     </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Contents\Background\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="StartButton.h">
+      <Filter>Contents\Background\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleHouse.h">
+      <Filter>Contents\Background\Title</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -369,6 +378,15 @@
     </ClCompile>
     <ClCompile Include="ProvisionBG.cpp">
       <Filter>Contents\Background\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>Contents\Background\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="StartButton.cpp">
+      <Filter>Contents\Background\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleHouse.cpp">
+      <Filter>Contents\Background\Title</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

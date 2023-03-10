@@ -2,6 +2,9 @@
 #include "Scene.h"
 
 class TitleBG;
+class Logo;
+class StartButton;
+class TitleHouse;
 class TitleScene : public Scene
 {
 public:
@@ -17,4 +20,8 @@ public:
 	virtual void OnExit() override;
 private:
 	TitleBG* mTitleBG;
+	TitleHouse* mTitleHouse;
+	Logo* mLogo;
+	StartButton* mStartButton;
+
 };
