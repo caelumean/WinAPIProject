@@ -28,9 +28,9 @@ void PlayRuinsScene::Initialize()
 
 void PlayRuinsScene::Update()
 {
-	if (Input::GetKeyState(eKeyCode::N) == eKeyState::Down)
+	if (Input::GetKeyState(eKeyCode::X) == eKeyState::Down)
 	{
-		SceneManager::LoadScene(eSceneType::Title);
+		SceneManager::LoadScene(eSceneType::Town);
 	}
 
 	Scene::Update();

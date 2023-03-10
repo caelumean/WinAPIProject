@@ -26,6 +26,10 @@ void ProvisionScene::Update()
 	{
 		SceneManager::LoadScene(eSceneType::Play);
 	}
+	else if (Input::GetKeyState(eKeyCode::X) == eKeyState::Down)
+	{
+		SceneManager::LoadScene(eSceneType::SelectDugeon);
+	}
 
 	Scene::Update();
 }

@@ -25,6 +25,11 @@ void SelectDungeonScene::Update()
 	{
 		SceneManager::LoadScene(eSceneType::Town);
 	}
+	//N АјБо
+	else if (Input::GetKeyState(eKeyCode::N) == eKeyState::Down)
+	{
+		SceneManager::LoadScene(eSceneType::Provision);
+	}
 
 	Scene::Update();
 }
