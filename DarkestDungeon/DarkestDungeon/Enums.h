@@ -38,9 +38,10 @@ enum class eSceneType
 enum class eLayerType
 {
 	BackGround,
+	Sky,
 	Shadow,
+	Building,
 	NPC,
-	Build,
 	Enemy,
 	Player,
 	Effect,

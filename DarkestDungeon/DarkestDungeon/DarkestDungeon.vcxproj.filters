@@ -72,6 +72,39 @@
     <Filter Include="Contents\Background\Dungeon\Ruins">
       <UniqueIdentifier>{9aa7fcc4-d139-4c40-8536-865deb65dfa2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\Background\Town\Abbey">
+      <UniqueIdentifier>{034acb23-7d64-4f8b-a1ee-1598f5c4bf30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Blacksmith">
+      <UniqueIdentifier>{afdf6858-9c99-473e-8f20-07ebbf01f3ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Graveyard">
+      <UniqueIdentifier>{ab31e1b9-bd02-4205-b6a3-d914a32e3eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Guild">
+      <UniqueIdentifier>{6099b1cd-3b24-4933-9b4a-9705428982aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Memoirs">
+      <UniqueIdentifier>{7d991316-1a90-41e4-b43c-e3dbadbd02a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Sanitarium">
+      <UniqueIdentifier>{75b9dd1a-5075-4990-988a-bab8d9640959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\NomadWagon">
+      <UniqueIdentifier>{66d890d5-0d1e-4f99-ba0e-df51e72fd8a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\StageCoach">
+      <UniqueIdentifier>{734822b1-e236-4d96-be5a-c2c1a3c14e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Survivalist">
+      <UniqueIdentifier>{63438ab6-9bd4-4336-be94-bc5e525fa0f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Tavern">
+      <UniqueIdentifier>{59b925d3-9006-41d0-862e-16f47382fa42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Build">
+      <UniqueIdentifier>{a66ca2f9-3a57-416d-9aaa-4224014336e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -188,36 +221,6 @@
     <ClInclude Include="TownBG.h">
       <Filter>Contents\Background\Town</Filter>
     </ClInclude>
-    <ClInclude Include="StageCoachBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="BlacksmithBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="GuildBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="SurvivalistBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="TavernBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="AbbeyBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="SanitariumBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="NomadWagonBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="GraveyardBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
-    <ClInclude Include="MemoirsBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
     <ClInclude Include="SelectDungeonScene.h">
       <Filter>Contents\Scene\Dungeon</Filter>
     </ClInclude>
@@ -238,6 +241,69 @@
     </ClInclude>
     <ClInclude Include="TitleHouse.h">
       <Filter>Contents\Background\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="AbbeyBG.h">
+      <Filter>Contents\Background\Town\Abbey</Filter>
+    </ClInclude>
+    <ClInclude Include="BlacksmithBG.h">
+      <Filter>Contents\Background\Town\Blacksmith</Filter>
+    </ClInclude>
+    <ClInclude Include="GraveyardBG.h">
+      <Filter>Contents\Background\Town\Graveyard</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBG.h">
+      <Filter>Contents\Background\Town\Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoirsBG.h">
+      <Filter>Contents\Background\Town\Memoirs</Filter>
+    </ClInclude>
+    <ClInclude Include="NomadWagonBG.h">
+      <Filter>Contents\Background\Town\NomadWagon</Filter>
+    </ClInclude>
+    <ClInclude Include="SanitariumBG.h">
+      <Filter>Contents\Background\Town\Sanitarium</Filter>
+    </ClInclude>
+    <ClInclude Include="StageCoachBG.h">
+      <Filter>Contents\Background\Town\StageCoach</Filter>
+    </ClInclude>
+    <ClInclude Include="SurvivalistBG.h">
+      <Filter>Contents\Background\Town\Survivalist</Filter>
+    </ClInclude>
+    <ClInclude Include="TavernBG.h">
+      <Filter>Contents\Background\Town\Tavern</Filter>
+    </ClInclude>
+    <ClInclude Include="TownGround.h">
+      <Filter>Contents\Background\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="AbbeyBuilding.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="BlacksmithBuilding.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="GraveyardBuilding.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildBuild.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoirsBuild.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="NomadWagonBuild.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="SanitariumBuild.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="StageCoachBuild.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="SurvivalistBuild.h">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClInclude>
+    <ClInclude Include="TavernBuild.h">
+      <Filter>Contents\Background\Town\Build</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -337,36 +403,6 @@
     <ClCompile Include="TownBG.cpp">
       <Filter>Contents\Background\Town</Filter>
     </ClCompile>
-    <ClCompile Include="StageCoachBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="BlacksmithBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="GuildBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="SurvivalistBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="TavernBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="AbbeyBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="SanitariumBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="NomadWagonBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="GraveyardBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
-    <ClCompile Include="MemoirsBG.cpp">
-      <Filter>Contents\Background\Town</Filter>
-    </ClCompile>
     <ClCompile Include="SelectDungeonScene.cpp">
       <Filter>Contents\Scene\Dungeon</Filter>
     </ClCompile>
@@ -387,6 +423,69 @@
     </ClCompile>
     <ClCompile Include="TitleHouse.cpp">
       <Filter>Contents\Background\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="AbbeyBG.cpp">
+      <Filter>Contents\Background\Town\Abbey</Filter>
+    </ClCompile>
+    <ClCompile Include="BlacksmithBG.cpp">
+      <Filter>Contents\Background\Town\Blacksmith</Filter>
+    </ClCompile>
+    <ClCompile Include="GraveyardBG.cpp">
+      <Filter>Contents\Background\Town\Graveyard</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBG.cpp">
+      <Filter>Contents\Background\Town\Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoirsBG.cpp">
+      <Filter>Contents\Background\Town\Memoirs</Filter>
+    </ClCompile>
+    <ClCompile Include="NomadWagonBG.cpp">
+      <Filter>Contents\Background\Town\NomadWagon</Filter>
+    </ClCompile>
+    <ClCompile Include="SanitariumBG.cpp">
+      <Filter>Contents\Background\Town\Sanitarium</Filter>
+    </ClCompile>
+    <ClCompile Include="StageCoachBG.cpp">
+      <Filter>Contents\Background\Town\StageCoach</Filter>
+    </ClCompile>
+    <ClCompile Include="SurvivalistBG.cpp">
+      <Filter>Contents\Background\Town\Survivalist</Filter>
+    </ClCompile>
+    <ClCompile Include="TavernBG.cpp">
+      <Filter>Contents\Background\Town\Tavern</Filter>
+    </ClCompile>
+    <ClCompile Include="TownGround.cpp">
+      <Filter>Contents\Background\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="AbbeyBuilding.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="BlacksmithBuilding.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="GraveyardBuilding.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildBuild.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoirsBuild.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="NomadWagonBuild.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="SanitariumBuild.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="StageCoachBuild.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="SurvivalistBuild.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
+    </ClCompile>
+    <ClCompile Include="TavernBuild.cpp">
+      <Filter>Contents\Background\Town\Build</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

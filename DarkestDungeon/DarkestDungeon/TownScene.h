@@ -2,6 +2,8 @@
 #include "Scene.h"
 
 class TownBG;
+class TownGround;
+class AbbeyBuilding;
 class TownScene : public Scene
 {
 public:
@@ -17,5 +19,7 @@ public:
 	virtual void OnExit() override;
 private:
 	TownBG* mTownBG;
+	TownGround* mTownGround;
+	AbbeyBuilding* mAbbeyBuilding;
 };
 

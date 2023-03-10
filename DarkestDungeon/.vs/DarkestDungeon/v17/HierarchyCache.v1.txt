@@ -3,9 +3,9 @@ i:{00000000-0000-0000-0000-000000000000}:DarkestDungeon.sln
 ++DarkestDungeon
 i:{00000000-0000-0000-0000-000000000000}:DarkestDungeon
 ++참조
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:{49637F7D-C377-47BB-AE5E-46EA4777D1F9}
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:{5C7138E4-416E-4A4A-85FC-02217AF73555}
 ++외부 종속성
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:{BA4FB324-4C61-4A0C-8F4C-6637194CE426}
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:{A4880E53-B43B-4A23-A173-C3F625A2E194}
 ++Contents
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents
 ++Background
@@ -13,31 +13,159 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background
 ++Dungeon
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Dungeon
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene\Dungeon
-++Ruins
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Dungeon\Ruins
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene\Dungeon\Ruins
-++ProvisionBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionBG.cpp
-++ProvisionBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionBG.h
-++SelectDungeonBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.cpp
-++SelectDungeonBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.h
 ++Title
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Title
+++Logo.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Logo.cpp
+++Logo.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Logo.h
+++StartButton.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StartButton.cpp
+++StartButton.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StartButton.h
+++TitleBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleBG.cpp
+++TitleBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleBG.h
+++TitleHouse.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleHouse.cpp
+++TitleHouse.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleHouse.h
 ++Town
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene\Town
+++Abbey
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Abbey
+++AbbeyBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyBG.cpp
+++AbbeyBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyBG.h
+++Blacksmith
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Blacksmith
+++BlacksmithBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithBG.cpp
+++BlacksmithBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithBG.h
+++Graveyard
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Graveyard
+++GraveyardBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardBG.cpp
+++GraveyardBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardBG.h
+++Guild
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Guild
+++GuildBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildBG.cpp
+++GuildBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildBG.h
+++Memoirs
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Memoirs
+++MemoirsBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsBG.cpp
+++MemoirsBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsBG.h
+++Tavern
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Tavern
+++TavernBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernBG.cpp
+++TavernBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernBG.h
+++Survivalist
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Survivalist
+++SurvivalistBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistBG.cpp
+++SurvivalistBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistBG.h
+++StageCoach
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\StageCoach
+++StageCoachBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachBG.cpp
+++StageCoachBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachBG.h
+++Sanitarium
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Sanitarium
+++SanitariumBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumBG.cpp
+++SanitariumBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumBG.h
+++NomadWagon
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\NomadWagon
+++NomadWagonBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonBG.cpp
+++NomadWagonBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonBG.h
+++TownBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownBG.cpp
+++TownBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownBG.h
+++TownGround.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownGround.cpp
+++TownGround.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownGround.h
 ++Player
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Player
-++Crusader.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp
-++Crusader.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.h
 ++Scene
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Scene
+++Ruins
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Scene\Dungeon\Ruins
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Dungeon\Ruins
+++PlayRuinsScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.cpp
+++PlayRuinsScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.h
+++ProvisionScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.cpp
+++ProvisionScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.h
+++SelectDungeonScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.cpp
+++SelectDungeonScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.h
+++AbbeyScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyScene.cpp
+++AbbeyScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyScene.h
+++BlacksmithScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithScene.cpp
+++BlacksmithScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithScene.h
+++GraveyardScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardScene.cpp
+++GraveyardScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardScene.h
+++GuildScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildScene.cpp
+++GuildScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildScene.h
+++MemoirsScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsScene.cpp
+++MemoirsScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsScene.h
+++NomadWagonScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonScene.cpp
+++NomadWagonScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonScene.h
+++SanitariumScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumScene.cpp
+++SanitariumScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumScene.h
+++StageCoachScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachScene.cpp
+++StageCoachScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachScene.h
+++SurvivalistScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistScene.cpp
+++SurvivalistScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistScene.h
+++TavernScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernScene.cpp
+++TavernScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernScene.h
+++TownScene.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownScene.cpp
+++TownScene.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownScene.h
 ++TitleScene.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleScene.cpp
 ++TitleScene.h
@@ -64,12 +192,20 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Component
 ++GameObject
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\GameObject
+++GameObject.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GameObject.cpp
+++GameObject.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GameObject.h
 ++High Level Interface
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\High Level Interface
 ++Input
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Input
 ++Layer
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Layer
+++Layer.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Layer.cpp
+++Layer.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Layer.h
 ++Resource
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Resource
 ++Image.cpp
@@ -88,6 +224,16 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:Engine\Time
 ++main
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:main
+++Client.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Client.h
+++framework.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\framework.h
+++main.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\main.cpp
+++Resource.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Resource.h
+++targetver.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\targetver.h
 ++리소스 파일
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:리소스 파일
 ++ammintrin.h
@@ -108,6 +254,8 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\ARMINTR.H
 ++assert.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\ASSERT.H
+++atomic
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\ATOMIC
 ++basetsd.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\BASETSD.H
 ++bcrypt.h
@@ -124,6 +272,8 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\CGUID.H
 ++climits
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CLIMITS
+++cmath
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CMATH
 ++combaseapi.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\COMBASEAPI.H
 ++coml2api.h
@@ -198,6 +348,8 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CSTDLIB
 ++cstring
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CSTRING
+++ctime
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CTIME
 ++ctype.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\CTYPE.H
 ++cwchar
@@ -240,6 +392,8 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\FILEAPIFROMAPP.H
 ++float.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\FLOAT.H
+++functional
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\FUNCTIONAL
 ++guiddef.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\GUIDDEF.H
 ++handleapi.h
@@ -302,6 +456,8 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MCIAPI.H
 ++mcx.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\MCX.H
+++memory
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\MEMORY
 ++memory.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\MEMORY.H
 ++memoryapi.h
@@ -470,6 +626,8 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\THREADPOOLAPISET.H
 ++threadpoollegacyapiset.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\THREADPOOLLEGACYAPISET.H
+++time.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\TIME.H
 ++timeapi.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\TIMEAPI.H
 ++timezoneapi.h
@@ -482,12 +640,16 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\TVOUT.H
 ++type_traits
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\TYPE_TRAITS
+++typeinfo
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\TYPEINFO
 ++types.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\SYS\TYPES.H
 ++Unknwn.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\UNKNWN.H
 ++Unknwnbase.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\UNKNWNBASE.H
+++unordered_map
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\UNORDERED_MAP
 ++urlmon.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UM\URLMON.H
 ++use_ansi.h
@@ -508,6 +670,8 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\VCRUNTIME_NEW_DEBUG.H
 ++vcruntime_string.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\VCRUNTIME_STRING.H
+++vcruntime_typeinfo.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\VCRUNTIME_TYPEINFO.H
 ++vector
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\VECTOR
 ++verrsrc.h
@@ -584,6 +748,12 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\SHARED\WTYPESBASE.H
 ++xatomic.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XATOMIC.H
+++xatomic_wait.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XATOMIC_WAIT.H
+++xbit_ops.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XBIT_OPS.H
+++xhash
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XHASH
 ++xkeycheck.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XKEYCHECK.H
 ++xmemory
@@ -598,6 +768,10 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XSTDDEF
 ++xstring
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XSTRING
+++xthreads.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XTHREADS.H
+++xtimec.h
+e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XTIMEC.H
 ++xtr1common
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XTR1COMMON
 ++xtree
@@ -610,110 +784,18 @@ e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDI
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\YVALS_CORE.H
 ++zmmintrin.h
 e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\ZMMINTRIN.H
-++RuinsBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.cpp
-++RuinsBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.h
-++TitleBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleBG.cpp
-++TitleBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleBG.h
-++AbbeyBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyBG.cpp
-++AbbeyBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyBG.h
-++BlacksmithBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithBG.cpp
-++BlacksmithBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithBG.h
-++GraveyardBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardBG.cpp
-++GraveyardBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardBG.h
-++GuildBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildBG.cpp
-++GuildBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildBG.h
-++MemoirsBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsBG.cpp
-++MemoirsBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsBG.h
-++NomadWagonBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonBG.cpp
-++NomadWagonBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonBG.h
-++SanitariumBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumBG.cpp
-++SanitariumBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumBG.h
-++StageCoachBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachBG.cpp
-++StageCoachBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachBG.h
-++SurvivalistBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistBG.cpp
-++SurvivalistBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistBG.h
-++TavernBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernBG.cpp
-++TavernBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernBG.h
-++TownBG.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownBG.cpp
-++TownBG.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownBG.h
-++ProvisionScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.cpp
-++ProvisionScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionScene.h
-++SelectDungeonScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.cpp
-++SelectDungeonScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonScene.h
-++AbbeyScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyScene.cpp
-++AbbeyScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyScene.h
-++BlacksmithScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithScene.cpp
-++BlacksmithScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithScene.h
-++GraveyardScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardScene.cpp
-++GraveyardScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardScene.h
-++GuildScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildScene.cpp
-++GuildScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildScene.h
-++MemoirsScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsScene.cpp
-++MemoirsScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsScene.h
-++NomadWagonScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonScene.cpp
-++NomadWagonScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonScene.h
-++SanitariumScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumScene.cpp
-++SanitariumScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumScene.h
-++StageCoachScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachScene.cpp
-++StageCoachScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachScene.h
-++SurvivalistScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistScene.cpp
-++SurvivalistScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistScene.h
-++TavernScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernScene.cpp
-++TavernScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernScene.h
-++TownScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownScene.cpp
-++TownScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TownScene.h
+++ProvisionBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionBG.cpp
+++ProvisionBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\ProvisionBG.h
+++SelectDungeonBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.cpp
+++SelectDungeonBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SelectDungeonBG.h
+++Crusader.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.cpp
+++Crusader.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Crusader.h
 ++Component.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Component.cpp
 ++Component.h
@@ -722,10 +804,6 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Transform.cpp
 ++Transform.h
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Transform.h
-++GameObject.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GameObject.cpp
-++GameObject.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GameObject.h
 ++Application.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Application.cpp
 ++Application.h
@@ -734,10 +812,6 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Input.cpp
 ++Input.h
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Input.h
-++Layer.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Layer.cpp
-++Layer.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Layer.h
 ++Scene.cpp
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Scene.cpp
 ++Scene.h
@@ -750,63 +824,64 @@ i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\Darkest
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Time.cpp
 ++Time.h
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Time.h
-++Client.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Client.h
-++framework.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\framework.h
-++main.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\main.cpp
-++Resource.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Resource.h
-++targetver.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\targetver.h
 ++DarkestDungeon.ico
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\DarkestDungeon.ico
 ++DarkestDungeon.rc
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\DarkestDungeon.rc
 ++small.ico
 i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\small.ico
-++PlayRuinsScene.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.cpp
-++PlayRuinsScene.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\PlayRuinsScene.h
-++atomic
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\ATOMIC
-++cmath
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CMATH
-++ctime
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\CTIME
-++functional
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\FUNCTIONAL
-++memory
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\MEMORY
-++time.h
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES (X86)\WINDOWS KITS\10\INCLUDE\10.0.19041.0\UCRT\TIME.H
-++typeinfo
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\TYPEINFO
-++unordered_map
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\UNORDERED_MAP
-++vcruntime_typeinfo.h
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\VCRUNTIME_TYPEINFO.H
-++xatomic_wait.h
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XATOMIC_WAIT.H
-++xbit_ops.h
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XBIT_OPS.H
-++xhash
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XHASH
-++xthreads.h
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XTHREADS.H
-++xtimec.h
-e:{2fa50acc-9701-43cc-b940-415766bbc335}:C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\2022\COMMUNITY\VC\TOOLS\MSVC\14.31.31103\INCLUDE\XTIMEC.H
-++Logo.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Logo.h
-++Logo.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\Logo.cpp
-++StartButton.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StartButton.h
-++StartButton.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StartButton.cpp
-++TitleHouse.h
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleHouse.h
-++TitleHouse.cpp
-i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TitleHouse.cpp
+++RuinsBG.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.cpp
+++RuinsBG.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\RuinsBG.h
+++AbbeyBuild.h
+++AbbeyBuild.cpp
+++NewFilter1
+++Build
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:Contents\Background\Town\Build
+++BlacksmithBuild.h
+++BlacksmithBuild.cpp
+++GraveyardBuild.h
+++GraveyardBuild.cpp
+++GuildBuild.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildBuild.h
+++GuildBuild.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GuildBuild.cpp
+++MemoirsBuild.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsBuild.h
+++MemoirsBuild.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\MemoirsBuild.cpp
+++TavernBuild.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernBuild.h
+++TavernBuild.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\TavernBuild.cpp
+++SurvivalistBuild.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistBuild.h
+++SurvivalistBuild.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SurvivalistBuild.cpp
+++StageCoachBuild.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachBuild.h
+++StageCoachBuild.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\StageCoachBuild.cpp
+++SanitariumBuidl.h
+++SanitariumBuidl.cpp
+++NomadWagonBuild.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonBuild.h
+++NomadWagonBuild.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\NomadWagonBuild.cpp
+++SanitariumBuild.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumBuild.h
+++SanitariumBuild.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\SanitariumBuild.cpp
+++AbbeyBuilding.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyBuilding.cpp
+++AbbeyBuilding.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\AbbeyBuilding.h
+++BlacksmithBuilding.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithBuilding.h
+++BlacksmithBuilding.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\BlacksmithBuilding.cpp
+++GraveyardBuilding.cpp
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardBuilding.cpp
+++GraveyardBuilding.h
+i:{2fa50acc-9701-43cc-b940-415766bbc335}:D:\WinAPIProject\DarkestDungeon\DarkestDungeon\GraveyardBuilding.h

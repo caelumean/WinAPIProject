@@ -28,7 +28,7 @@ void Logo::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 550, pos.y + 50, 600, 200
+	TransparentBlt(hdc, pos.x + 400, pos.y + 50, 800, 300
 		, mImage->GetHdc(), 0, 0, 640, 242, RGB(255, 0, 255));
 }
 

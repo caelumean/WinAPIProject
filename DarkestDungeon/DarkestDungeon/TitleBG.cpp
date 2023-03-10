@@ -28,7 +28,7 @@ void TitleBG::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 	//BitBlt(hdc, 0, 0, mImage->GetWidth(), mImage->GetHeight(), mImage->GetHdc(), 0, 0, SRCCOPY);
-	TransparentBlt(hdc, pos.x, pos.y, 1600, 900
+	TransparentBlt(hdc, pos.x, pos.y, 1600, 800
 		, mImage->GetHdc(), 0, 0, 1920, 2160, RGB(255, 0, 255));
 }
 

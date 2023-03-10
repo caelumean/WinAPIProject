@@ -1,5 +1,7 @@
 #include "TownScene.h"
 #include "TownBG.h"
+#include "TownGround.h"
+#include "AbbeyBuilding.h"
 #include "SceneManager.h"
 #include "Input.h"
 
@@ -15,6 +17,31 @@ void TownScene::Initialize()
 {
 	mTownBG = new TownBG();
 	AddGameObeject(mTownBG, eLayerType::BackGround);
+
+	mTownGround = new TownGround();
+	AddGameObeject(mTownGround, eLayerType::Shadow);
+
+	// °Ç¹°
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mAbbeyBuilding = new AbbeyBuilding();
+	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
 
 	Scene::Initialize();
 }

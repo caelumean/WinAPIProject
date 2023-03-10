@@ -28,7 +28,7 @@ void TitleHouse::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 	
-	TransparentBlt(hdc, pos.x, pos.y, 1600, 900
+	TransparentBlt(hdc, pos.x, pos.y+450, 1600, 500
 		, mImage->GetHdc(), 0, 0, 1920, 674, RGB(255, 0, 255));
 }
 
