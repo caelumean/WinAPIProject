@@ -14,7 +14,7 @@ GraveyardBuilding::~GraveyardBuilding()
 
 void GraveyardBuilding::Initialize()
 {
-	mImage = Resources::Load<Image>(L"Logo", L"..\\Resources\\Title\\Town\\building\\town_graveyard_1.bmp");
+	mImage = Resources::Load<Image>(L"GraveyardBuilding", L"..\\Resources\\Town\\building\\town_graveyard_1.bmp");
 	GameObject::Initialize();
 }
 
@@ -29,8 +29,8 @@ void GraveyardBuilding::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 400, pos.y + 50, 800, 300
-		, mImage->GetHdc(), 0, 0, 640, 242, RGB(255, 0, 255));
+	TransparentBlt(hdc, pos.x + 600, pos.y + 480, 250, 100
+		, mImage->GetHdc(), 0, 0, 578, 293, RGB(255, 0, 255));
 }
 
 void GraveyardBuilding::Release()

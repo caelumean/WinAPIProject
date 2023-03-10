@@ -2,6 +2,15 @@
 #include "TownBG.h"
 #include "TownGround.h"
 #include "AbbeyBuilding.h"
+#include "BlacksmithBuilding.h"
+#include "GraveyardBuilding.h"
+#include "GuildBuilding.h"
+#include "MemoirsBuilding.h"
+#include "NomadWagonBuilding.h"
+#include "SanitariumBuilding.h"
+#include "StageCoachBuilding.h"
+#include "SurvivalistBuilding.h"
+#include "TavernBuilding.h"
 #include "SceneManager.h"
 #include "Input.h"
 
@@ -24,24 +33,29 @@ void TownScene::Initialize()
 	// °Ç¹°
 	mAbbeyBuilding = new AbbeyBuilding();
 	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
+	mGuildBuilding = new GuildBuilding();
+	AddGameObeject(mGuildBuilding, eLayerType::Building);
+	mBlacksmithBuilding = new BlacksmithBuilding();
+	AddGameObeject(mBlacksmithBuilding, eLayerType::Building);
+	mGraveyardBuilding = new GraveyardBuilding();
+	AddGameObeject(mGraveyardBuilding, eLayerType::Building);
+	
+	mSanitariumBuilding = new SanitariumBuilding();
+	AddGameObeject(mSanitariumBuilding, eLayerType::Building);
+	mTavernBuilding = new TavernBuilding();
+	AddGameObeject(mTavernBuilding, eLayerType::Building);
+	mStageCoachBuilding = new StageCoachBuilding();
+	AddGameObeject(mStageCoachBuilding, eLayerType::Building);
+	mSurvivalistBuilding = new SurvivalistBuilding();
+	AddGameObeject(mSurvivalistBuilding, eLayerType::Building);
+
+	mMemoirsBuilding = new MemoirsBuilding();
+	AddGameObeject(mMemoirsBuilding, eLayerType::Building);
+	mNomadWagonBuilding = new NomadWagonBuilding();
+	AddGameObeject(mNomadWagonBuilding, eLayerType::Building);
+	
+	
+	
 
 	Scene::Initialize();
 }

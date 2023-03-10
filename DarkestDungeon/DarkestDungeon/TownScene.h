@@ -4,6 +4,15 @@
 class TownBG;
 class TownGround;
 class AbbeyBuilding;
+class BlacksmithBuilding;
+class GraveyardBuilding;
+class GuildBuilding;
+class MemoirsBuilding;
+class NomadWagonBuilding;
+class SanitariumBuilding;
+class StageCoachBuilding;
+class SurvivalistBuilding;
+class TavernBuilding;
 class TownScene : public Scene
 {
 public:
@@ -21,5 +30,15 @@ private:
 	TownBG* mTownBG;
 	TownGround* mTownGround;
 	AbbeyBuilding* mAbbeyBuilding;
+	BlacksmithBuilding* mBlacksmithBuilding;
+	GraveyardBuilding* mGraveyardBuilding;
+	GuildBuilding* mGuildBuilding;
+	MemoirsBuilding* mMemoirsBuilding;
+	NomadWagonBuilding* mNomadWagonBuilding;
+	SanitariumBuilding* mSanitariumBuilding;
+	StageCoachBuilding* mStageCoachBuilding;
+	SurvivalistBuilding* mSurvivalistBuilding;
+	TavernBuilding* mTavernBuilding;
+
 };
 
