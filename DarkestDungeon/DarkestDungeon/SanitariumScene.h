@@ -1,6 +1,7 @@
 #pragma once
 #include "Scene.h"
 
+class SanitariumBG;
 class SanitariumScene : public Scene
 {
 public:
@@ -14,6 +15,7 @@ public:
 
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
-
+private:
+	SanitariumBG* mSanitariumBG;
 };
 

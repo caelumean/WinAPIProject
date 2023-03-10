@@ -7,6 +7,7 @@ int ASCII[(UINT)eKeyCode::END] =
 	'Z', 'X', 'C', 'V', 'B', 'N', 'M',
 };
 
+
 std::vector<Input::Key> Input::mKeys;
 
 void Input::Initialize()

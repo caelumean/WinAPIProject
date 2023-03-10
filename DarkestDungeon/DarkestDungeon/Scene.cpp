@@ -2,7 +2,7 @@
 
 Scene::Scene()
 {
-	mLayers.reserve(15);
+	mLayers.reserve(16);
 	mLayers.resize((UINT)eLayerType::End);
 }
 

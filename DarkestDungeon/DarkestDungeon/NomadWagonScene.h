@@ -1,6 +1,7 @@
 #pragma once
 #include "Scene.h"
 
+class NomadWagonBG;
 class NomadWagonScene : public Scene
 {
 public:
@@ -15,5 +16,7 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 
+private:
+	NomadWagonBG* mNomadWagonBG;
 };
 

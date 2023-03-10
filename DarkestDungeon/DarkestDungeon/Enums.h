@@ -27,6 +27,7 @@ enum class eSceneType
 	Graveyard,
 	Memoirs,
 	SelectDugeon,
+	Shop,
 	Play,
 	Ending,
 	End

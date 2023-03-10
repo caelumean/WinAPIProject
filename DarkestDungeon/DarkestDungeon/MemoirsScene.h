@@ -1,6 +1,7 @@
 #pragma once
 #include "Scene.h"
 
+class MemoirsBG;
 class MemoirsScene : public Scene
 {
 public:
@@ -14,5 +15,7 @@ public:
 
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
+private:
+	MemoirsBG* mMemoirsBG;
 };
 
