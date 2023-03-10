@@ -11,6 +11,8 @@
 유목민 마차(Nomad Wagon)
 무덤(Graveyard)
 선조의 기억(Ancestor's Memoirs)
+공급(Provision)
+던전 선택(SelectDugeon)
 */
 enum class eSceneType
 {
@@ -27,7 +29,7 @@ enum class eSceneType
 	Graveyard,
 	Memoirs,
 	SelectDugeon,
-	Shop,
+	Provision,
 	Play,
 	Ending,
 	End

@@ -173,8 +173,8 @@
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SelectDungeonBG.h" />
     <ClInclude Include="SelectDungeonScene.h" />
-    <ClInclude Include="ShopBG.h" />
-    <ClInclude Include="ShopScene.h" />
+    <ClInclude Include="ProvisionBG.h" />
+    <ClInclude Include="ProvisionScene.h" />
     <ClInclude Include="StageCoachBG.h" />
     <ClInclude Include="StageCoachScene.h" />
     <ClInclude Include="SurvivalistBG.h" />
@@ -223,8 +223,8 @@
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SelectDungeonBG.cpp" />
     <ClCompile Include="SelectDungeonScene.cpp" />
-    <ClCompile Include="ShopBG.cpp" />
-    <ClCompile Include="ShopScene.cpp" />
+    <ClCompile Include="ProvisionBG.cpp" />
+    <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="StageCoachBG.cpp" />
     <ClCompile Include="StageCoachScene.cpp" />
     <ClCompile Include="SurvivalistBG.cpp" />

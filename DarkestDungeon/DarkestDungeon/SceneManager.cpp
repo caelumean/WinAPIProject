@@ -14,7 +14,7 @@
 #include "TownScene.h"
 
 #include "SelectDungeonScene.h"
-#include "ShopScene.h"
+#include "ProvisionScene.h"
 #include "PlayRuinsScene.h"
 
 
@@ -43,8 +43,9 @@ void SceneManager::Initialize()
 	mScenes[(UINT)eSceneType::Survivalist] = new SurvivalistScene();
 	mScenes[(UINT)eSceneType::Tavern] = new TavernScene();
 
-	mScenes[(UINT)eSceneType::SelectDugeon] = new SelectDugeonScene();
-	mScenes[(UINT)eSceneType::Shop] = new ShopScene();
+	//던전 관련
+	mScenes[(UINT)eSceneType::SelectDugeon] = new SelectDungeonScene();
+	mScenes[(UINT)eSceneType::Provision] = new ProvisionScene();
 	mScenes[(UINT)eSceneType::Play] = new PlayRuinsScene();
 
 	mActiveScene = mScenes[(UINT)eSceneType::Title];

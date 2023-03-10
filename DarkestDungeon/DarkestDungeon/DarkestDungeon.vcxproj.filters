@@ -221,13 +221,13 @@
     <ClInclude Include="SelectDungeonScene.h">
       <Filter>Contents\Scene\Dungeon</Filter>
     </ClInclude>
-    <ClInclude Include="ShopScene.h">
+    <ClInclude Include="ProvisionScene.h">
       <Filter>Contents\Scene\Dungeon</Filter>
     </ClInclude>
     <ClInclude Include="SelectDungeonBG.h">
       <Filter>Contents\Background\Dungeon</Filter>
     </ClInclude>
-    <ClInclude Include="ShopBG.h">
+    <ClInclude Include="ProvisionBG.h">
       <Filter>Contents\Background\Dungeon</Filter>
     </ClInclude>
   </ItemGroup>
@@ -361,13 +361,13 @@
     <ClCompile Include="SelectDungeonScene.cpp">
       <Filter>Contents\Scene\Dungeon</Filter>
     </ClCompile>
-    <ClCompile Include="ShopScene.cpp">
+    <ClCompile Include="ProvisionScene.cpp">
       <Filter>Contents\Scene\Dungeon</Filter>
     </ClCompile>
     <ClCompile Include="SelectDungeonBG.cpp">
       <Filter>Contents\Background\Dungeon</Filter>
     </ClCompile>
-    <ClCompile Include="ShopBG.cpp">
+    <ClCompile Include="ProvisionBG.cpp">
       <Filter>Contents\Background\Dungeon</Filter>
     </ClCompile>
   </ItemGroup>
