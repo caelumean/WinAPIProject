@@ -13,7 +13,9 @@ class SanitariumBuilding;
 class StageCoachBuilding;
 class SurvivalistBuilding;
 class TavernBuilding;
-class ProgresstionBar;
+class ProgressionBar;
+class Namesplate;
+
 class TownScene : public Scene
 {
 public:
@@ -44,7 +46,8 @@ private:
 	TavernBuilding* mTavernBuilding;
 
 	//UI
-	ProgresstionBar* mProgresstionBar;
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
 
 };
 

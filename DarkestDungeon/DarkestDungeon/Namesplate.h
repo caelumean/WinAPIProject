@@ -2,11 +2,11 @@
 #include "GameObject.h"
 #include "Image.h"
 
-class ProgresstionBar : public GameObject
+class Namesplate : public GameObject
 {
 public:
-	ProgresstionBar();
-	~ProgresstionBar();
+	Namesplate();
+	~Namesplate();
 
 	virtual void Initialize() override;
 	virtual void Update() override;

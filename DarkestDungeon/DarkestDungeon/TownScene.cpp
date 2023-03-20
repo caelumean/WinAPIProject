@@ -13,7 +13,9 @@
 #include "SurvivalistBuilding.h"
 #include "TavernBuilding.h"
 //UI
-#include "ProgresstionBar.h"
+#include "ProgressionBar.h"
+#include "Namesplate.h"
+
 #include "SceneManager.h"
 #include "Input.h"
 
@@ -60,9 +62,10 @@ void TownScene::Initialize()
 	AddGameObeject(mNomadWagonBuilding, eLayerType::Building);
 	
 	// UI
-	mProgresstionBar = new ProgresstionBar();
-	AddGameObeject(mProgresstionBar, eLayerType::UI1);
-	
+	mProgressionBar = new ProgressionBar();
+	AddGameObeject(mProgressionBar, eLayerType::UI1);
+	mNamesplate = new Namesplate();
+	AddGameObeject(mNamesplate, eLayerType::UI1);
 
 	Scene::Initialize();
 }

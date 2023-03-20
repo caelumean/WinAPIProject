@@ -323,10 +323,10 @@
     <ClInclude Include="Collider.h">
       <Filter>Engine\Component\Collider</Filter>
     </ClInclude>
-    <ClInclude Include="Namespate.h">
+    <ClInclude Include="Namesplate.h">
       <Filter>Contents\Background\Town\UI</Filter>
     </ClInclude>
-    <ClInclude Include="ProgresstionBar.h">
+    <ClInclude Include="ProgressionBar.h">
       <Filter>Contents\Background\Town\UI</Filter>
     </ClInclude>
   </ItemGroup>
@@ -523,10 +523,10 @@
     <ClCompile Include="Collider.cpp">
       <Filter>Engine\Component\Collider</Filter>
     </ClCompile>
-    <ClCompile Include="Namespate.cpp">
+    <ClCompile Include="Namesplate.cpp">
       <Filter>Contents\Background\Town\UI</Filter>
     </ClCompile>
-    <ClCompile Include="ProgresstionBar.cpp">
+    <ClCompile Include="ProgressionBar.cpp">
       <Filter>Contents\Background\Town\UI</Filter>
     </ClCompile>
   </ItemGroup>

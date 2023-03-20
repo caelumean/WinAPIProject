@@ -1,29 +1,29 @@
-#include "ProgresstionBar.h"
+#include "ProgressionBar.h"
 #include "SceneManager.h"
 #include "yaResources.h"
 #include "Transform.h"
 
-ProgresstionBar::ProgresstionBar()
+ProgressionBar::ProgressionBar()
 {
 }
 
-ProgresstionBar::~ProgresstionBar()
+ProgressionBar::~ProgressionBar()
 {
 }
 
 
-void ProgresstionBar::Initialize()
+void ProgressionBar::Initialize()
 {
 	mImage = Resources::Load<Image>(L"Progressionbar", L"..\\Resources\\Town\\UI\\progression_bar.bmp");
 	GameObject::Initialize();
 }
 
-void ProgresstionBar::Update()
+void ProgressionBar::Update()
 {
 	GameObject::Update();
 }
 
-void ProgresstionBar::Render(HDC hdc)
+void ProgressionBar::Render(HDC hdc)
 {
 	GameObject::Render(hdc);
 	Transform* tr = GetComponent<Transform>();
@@ -33,7 +33,7 @@ void ProgresstionBar::Render(HDC hdc)
 		, mImage->GetHdc(), 0, 0, 1920, 138, RGB(255, 0, 255));
 }
 
-void ProgresstionBar::Release()
+void ProgressionBar::Release()
 {
 	GameObject::Release();
 }

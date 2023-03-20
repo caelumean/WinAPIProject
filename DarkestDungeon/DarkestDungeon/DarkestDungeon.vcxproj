@@ -165,11 +165,11 @@
     <ClInclude Include="MemoirsBG.h" />
     <ClInclude Include="MemoirsBuilding.h" />
     <ClInclude Include="MemoirsScene.h" />
-    <ClInclude Include="Namespate.h" />
+    <ClInclude Include="Namesplate.h" />
     <ClInclude Include="NomadWagonBG.h" />
     <ClInclude Include="NomadWagonBuilding.h" />
     <ClInclude Include="NomadWagonScene.h" />
-    <ClInclude Include="ProgresstionBar.h" />
+    <ClInclude Include="ProgressionBar.h" />
     <ClInclude Include="RuinsBG.h" />
     <ClInclude Include="Crusader.h" />
     <ClInclude Include="Engine.h" />
@@ -238,11 +238,11 @@
     <ClCompile Include="MemoirsBG.cpp" />
     <ClCompile Include="MemoirsBuilding.cpp" />
     <ClCompile Include="MemoirsScene.cpp" />
-    <ClCompile Include="Namespate.cpp" />
+    <ClCompile Include="Namesplate.cpp" />
     <ClCompile Include="NomadWagonBG.cpp" />
     <ClCompile Include="NomadWagonBuilding.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
-    <ClCompile Include="ProgresstionBar.cpp" />
+    <ClCompile Include="ProgressionBar.cpp" />
     <ClCompile Include="RuinsBG.cpp" />
     <ClCompile Include="Crusader.cpp" />
     <ClCompile Include="Entity.cpp" />
