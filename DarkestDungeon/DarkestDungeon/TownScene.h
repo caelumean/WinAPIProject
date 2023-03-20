@@ -13,6 +13,7 @@ class SanitariumBuilding;
 class StageCoachBuilding;
 class SurvivalistBuilding;
 class TavernBuilding;
+class ProgresstionBar;
 class TownScene : public Scene
 {
 public:
@@ -29,6 +30,8 @@ public:
 private:
 	TownBG* mTownBG;
 	TownGround* mTownGround;
+
+	// °Ç¹°
 	AbbeyBuilding* mAbbeyBuilding;
 	BlacksmithBuilding* mBlacksmithBuilding;
 	GraveyardBuilding* mGraveyardBuilding;
@@ -39,6 +42,9 @@ private:
 	StageCoachBuilding* mStageCoachBuilding;
 	SurvivalistBuilding* mSurvivalistBuilding;
 	TavernBuilding* mTavernBuilding;
+
+	//UI
+	ProgresstionBar* mProgresstionBar;
 
 };
 

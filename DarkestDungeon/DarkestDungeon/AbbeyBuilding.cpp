@@ -28,7 +28,7 @@ void AbbeyBuilding::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 600, pos.y + 290, 400, 300
+	TransparentBlt(hdc, pos.x + 620, pos.y + 200, 400, 400
 		, mImage->GetHdc(), 0, 0, 800, 986, RGB(255, 0, 255));
 }
 

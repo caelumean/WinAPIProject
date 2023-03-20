@@ -27,7 +27,7 @@ void SurvivalistBuilding::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 60, pos.y + 400, 180, 160
+	TransparentBlt(hdc, pos.x + 80, pos.y + 380, 160, 140
 		, mImage->GetHdc(), 0, 0, 424, 281, RGB(255, 0, 255));
 }
 

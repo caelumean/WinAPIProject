@@ -1,6 +1,7 @@
 #include "TownScene.h"
 #include "TownBG.h"
 #include "TownGround.h"
+// °Ç¹°
 #include "AbbeyBuilding.h"
 #include "BlacksmithBuilding.h"
 #include "GraveyardBuilding.h"
@@ -11,6 +12,8 @@
 #include "StageCoachBuilding.h"
 #include "SurvivalistBuilding.h"
 #include "TavernBuilding.h"
+//UI
+#include "ProgresstionBar.h"
 #include "SceneManager.h"
 #include "Input.h"
 
@@ -56,7 +59,9 @@ void TownScene::Initialize()
 	mNomadWagonBuilding = new NomadWagonBuilding();
 	AddGameObeject(mNomadWagonBuilding, eLayerType::Building);
 	
-	
+	// UI
+	mProgresstionBar = new ProgresstionBar();
+	AddGameObeject(mProgresstionBar, eLayerType::UI1);
 	
 
 	Scene::Initialize();

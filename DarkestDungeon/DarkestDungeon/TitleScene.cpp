@@ -25,10 +25,10 @@ void TitleScene::Initialize()
 	AddGameObeject(mTitleHouse, eLayerType::Shadow);
 	// Logo
 	mLogo = new Logo();
-	AddGameObeject(mLogo, eLayerType::UI);
+	AddGameObeject(mLogo, eLayerType::UI1);
 	// start Button
 	mStartButton = new StartButton();
-	AddGameObeject(mStartButton, eLayerType::UI);
+	AddGameObeject(mStartButton, eLayerType::UI1);
 	
 
 	Scene::Initialize();

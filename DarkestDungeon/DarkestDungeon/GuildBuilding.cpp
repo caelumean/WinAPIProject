@@ -29,7 +29,7 @@ void GuildBuilding::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 940, pos.y + 300, 300, 400
+	TransparentBlt(hdc, pos.x + 960, pos.y + 300, 300, 400
 		, mImage->GetHdc(), 0, 0, 707, 697, RGB(255, 0, 255));
 }
 

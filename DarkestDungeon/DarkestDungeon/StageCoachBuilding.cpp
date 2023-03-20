@@ -28,7 +28,7 @@ void StageCoachBuilding::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 100, pos.y + 600, 200, 150
+	TransparentBlt(hdc, pos.x + 140, pos.y + 580, 200, 130
 		, mImage->GetHdc(), 0, 0, 509, 362, RGB(255, 0, 255));
 }
 

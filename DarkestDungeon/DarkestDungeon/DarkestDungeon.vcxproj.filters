@@ -323,6 +323,12 @@
     <ClInclude Include="Collider.h">
       <Filter>Engine\Component\Collider</Filter>
     </ClInclude>
+    <ClInclude Include="Namespate.h">
+      <Filter>Contents\Background\Town\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgresstionBar.h">
+      <Filter>Contents\Background\Town\UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -516,6 +522,12 @@
     </ClCompile>
     <ClCompile Include="Collider.cpp">
       <Filter>Engine\Component\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Namespate.cpp">
+      <Filter>Contents\Background\Town\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgresstionBar.cpp">
+      <Filter>Contents\Background\Town\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

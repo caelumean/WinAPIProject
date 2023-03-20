@@ -46,7 +46,8 @@ enum class eLayerType
 	Player,
 	Effect,
 	Item,
-	UI,
+	UI1,
+	UI2,
 	Text,
 	End,
 };

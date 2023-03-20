@@ -28,7 +28,7 @@ void StartButton::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 	
-	TransparentBlt(hdc, pos.x + 650, pos.y + 800, 300, 70
+	TransparentBlt(hdc, pos.x + 650, pos.y + 780, 300, 70
 		, mImage->GetHdc(), 0, 0, 372, 92, RGB(255, 0, 255));
 }
 
