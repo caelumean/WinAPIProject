@@ -3,6 +3,7 @@
 #include "Image.h"
 
 class Animator;
+class Animation;
 class Crusader : public GameObject
 {
 public:

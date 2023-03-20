@@ -19,7 +19,8 @@ Crusader::~Crusader()
 void Crusader::Initialize()
 {
 	Transform* tr = GetComponent<Transform>();
-	tr->SetPos(Vector2(300.0f, 700.0f));
+	tr->SetPos(Vector2(800.0f, 980.0f));
+	tr->SetScale(Vector2{ 0.6f, 0.5f });
 
 	Image* mImage = Resources::Load<Image>(L"crusader_Idle", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
 	Image* mImage2 = Resources::Load<Image>(L"crusader_walk", L"..\\Resources\\Heroes\\crusader\\crusader_walk.bmp");
@@ -27,12 +28,12 @@ void Crusader::Initialize()
 	
 	mAnimator = AddComponent<Animator>();
 	mAnimator->CreateAnimation(L"crusader_Idle", mImage, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
-	mAnimator->CreateAnimation(L"crusader_walk", mImage2, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
+	mAnimator->CreateAnimation(L"crusader_walk", mImage2, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.08f);
 	mAnimator->CreateAnimation(L"crusader_combat", mImage3, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
 
 	mAnimator->Play(L"crusader_Idle", true);
 	Collider* collider = AddComponent<Collider>();
-	collider->SetCenter(Vector2(-50.0f, -50.0f));
+	collider->SetCenter(Vector2(-150.0f, -580.0f));
 
 	mState = eCrusaderState::Idle;
 

@@ -6,7 +6,7 @@ Collider::Collider()
 	: Component(eComponentType::Collider)
 	, mCenter(Vector2::Zero)
 	, mPos(Vector2::Zero)
-	, mSize(100.0f, 100.0f)
+	, mSize(150.0f, 285.0f)
 {
 }
 
