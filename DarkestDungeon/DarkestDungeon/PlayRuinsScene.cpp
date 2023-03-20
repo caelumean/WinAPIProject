@@ -3,6 +3,7 @@
 #include "RuinsBG.h"
 #include "Input.h"
 #include "SceneManager.h"
+#include "CollisionManager.h"
 
 PlayRuinsScene::PlayRuinsScene()
 {

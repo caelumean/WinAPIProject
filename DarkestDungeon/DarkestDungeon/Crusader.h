@@ -2,9 +2,16 @@
 #include "GameObject.h"
 #include "Image.h"
 
+class Animator;
 class Crusader : public GameObject
 {
 public:
+	enum class eCrusaderState
+	{
+		Walk,
+		Combat,
+		Idle,
+	};
 	Crusader();
 	~Crusader();
 
@@ -14,7 +21,11 @@ public:
 	virtual void Release() override;
 
 private:
-	Image* mImage;
-	float mTime;
-	int mIdx;
+	void walk ();
+	void combat();
+	void idle();
+
+private:
+	eCrusaderState mState;
+	Animator* mAnimator;
 };

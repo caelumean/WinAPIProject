@@ -167,7 +167,7 @@ void Animator::Play(const std::wstring& name, bool loop)
         events->mStartEvent();
 }
 
-Events* Animator::FindEvents(const std::wstring& name)
+Animator::Events* Animator::FindEvents(const std::wstring& name)
 {
     std::map<std::wstring, Events*>::iterator iter
         = mEvents.find(name);

@@ -51,3 +51,8 @@ void Scene::AddGameObeject(GameObject* obj, eLayerType layer)
 {
 	mLayers[(UINT)layer].AddGameObject(obj);
 }
+
+const std::vector<GameObject*>& Scene::GetGameObjects(eLayerType layer)
+{
+	return mLayers[(UINT)layer].GetGameObjects();
+}

@@ -48,6 +48,7 @@ void SceneManager::Initialize()
 	mScenes[(UINT)eSceneType::Provision] = new ProvisionScene();
 	mScenes[(UINT)eSceneType::Play] = new PlayRuinsScene();
 
+	// 타이틀 씬으로 시작하기
 	mActiveScene = mScenes[(UINT)eSceneType::Title];
 
 

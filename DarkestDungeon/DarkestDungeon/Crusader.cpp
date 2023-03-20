@@ -4,10 +4,11 @@
 #include "Input.h"
 #include "yaResources.h"
 #include "Transform.h"
+#include "Animator.h"
+#include "Collider.h"
+#include "Scene.h"
 
 Crusader::Crusader()
-	:mTime(0.0f)
-	,mIdx(0)
 {
 }
 
@@ -17,7 +18,24 @@ Crusader::~Crusader()
 
 void Crusader::Initialize()
 {
-	mImage = Resources::Load<Image>(L"Crusader", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
+	Transform* tr = GetComponent<Transform>();
+	tr->SetPos(Vector2(300.0f, 700.0f));
+
+	Image* mImage = Resources::Load<Image>(L"crusader_Idle", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
+	Image* mImage2 = Resources::Load<Image>(L"crusader_walk", L"..\\Resources\\Heroes\\crusader\\crusader_walk.bmp");
+	Image* mImage3 = Resources::Load<Image>(L"crusader_combat", L"..\\Resources\\Heroes\\crusader\\crusader_combat.bmp");
+	
+	mAnimator = AddComponent<Animator>();
+	mAnimator->CreateAnimation(L"crusader_Idle", mImage, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
+	mAnimator->CreateAnimation(L"crusader_walk", mImage2, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
+	mAnimator->CreateAnimation(L"crusader_combat", mImage3, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
+
+	mAnimator->Play(L"crusader_Idle", true);
+	Collider* collider = AddComponent<Collider>();
+	collider->SetCenter(Vector2(-50.0f, -50.0f));
+
+	mState = eCrusaderState::Idle;
+
 	GameObject::Initialize();
 }
 
@@ -25,6 +43,21 @@ void Crusader::Update()
 {
 	GameObject::Update();
 
+	switch (mState)
+	{
+	case Crusader::eCrusaderState::Walk:
+		walk();
+		break;
+	case Crusader::eCrusaderState::Combat:
+		combat();
+		break;
+	case Crusader::eCrusaderState::Idle:
+		idle();
+		break;
+	default:
+		break;
+	}
+	/*
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
@@ -39,12 +72,14 @@ void Crusader::Update()
 	}
 
 	tr->SetPos(pos);
+	*/
 }
 
 
 void Crusader::Render(HDC hdc)
 {
 	GameObject::Render(hdc);
+	/*
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
@@ -63,10 +98,48 @@ void Crusader::Render(HDC hdc)
 
 	TransparentBlt(hdc, pos.x, pos.y+380, 250, 300
 		, mImage->GetHdc(), (400 * mIdx), 0, 400, 590, RGB(255, 0, 255));
-
+	*/
+	
 }
 
 void Crusader::Release()
 {
 	GameObject::Release();
+}
+
+void Crusader::walk()
+{
+	if (Input::GetKeyUp(eKeyCode::A)
+		|| Input::GetKeyUp(eKeyCode::D))
+	{
+		mState = eCrusaderState::Idle;
+		mAnimator->Play(L"crusader_Idle", true);
+	}
+
+	Transform* tr = GetComponent<Transform>();
+	Vector2 pos = tr->GetPos();
+
+	if (Input::GetKey(eKeyCode::A))
+		pos.x -= 150.0f * Time::DeltaTime();
+
+	if (Input::GetKey(eKeyCode::D))
+		pos.x += 150.0f * Time::DeltaTime();
+
+
+	tr->SetPos(pos);
+}
+
+void Crusader::combat()
+{
+}
+
+void Crusader::idle()
+{
+	if (Input::GetKeyDown(eKeyCode::A)
+		|| Input::GetKeyDown(eKeyCode::D))
+	{
+		mState = eCrusaderState::Walk;
+		mAnimator->Play(L"crusader_walk", true);
+	}
+
 }

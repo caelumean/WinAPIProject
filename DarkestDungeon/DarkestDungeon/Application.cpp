@@ -2,6 +2,7 @@
 #include "SceneManager.h"
 #include "Time.h"
 #include "Input.h"
+#include "CollisionManager.h"
 
 Application::Application()
 	: mHwnd(NULL)

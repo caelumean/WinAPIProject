@@ -24,6 +24,7 @@
     <ProjectGuid>{2fa50acc-9701-43cc-b940-415766bbc335}</ProjectGuid>
     <RootNamespace>DarkestDungeon</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Client</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -151,6 +152,8 @@
     <ClInclude Include="BlacksmithBuilding.h" />
     <ClInclude Include="BlacksmithScene.h" />
     <ClInclude Include="Client.h" />
+    <ClInclude Include="Collider.h" />
+    <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="GraveyardBG.h" />
     <ClInclude Include="GraveyardBuilding.h" />
@@ -220,6 +223,8 @@
     <ClCompile Include="BlacksmithBG.cpp" />
     <ClCompile Include="BlacksmithBuilding.cpp" />
     <ClCompile Include="BlacksmithScene.cpp" />
+    <ClCompile Include="Collider.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="GraveyardBG.cpp" />
     <ClCompile Include="GraveyardBuilding.cpp" />
