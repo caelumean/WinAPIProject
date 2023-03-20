@@ -2,6 +2,10 @@
 #include "Scene.h"
 
 class GuildBG;
+
+//UI
+class ProgressionBar;
+class Namesplate;
 class GuildScene : public Scene
 {
 public:
@@ -16,6 +20,13 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 private:
+
+	//BG
 	GuildBG* mGuildBG;
+
+	//UI
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
+
 };
 

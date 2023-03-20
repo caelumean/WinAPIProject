@@ -105,11 +105,20 @@
     <Filter Include="Contents\Background\Town\Building">
       <UniqueIdentifier>{a66ca2f9-3a57-416d-9aaa-4224014336e8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contents\Background\Town\UI">
-      <UniqueIdentifier>{843844f3-c840-4249-8245-202bba5db2a2}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Engine\Component\Collider">
       <UniqueIdentifier>{28738f21-4c1c-4ede-9846-cc5ccfa2131e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Abbey\UI">
+      <UniqueIdentifier>{2aac7601-363f-4f72-8ec6-ba802b9b2307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\CommonUI">
+      <UniqueIdentifier>{843844f3-c840-4249-8245-202bba5db2a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Blacksmith\UI">
+      <UniqueIdentifier>{9d5f6eac-4760-4534-bc47-2dcc4db8c693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Graveyard\UI">
+      <UniqueIdentifier>{864e3e5f-fc43-409f-ac7c-ee0dfeb17e7a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -324,10 +333,31 @@
       <Filter>Engine\Component\Collider</Filter>
     </ClInclude>
     <ClInclude Include="Namesplate.h">
-      <Filter>Contents\Background\Town\UI</Filter>
+      <Filter>Contents\Background\Town\CommonUI</Filter>
     </ClInclude>
     <ClInclude Include="ProgressionBar.h">
-      <Filter>Contents\Background\Town\UI</Filter>
+      <Filter>Contents\Background\Town\CommonUI</Filter>
+    </ClInclude>
+    <ClInclude Include="AbbeyNPC.h">
+      <Filter>Contents\Background\Town\Abbey\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AbbeyNPCBG.h">
+      <Filter>Contents\Background\Town\Abbey\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BlacksmithNPC.h">
+      <Filter>Contents\Background\Town\Blacksmith\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BlacksmithNPCBG.h">
+      <Filter>Contents\Background\Town\Blacksmith\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BlacksmithFrame.h">
+      <Filter>Contents\Background\Town\Blacksmith\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GraveyardNPCBG.h">
+      <Filter>Contents\Background\Town\Graveyard\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GraveyardNPC.h">
+      <Filter>Contents\Background\Town\Graveyard\UI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -524,10 +554,31 @@
       <Filter>Engine\Component\Collider</Filter>
     </ClCompile>
     <ClCompile Include="Namesplate.cpp">
-      <Filter>Contents\Background\Town\UI</Filter>
+      <Filter>Contents\Background\Town\CommonUI</Filter>
     </ClCompile>
     <ClCompile Include="ProgressionBar.cpp">
-      <Filter>Contents\Background\Town\UI</Filter>
+      <Filter>Contents\Background\Town\CommonUI</Filter>
+    </ClCompile>
+    <ClCompile Include="AbbeyNPC.cpp">
+      <Filter>Contents\Background\Town\Abbey\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="AbbeyNPCBG.cpp">
+      <Filter>Contents\Background\Town\Abbey\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BlacksmithNPC.cpp">
+      <Filter>Contents\Background\Town\Blacksmith\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BlacksmithNPCBG.cpp">
+      <Filter>Contents\Background\Town\Blacksmith\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BlacksmithFrame.cpp">
+      <Filter>Contents\Background\Town\Blacksmith\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GraveyardNPCBG.cpp">
+      <Filter>Contents\Background\Town\Graveyard\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GraveyardNPC.cpp">
+      <Filter>Contents\Background\Town\Graveyard\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

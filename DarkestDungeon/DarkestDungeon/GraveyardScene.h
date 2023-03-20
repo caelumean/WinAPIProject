@@ -2,6 +2,10 @@
 #include "Scene.h"
 
 class GraveyardBG;
+class GraveyardNPCBG;
+class GraveyardNPC;
+class ProgressionBar;
+class Namesplate;
 class GraveyardScene : public Scene
 {
 public:
@@ -16,6 +20,13 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 private:
+	//BG
 	GraveyardBG* mGraveyardBG;
+	GraveyardNPCBG* mGraveyardNPCBG;
+	GraveyardNPC* mGraveyardNPC;
+
+	//UI
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
 };
 

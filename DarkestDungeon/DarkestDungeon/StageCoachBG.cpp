@@ -27,7 +27,8 @@ void StageCoachBG::Render(HDC hdc)
 	GameObject::Render(hdc);
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
-	BitBlt(hdc, 0, 0, mImage->GetWidth(), mImage->GetHeight(), mImage->GetHdc(), 0, 0, SRCCOPY);
+	TransparentBlt(hdc, pos.x - 5, pos.y - 5, 1605, 905
+		, mImage->GetHdc(), 0, 0, 876, 410, RGB(255, 0, 255));
 }
 
 void StageCoachBG::Release()

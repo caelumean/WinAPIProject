@@ -1,8 +1,12 @@
 #include "GuildScene.h"
-#include "GuildBG.h"
 #include "SceneManager.h"
 #include "Input.h"
 
+//BG
+#include "GuildBG.h"
+//UI
+#include "ProgressionBar.h"
+#include "Namesplate.h"
 GuildScene::GuildScene()
 {
 }

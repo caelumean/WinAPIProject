@@ -2,6 +2,12 @@
 #include "Scene.h"
 
 class BlacksmithBG;
+class BlacksmithNPC;
+class BlacksmithNPCBG;
+class BlacksmithFrame;
+class ProgressionBar;
+class Namesplate;
+
 class BlacksmithScene : public Scene
 {
 public:
@@ -17,6 +23,14 @@ public:
 	virtual void OnExit() override;
 
 private:
+	//BG
 	BlacksmithBG* mBlacksmithBG;
+	BlacksmithNPC* mBlacksmithNPC;
+	BlacksmithNPCBG* mBlacksmithNPCBG;
+	//UI
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
+	BlacksmithFrame* mBlacksmithFrame;
+
 };
 
