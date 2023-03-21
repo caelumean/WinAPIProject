@@ -21,7 +21,6 @@ void PlagueDoctor::Initialize()
 	Transform* tr = GetComponent<Transform>();
 	tr->SetPos(Vector2(290.0f, 935.0f));
 	tr->SetScale(Vector2{ 0.6f, 0.5f });
-
 	//D:\WinAPIProject\DarkestDungeon\Resources\Heroes\plague_doctor
 	Image* mImage = Resources::Load<Image>(L"plaguedoctor_Idle", L"..\\Resources\\Heroes\\plague_doctor\\plague_doctor_Idle.bmp");
 	Image* mImage2 = Resources::Load<Image>(L"plaguedoctor_walk", L"..\\Resources\\Heroes\\plague_doctor\\plague_doctor_Walk.bmp");

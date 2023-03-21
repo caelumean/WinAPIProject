@@ -21,7 +21,7 @@ void HighwayMan::Initialize()
 	Transform* tr = GetComponent<Transform>();
 	tr->SetPos(Vector2(630.0f, 960.0f));
 	tr->SetScale(Vector2{ 0.6f, 0.5f });
-
+	
 	//D:\WinAPIProject\DarkestDungeon\Resources\Heroes\highwayman
 	Image* mImage = Resources::Load<Image>(L"highwayman_Idle", L"..\\Resources\\Heroes\\highwayman\\highwayMan_Idle.bmp");
 	Image* mImage2 = Resources::Load<Image>(L"highwayman_walk", L"..\\Resources\\Heroes\\highwayman\\highwayMan_Walk.bmp");

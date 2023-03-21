@@ -34,7 +34,7 @@ void PlayRuinsScene::Initialize()
 	AddGameObeject(mPlagueDoctor, eLayerType::Player);
 	mVestal = new Vestal();
 	AddGameObeject(mVestal, eLayerType::Player);
-
+	
 	Scene::Initialize();
 }
 
