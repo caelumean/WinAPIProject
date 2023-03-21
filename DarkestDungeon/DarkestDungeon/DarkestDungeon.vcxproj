@@ -170,6 +170,7 @@
     <ClInclude Include="GuildBG.h" />
     <ClInclude Include="GuildBuilding.h" />
     <ClInclude Include="GuildScene.h" />
+    <ClInclude Include="HighwayMan.h" />
     <ClInclude Include="Logo.h" />
     <ClInclude Include="MemoirsBG.h" />
     <ClInclude Include="MemoirsBuilding.h" />
@@ -178,6 +179,7 @@
     <ClInclude Include="NomadWagonBG.h" />
     <ClInclude Include="NomadWagonBuilding.h" />
     <ClInclude Include="NomadWagonScene.h" />
+    <ClInclude Include="PlagueDoctor.h" />
     <ClInclude Include="ProgressionBar.h" />
     <ClInclude Include="RuinsBG.h" />
     <ClInclude Include="Crusader.h" />
@@ -221,6 +223,7 @@
     <ClInclude Include="TownGround.h" />
     <ClInclude Include="TownScene.h" />
     <ClInclude Include="Transform.h" />
+    <ClInclude Include="Vestal.h" />
     <ClInclude Include="yaResource.h" />
     <ClInclude Include="yaResources.h" />
   </ItemGroup>
@@ -250,6 +253,7 @@
     <ClCompile Include="GuildBG.cpp" />
     <ClCompile Include="GuildBuilding.cpp" />
     <ClCompile Include="GuildScene.cpp" />
+    <ClCompile Include="HighwayMan.cpp" />
     <ClCompile Include="Logo.cpp" />
     <ClCompile Include="MemoirsBG.cpp" />
     <ClCompile Include="MemoirsBuilding.cpp" />
@@ -258,6 +262,7 @@
     <ClCompile Include="NomadWagonBG.cpp" />
     <ClCompile Include="NomadWagonBuilding.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
+    <ClCompile Include="PlagueDoctor.cpp" />
     <ClCompile Include="ProgressionBar.cpp" />
     <ClCompile Include="RuinsBG.cpp" />
     <ClCompile Include="Crusader.cpp" />
@@ -296,6 +301,7 @@
     <ClCompile Include="TownGround.cpp" />
     <ClCompile Include="TownScene.cpp" />
     <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Vestal.cpp" />
     <ClCompile Include="yaResource.cpp" />
     <ClCompile Include="yaResources.cpp" />
   </ItemGroup>

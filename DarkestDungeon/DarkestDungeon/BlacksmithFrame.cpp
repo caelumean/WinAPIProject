@@ -28,7 +28,7 @@ void BlacksmithFrame::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 900, pos.y + 250, 350, 300
+	TransparentBlt(hdc, pos.x + 913, pos.y + 250, 350, 300
 		, mImage->GetHdc(), 0, 0, 467, 360, RGB(255, 0, 255));
 }
 

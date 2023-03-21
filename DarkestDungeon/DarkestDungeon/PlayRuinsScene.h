@@ -1,8 +1,13 @@
 #pragma once
 #include "Scene.h"
 
-class Crusader;
+//BG
 class RuinsBG;
+//player
+class Crusader;
+class HighwayMan;
+class PlagueDoctor;
+class Vestal;
 class PlayRuinsScene : public Scene
 {
 public:
@@ -20,4 +25,7 @@ public:
 private:
 	RuinsBG* mRuinsBG;
 	Crusader* mCrusader;
+	HighwayMan* mHighwayMan;
+	PlagueDoctor* mPlagueDoctor;
+	Vestal* mVestal;
 };

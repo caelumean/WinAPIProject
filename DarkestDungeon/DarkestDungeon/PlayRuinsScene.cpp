@@ -1,9 +1,14 @@
 #include "PlayRuinsScene.h"
-#include "Crusader.h"
-#include "RuinsBG.h"
 #include "Input.h"
 #include "SceneManager.h"
 #include "CollisionManager.h"
+//BG
+#include "RuinsBG.h"
+// player
+#include "Crusader.h"
+#include "HighwayMan.h"
+#include "PlagueDoctor.h"
+#include "Vestal.h"
 
 PlayRuinsScene::PlayRuinsScene()
 {
@@ -23,6 +28,12 @@ void PlayRuinsScene::Initialize()
 	//Ä³¸¯ÅÍ
 	mCrusader = new Crusader();
 	AddGameObeject(mCrusader, eLayerType::Player);
+	mHighwayMan = new HighwayMan();
+	AddGameObeject(mHighwayMan, eLayerType::Player);
+	mPlagueDoctor = new PlagueDoctor();
+	AddGameObeject(mPlagueDoctor, eLayerType::Player);
+	mVestal = new Vestal();
+	AddGameObeject(mVestal, eLayerType::Player);
 
 	Scene::Initialize();
 }

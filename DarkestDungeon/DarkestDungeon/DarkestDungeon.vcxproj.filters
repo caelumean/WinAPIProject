@@ -359,6 +359,15 @@
     <ClInclude Include="GraveyardNPC.h">
       <Filter>Contents\Background\Town\Graveyard\UI</Filter>
     </ClInclude>
+    <ClInclude Include="HighwayMan.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctor.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Vestal.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -579,6 +588,15 @@
     </ClCompile>
     <ClCompile Include="GraveyardNPC.cpp">
       <Filter>Contents\Background\Town\Graveyard\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayMan.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctor.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Vestal.cpp">
+      <Filter>Contents\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

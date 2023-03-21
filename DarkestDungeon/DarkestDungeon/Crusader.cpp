@@ -23,8 +23,8 @@ void Crusader::Initialize()
 	tr->SetScale(Vector2{ 0.6f, 0.5f });
 
 	Image* mImage = Resources::Load<Image>(L"crusader_Idle", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
-	Image* mImage2 = Resources::Load<Image>(L"crusader_walk", L"..\\Resources\\Heroes\\crusader\\crusader_walk.bmp");
-	Image* mImage3 = Resources::Load<Image>(L"crusader_combat", L"..\\Resources\\Heroes\\crusader\\crusader_combat.bmp");
+	Image* mImage2 = Resources::Load<Image>(L"crusader_walk", L"..\\Resources\\Heroes\\crusader\\crusader_Walk.bmp");
+	Image* mImage3 = Resources::Load<Image>(L"crusader_combat", L"..\\Resources\\Heroes\\crusader\\crusader_Combat.bmp");
 	
 	mAnimator = AddComponent<Animator>();
 	mAnimator->CreateAnimation(L"crusader_Idle", mImage, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
