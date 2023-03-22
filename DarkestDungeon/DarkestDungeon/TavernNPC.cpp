@@ -1,29 +1,30 @@
-#include "GraveyardNPC.h"
+#include "TavernNPC.h"
 #include "SceneManager.h"
 #include "yaResources.h"
 #include "Transform.h"
 
-GraveyardNPC::GraveyardNPC()
+TavernNPC::TavernNPC()
 {
 }
 
-GraveyardNPC::~GraveyardNPC()
+TavernNPC::~TavernNPC()
 {
 }
 
-void GraveyardNPC::Initialize()
+void TavernNPC::Initialize()
 {
-	//D:\WinAPIProject\DarkestDungeon\Resources\Town\graveyard
-	mImage = Resources::Load<Image>(L"GraveyardNPC", L"..\\Resources\\Town\\graveyard\\graveyard_character.bmp");
+	//D:\WinAPIProject\DarkestDungeon\Resources\Town\tavern
+	mImage = Resources::Load<Image>(L"TavernNPC", L"..\\Resources\\Town\\tavern\\tavern_character.bmp");
 	GameObject::Initialize();
 }
 
-void GraveyardNPC::Update()
+void TavernNPC::Update()
 {
 	GameObject::Update();
+	
 }
 
-void GraveyardNPC::Render(HDC hdc)
+void TavernNPC::Render(HDC hdc)
 {
 	GameObject::Render(hdc);
 	Transform* tr = GetComponent<Transform>();
@@ -33,7 +34,7 @@ void GraveyardNPC::Render(HDC hdc)
 		, mImage->GetHdc(), 0, 0, 811, 757, RGB(255, 0, 255));
 }
 
-void GraveyardNPC::Release()
+void TavernNPC::Release()
 {
 	GameObject::Release();
 }

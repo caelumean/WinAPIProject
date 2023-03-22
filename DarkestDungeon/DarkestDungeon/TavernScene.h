@@ -2,6 +2,10 @@
 #include "Scene.h"
 
 class TavernBG;
+class TavernNPC;
+class TavernNPCBG;
+class ProgressionBar;
+class Namesplate;
 class TavernScene : public Scene
 {
 public:
@@ -16,6 +20,13 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 private:
+	//BG
 	TavernBG* mTavernBG;
+	TavernNPCBG* mTavernNPCBG;
+	TavernNPC* mTavernNPC;
+
+	//UI
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
 };
 

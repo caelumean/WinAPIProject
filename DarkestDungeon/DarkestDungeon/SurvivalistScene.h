@@ -2,6 +2,10 @@
 #include "Scene.h"
 
 class SurvivalistBG;
+class SurvivalistNPCBG;
+class SurvivalistNPC;
+class ProgressionBar;
+class Namesplate;
 class SurvivalistScene : public Scene
 {
 public:
@@ -17,5 +21,11 @@ public:
 	virtual void OnExit() override;
 
 private:
+	//BG
 	SurvivalistBG* mSurvivalistBG;
+	SurvivalistNPCBG* mSurvivalistNPCBG;
+	SurvivalistNPC* mSurvivalistNPC;
+	//UI
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
 };

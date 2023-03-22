@@ -1,7 +1,15 @@
 #include "NomadWagonScene.h"
-#include "NomadWagonBG.h"
 #include "SceneManager.h"
 #include "Input.h"
+
+//BG
+#include "NomadWagonBG.h"
+#include "NomadWagonNPCBG.h"
+#include "NomadWagonNPC.h"
+
+//UI
+#include "ProgressionBar.h"
+#include "Namesplate.h"
 
 NomadWagonScene::NomadWagonScene()
 {
@@ -13,8 +21,19 @@ NomadWagonScene::~NomadWagonScene()
 
 void NomadWagonScene::Initialize()
 {
+	//BG
 	mNomadWagonBG = new NomadWagonBG();
 	AddGameObeject(mNomadWagonBG, eLayerType::BackGround);
+	mNomadWagonNPCBG = new NomadWagonNPCBG();
+	AddGameObeject(mNomadWagonNPCBG, eLayerType::Shadow);
+	mNomadWagonNPC = new NomadWagonNPC();
+	AddGameObeject(mNomadWagonNPC, eLayerType::NPC);
+
+	//UI
+	mProgressionBar = new ProgressionBar();
+	AddGameObeject(mProgressionBar, eLayerType::UI1);
+	mNamesplate = new Namesplate();
+	AddGameObeject(mNamesplate, eLayerType::Sky);
 
 	Scene::Initialize();
 }

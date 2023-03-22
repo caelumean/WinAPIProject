@@ -2,6 +2,10 @@
 #include "Scene.h"
 
 class NomadWagonBG;
+class NomadWagonNPCBG;
+class NomadWagonNPC;
+class ProgressionBar;
+class Namesplate;
 class NomadWagonScene : public Scene
 {
 public:
@@ -17,6 +21,13 @@ public:
 	virtual void OnExit() override;
 
 private:
+	//BG
 	NomadWagonBG* mNomadWagonBG;
+	NomadWagonNPCBG* mNomadWagonNPCBG;
+	NomadWagonNPC* mNomadWagonNPC;
+
+	//UI
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
 };
 

@@ -1,29 +1,29 @@
-#include "GraveyardNPC.h"
+#include "MemoirsNPC.h"
 #include "SceneManager.h"
 #include "yaResources.h"
 #include "Transform.h"
 
-GraveyardNPC::GraveyardNPC()
+MemoirsNPC::MemoirsNPC()
 {
 }
 
-GraveyardNPC::~GraveyardNPC()
+MemoirsNPC::~MemoirsNPC()
 {
 }
 
-void GraveyardNPC::Initialize()
+void MemoirsNPC::Initialize()
 {
-	//D:\WinAPIProject\DarkestDungeon\Resources\Town\graveyard
-	mImage = Resources::Load<Image>(L"GraveyardNPC", L"..\\Resources\\Town\\graveyard\\graveyard_character.bmp");
+	//D:\WinAPIProject\DarkestDungeon\Resources\Town\memoirs
+	mImage = Resources::Load<Image>(L"MemoirsNPC", L"..\\Resources\\Town\\memoirs\\memoirs_character.bmp");
 	GameObject::Initialize();
 }
 
-void GraveyardNPC::Update()
+void MemoirsNPC::Update()
 {
 	GameObject::Update();
 }
 
-void GraveyardNPC::Render(HDC hdc)
+void MemoirsNPC::Render(HDC hdc)
 {
 	GameObject::Render(hdc);
 	Transform* tr = GetComponent<Transform>();
@@ -33,7 +33,7 @@ void GraveyardNPC::Render(HDC hdc)
 		, mImage->GetHdc(), 0, 0, 811, 757, RGB(255, 0, 255));
 }
 
-void GraveyardNPC::Release()
+void MemoirsNPC::Release()
 {
 	GameObject::Release();
 }

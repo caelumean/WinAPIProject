@@ -2,6 +2,10 @@
 #include "Scene.h"
 
 class MemoirsBG;
+class MemoirsNPCBG;
+class MemoirsNPC;
+class ProgressionBar;
+class Namesplate;
 class MemoirsScene : public Scene
 {
 public:
@@ -16,6 +20,12 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 private:
+	//BG
 	MemoirsBG* mMemoirsBG;
+	MemoirsNPCBG* mMemoirsNPCBG;
+	MemoirsNPC* mMemoirsNPC;
+	//UI
+	ProgressionBar* mProgressionBar;
+	Namesplate* mNamesplate;
 };
 

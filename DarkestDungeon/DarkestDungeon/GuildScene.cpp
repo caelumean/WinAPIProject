@@ -4,9 +4,12 @@
 
 //BG
 #include "GuildBG.h"
+#include "GuildNPCBG.h"
+#include "GuildNPC.h"
 //UI
 #include "ProgressionBar.h"
 #include "Namesplate.h"
+
 GuildScene::GuildScene()
 {
 }
@@ -17,8 +20,19 @@ GuildScene::~GuildScene()
 
 void GuildScene::Initialize()
 {
+	//BG
 	mGuildBG = new GuildBG();
 	AddGameObeject(mGuildBG, eLayerType::BackGround);
+	mGuildNPCBG = new GuildNPCBG();
+	AddGameObeject(mGuildNPCBG, eLayerType::Shadow);
+	mGuildNPC = new GuildNPC();
+	AddGameObeject(mGuildNPC, eLayerType::NPC);
+
+	//UI
+	mProgressionBar = new ProgressionBar();
+	AddGameObeject(mProgressionBar, eLayerType::UI1);
+	mNamesplate = new Namesplate();
+	AddGameObeject(mNamesplate, eLayerType::Sky);
 
 	Scene::Initialize();
 }

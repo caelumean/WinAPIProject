@@ -2,7 +2,8 @@
 #include "Scene.h"
 
 class GuildBG;
-
+class GuildNPCBG;
+class GuildNPC;
 //UI
 class ProgressionBar;
 class Namesplate;
@@ -23,6 +24,8 @@ private:
 
 	//BG
 	GuildBG* mGuildBG;
+	GuildNPCBG* mGuildNPCBG;
+	GuildNPC* mGuildNPC;
 
 	//UI
 	ProgressionBar* mProgressionBar;

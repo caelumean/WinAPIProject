@@ -120,6 +120,27 @@
     <Filter Include="Contents\Background\Town\Graveyard\UI">
       <UniqueIdentifier>{864e3e5f-fc43-409f-ac7c-ee0dfeb17e7a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\Background\Town\Guild\UI">
+      <UniqueIdentifier>{a2d464a0-67b4-45be-a42a-393f9d91eb3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Memoirs\UI">
+      <UniqueIdentifier>{d9fefe77-c00f-48a3-9f3b-f82118908631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\NomadWagon\UI">
+      <UniqueIdentifier>{466575bd-8174-4ed1-9ae0-53d3f0865c3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Sanitarium\UI">
+      <UniqueIdentifier>{07f3ad97-8d18-46fb-9702-5bc90a107a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\StageCoach\UI">
+      <UniqueIdentifier>{8eaed547-4280-46e8-b31b-ead562fa520c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Survivalist\UI">
+      <UniqueIdentifier>{be1d6839-1b91-4ab3-852f-d921c75d28f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\Town\Tavern\UI">
+      <UniqueIdentifier>{46a9948a-1d1b-41be-8cc7-794454fe2477}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -368,6 +389,48 @@
     <ClInclude Include="Vestal.h">
       <Filter>Contents\Player</Filter>
     </ClInclude>
+    <ClInclude Include="GuildNPC.h">
+      <Filter>Contents\Background\Town\Guild\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildNPCBG.h">
+      <Filter>Contents\Background\Town\Guild\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoirsNPCBG.h">
+      <Filter>Contents\Background\Town\Memoirs\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoirsNPC.h">
+      <Filter>Contents\Background\Town\Memoirs\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="NomadWagonNPCBG.h">
+      <Filter>Contents\Background\Town\NomadWagon\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="NomadWagonNPC.h">
+      <Filter>Contents\Background\Town\NomadWagon\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SanitariumNPCBG.h">
+      <Filter>Contents\Background\Town\Sanitarium\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SanitariumNPC.h">
+      <Filter>Contents\Background\Town\Sanitarium\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="StageCoachNPCBG.h">
+      <Filter>Contents\Background\Town\StageCoach\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="StageCoachNPC.h">
+      <Filter>Contents\Background\Town\StageCoach\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SurvivalistNPCBG.h">
+      <Filter>Contents\Background\Town\Survivalist\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SurvivalistNPC.h">
+      <Filter>Contents\Background\Town\Survivalist\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TavernNPCBG.h">
+      <Filter>Contents\Background\Town\Tavern\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TavernNPC.h">
+      <Filter>Contents\Background\Town\Tavern\UI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -597,6 +660,48 @@
     </ClCompile>
     <ClCompile Include="Vestal.cpp">
       <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildNPC.cpp">
+      <Filter>Contents\Background\Town\Guild\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="GuildNPCBG.cpp">
+      <Filter>Contents\Background\Town\Guild\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoirsNPCBG.cpp">
+      <Filter>Contents\Background\Town\Memoirs\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoirsNPC.cpp">
+      <Filter>Contents\Background\Town\Memoirs\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="NomadWagonNPCBG.cpp">
+      <Filter>Contents\Background\Town\NomadWagon\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="NomadWagonNPC.cpp">
+      <Filter>Contents\Background\Town\NomadWagon\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SanitariumNPCBG.cpp">
+      <Filter>Contents\Background\Town\Sanitarium\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SanitariumNPC.cpp">
+      <Filter>Contents\Background\Town\Sanitarium\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="StageCoachNPCBG.cpp">
+      <Filter>Contents\Background\Town\StageCoach\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="StageCoachNPC.cpp">
+      <Filter>Contents\Background\Town\StageCoach\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SurvivalistNPCBG.cpp">
+      <Filter>Contents\Background\Town\Survivalist\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SurvivalistNPC.cpp">
+      <Filter>Contents\Background\Town\Survivalist\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TavernNPCBG.cpp">
+      <Filter>Contents\Background\Town\Tavern\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TavernNPC.cpp">
+      <Filter>Contents\Background\Town\Tavern\UI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
