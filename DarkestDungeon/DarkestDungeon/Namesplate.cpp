@@ -13,7 +13,7 @@ Namesplate::~Namesplate()
 
 void Namesplate::Initialize()
 {
-	mImage = Resources::Load<Image>(L"Namesplate", L"..\\Resources\\Town\\UI\\namesplate.bmp");
+	mImage = Resources::Load<Image>(L"Namesplate", L"..\\Resources\\Town\\CommonUI\\namesplate.bmp");
 	GameObject::Initialize();
 }
 

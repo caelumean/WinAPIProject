@@ -14,7 +14,7 @@ ProgressionBar::~ProgressionBar()
 
 void ProgressionBar::Initialize()
 {
-	mImage = Resources::Load<Image>(L"Progressionbar", L"..\\Resources\\Town\\UI\\progression_bar.bmp");
+	mImage = Resources::Load<Image>(L"Progressionbar", L"..\\Resources\\Town\\CommonUI\\progression_bar.bmp");
 	GameObject::Initialize();
 }
 
