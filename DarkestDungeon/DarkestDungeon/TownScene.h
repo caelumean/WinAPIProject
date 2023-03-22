@@ -1,8 +1,11 @@
 #pragma once
 #include "Scene.h"
 
+//BG
 class TownBG;
 class TownGround;
+class TownRuins;
+//Building
 class AbbeyBuilding;
 class BlacksmithBuilding;
 class GraveyardBuilding;
@@ -13,6 +16,7 @@ class SanitariumBuilding;
 class StageCoachBuilding;
 class SurvivalistBuilding;
 class TavernBuilding;
+//UI
 class ProgressionBar;
 class Namesplate;
 
@@ -30,8 +34,10 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 private:
+	//BG
 	TownBG* mTownBG;
 	TownGround* mTownGround;
+	TownRuins* mTownRuins;
 
 	// °Ç¹°
 	AbbeyBuilding* mAbbeyBuilding;

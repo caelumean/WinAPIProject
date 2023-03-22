@@ -431,6 +431,9 @@
     <ClInclude Include="TavernNPC.h">
       <Filter>Contents\Background\Town\Tavern\UI</Filter>
     </ClInclude>
+    <ClInclude Include="TownRuins.h">
+      <Filter>Contents\Background\Town</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -702,6 +705,9 @@
     </ClCompile>
     <ClCompile Include="TavernNPC.cpp">
       <Filter>Contents\Background\Town\Tavern\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TownRuins.cpp">
+      <Filter>Contents\Background\Town</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

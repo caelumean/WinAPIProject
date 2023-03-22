@@ -1,6 +1,8 @@
 #include "TownScene.h"
+//BG
 #include "TownBG.h"
 #include "TownGround.h"
+#include "TownRuins.h"
 // °Ç¹°
 #include "AbbeyBuilding.h"
 #include "BlacksmithBuilding.h"
@@ -29,9 +31,11 @@ TownScene::~TownScene()
 
 void TownScene::Initialize()
 {
+	//BG
 	mTownBG = new TownBG();
 	AddGameObeject(mTownBG, eLayerType::BackGround);
-
+	mTownRuins = new TownRuins();
+	AddGameObeject(mTownRuins, eLayerType::Shadow);
 	mTownGround = new TownGround();
 	AddGameObeject(mTownGround, eLayerType::Shadow);
 
