@@ -8,8 +8,7 @@
 #include "MemoirsNPC.h"
 
 //UI
-#include "ProgressionBar.h"
-#include "Namesplate.h"
+#include "TownCommonUI1.h"
 
 MemoirsScene::MemoirsScene()
 {
@@ -30,10 +29,8 @@ void MemoirsScene::Initialize()
 	AddGameObeject(mMemoirsNPC, eLayerType::NPC);
 
 	//UI
-	mProgressionBar = new ProgressionBar();
-	AddGameObeject(mProgressionBar, eLayerType::UI1);
-	mNamesplate = new Namesplate();
-	AddGameObeject(mNamesplate, eLayerType::Sky);
+	mTownCommonUI1 = new TownCommonUI1();
+	AddGameObeject(mTownCommonUI1, eLayerType::UI1);
 
 	Scene::Initialize();
 }

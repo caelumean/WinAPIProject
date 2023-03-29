@@ -8,8 +8,7 @@
 #include "BlacksmithNPCBG.h"
 
 //UI
-#include "ProgressionBar.h"
-#include "Namesplate.h"
+#include "TownCommonUI1.h"
 #include "BlacksmithFrame.h"
 
 BlacksmithScene::BlacksmithScene()
@@ -31,13 +30,14 @@ void BlacksmithScene::Initialize()
 	AddGameObeject(mBlacksmithNPC, eLayerType::NPC);
 
 	//UI
-	mProgressionBar = new ProgressionBar();
-	AddGameObeject(mProgressionBar, eLayerType::UI1);
-	mNamesplate = new Namesplate();
-	AddGameObeject(mNamesplate, eLayerType::Sky);
+	
 	mBlacksmithFrame = new BlacksmithFrame();
 	AddGameObeject(mBlacksmithFrame, eLayerType::UI1);
 
+
+	//UI
+	mTownCommonUI1 = new TownCommonUI1();
+	AddGameObeject(mTownCommonUI1, eLayerType::UI1);
 
 	Scene::Initialize();
 }

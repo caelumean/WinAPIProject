@@ -4,8 +4,8 @@
 class TavernBG;
 class TavernNPC;
 class TavernNPCBG;
-class ProgressionBar;
-class Namesplate;
+//UI
+class TownCommonUI1;
 class TavernScene : public Scene
 {
 public:
@@ -26,7 +26,6 @@ private:
 	TavernNPC* mTavernNPC;
 
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 };
 

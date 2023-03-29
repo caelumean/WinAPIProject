@@ -5,8 +5,9 @@ class BlacksmithBG;
 class BlacksmithNPC;
 class BlacksmithNPCBG;
 class BlacksmithFrame;
-class ProgressionBar;
-class Namesplate;
+
+//UI1
+class TownCommonUI1;
 
 class BlacksmithScene : public Scene
 {
@@ -28,8 +29,7 @@ private:
 	BlacksmithNPC* mBlacksmithNPC;
 	BlacksmithNPCBG* mBlacksmithNPCBG;
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 	BlacksmithFrame* mBlacksmithFrame;
 
 };

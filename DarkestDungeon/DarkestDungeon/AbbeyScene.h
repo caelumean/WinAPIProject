@@ -4,8 +4,7 @@
 class AbbeyBG;
 class AbbeyNPCBG;
 class AbbeyNPC;
-class ProgressionBar;
-class Namesplate;
+class TownCommonUI1;
 
 class AbbeyScene : public Scene
 {
@@ -26,7 +25,6 @@ private:
 	AbbeyNPCBG* mAbbeyNPCBG;
 	AbbeyNPC* mAbbeyNPC;
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 };
 

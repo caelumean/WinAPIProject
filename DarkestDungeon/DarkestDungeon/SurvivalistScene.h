@@ -4,8 +4,8 @@
 class SurvivalistBG;
 class SurvivalistNPCBG;
 class SurvivalistNPC;
-class ProgressionBar;
-class Namesplate;
+//UI
+class TownCommonUI1;
 class SurvivalistScene : public Scene
 {
 public:
@@ -26,6 +26,5 @@ private:
 	SurvivalistNPCBG* mSurvivalistNPCBG;
 	SurvivalistNPC* mSurvivalistNPC;
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 };

@@ -4,8 +4,8 @@
 class NomadWagonBG;
 class NomadWagonNPCBG;
 class NomadWagonNPC;
-class ProgressionBar;
-class Namesplate;
+//UI
+class TownCommonUI1;
 class NomadWagonScene : public Scene
 {
 public:
@@ -27,7 +27,6 @@ private:
 	NomadWagonNPC* mNomadWagonNPC;
 
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 };
 

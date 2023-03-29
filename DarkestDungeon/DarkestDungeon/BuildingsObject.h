@@ -2,11 +2,11 @@
 #include "GameObject.h"
 #include "Image.h"
 
-class Namesplate : public GameObject
+class BuildingsObject : public GameObject
 {
 public:
-	Namesplate();
-	~Namesplate();
+	BuildingsObject();
+	~BuildingsObject();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -14,5 +14,5 @@ public:
 	virtual void Release() override;
 
 private:
-	Image* mImage;
+	Image* mImage[10];
 };

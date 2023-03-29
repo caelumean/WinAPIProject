@@ -254,9 +254,6 @@
     <ClInclude Include="MemoirsScene.h">
       <Filter>Contents\Scene\Town</Filter>
     </ClInclude>
-    <ClInclude Include="TownBG.h">
-      <Filter>Contents\Background\Town</Filter>
-    </ClInclude>
     <ClInclude Include="SelectDungeonScene.h">
       <Filter>Contents\Scene\Dungeon</Filter>
     </ClInclude>
@@ -311,36 +308,6 @@
     <ClInclude Include="TownGround.h">
       <Filter>Contents\Background\Town</Filter>
     </ClInclude>
-    <ClInclude Include="AbbeyBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="BlacksmithBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="GraveyardBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="GuildBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="MemoirsBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="NomadWagonBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="SanitariumBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="StageCoachBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="SurvivalistBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
-    <ClInclude Include="TavernBuilding.h">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClInclude>
     <ClInclude Include="Animation.h">
       <Filter>Engine\Component</Filter>
     </ClInclude>
@@ -352,12 +319,6 @@
     </ClInclude>
     <ClInclude Include="Collider.h">
       <Filter>Engine\Component\Collider</Filter>
-    </ClInclude>
-    <ClInclude Include="Namesplate.h">
-      <Filter>Contents\Background\Town\CommonUI</Filter>
-    </ClInclude>
-    <ClInclude Include="ProgressionBar.h">
-      <Filter>Contents\Background\Town\CommonUI</Filter>
     </ClInclude>
     <ClInclude Include="AbbeyNPC.h">
       <Filter>Contents\Background\Town\Abbey\UI</Filter>
@@ -433,6 +394,15 @@
     </ClInclude>
     <ClInclude Include="TownRuins.h">
       <Filter>Contents\Background\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="BuildingsObject.h">
+      <Filter>Contents\Background\Town\Building</Filter>
+    </ClInclude>
+    <ClInclude Include="TownCommonUI1.h">
+      <Filter>Contents\Background\Town\CommonUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TownBG.h">
+      <Filter>Contents\Player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -586,36 +556,6 @@
     <ClCompile Include="TownGround.cpp">
       <Filter>Contents\Background\Town</Filter>
     </ClCompile>
-    <ClCompile Include="AbbeyBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="BlacksmithBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="GraveyardBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="GuildBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="MemoirsBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="NomadWagonBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="SanitariumBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="StageCoachBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="SurvivalistBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
-    <ClCompile Include="TavernBuilding.cpp">
-      <Filter>Contents\Background\Town\Building</Filter>
-    </ClCompile>
     <ClCompile Include="Animation.cpp">
       <Filter>Engine\Component</Filter>
     </ClCompile>
@@ -627,12 +567,6 @@
     </ClCompile>
     <ClCompile Include="Collider.cpp">
       <Filter>Engine\Component\Collider</Filter>
-    </ClCompile>
-    <ClCompile Include="Namesplate.cpp">
-      <Filter>Contents\Background\Town\CommonUI</Filter>
-    </ClCompile>
-    <ClCompile Include="ProgressionBar.cpp">
-      <Filter>Contents\Background\Town\CommonUI</Filter>
     </ClCompile>
     <ClCompile Include="AbbeyNPC.cpp">
       <Filter>Contents\Background\Town\Abbey\UI</Filter>
@@ -708,6 +642,12 @@
     </ClCompile>
     <ClCompile Include="TownRuins.cpp">
       <Filter>Contents\Background\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="BuildingsObject.cpp">
+      <Filter>Contents\Background\Town\Building</Filter>
+    </ClCompile>
+    <ClCompile Include="TownCommonUI1.cpp">
+      <Filter>Contents\Background\Town\CommonUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

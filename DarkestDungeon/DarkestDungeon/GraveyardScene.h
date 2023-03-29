@@ -4,8 +4,8 @@
 class GraveyardBG;
 class GraveyardNPCBG;
 class GraveyardNPC;
-class ProgressionBar;
-class Namesplate;
+//UI
+class TownCommonUI1;
 class GraveyardScene : public Scene
 {
 public:
@@ -26,7 +26,6 @@ private:
 	GraveyardNPC* mGraveyardNPC;
 
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 };
 

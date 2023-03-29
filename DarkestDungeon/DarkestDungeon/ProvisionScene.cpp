@@ -1,7 +1,11 @@
 #include "ProvisionScene.h"
-#include "ProvisionBG.h"
 #include "Input.h"
 #include "SceneManager.h"
+
+//BG
+#include "ProvisionBG.h"
+//UI
+#include "TownCommonUI1.h"
 
 ProvisionScene::ProvisionScene()
 {
@@ -13,9 +17,14 @@ ProvisionScene::~ProvisionScene()
 
 void ProvisionScene::Initialize()
 {
-	//¹è°æ
+	//BG
 	mProvisionBG = new ProvisionBG();
 	AddGameObeject(mProvisionBG, eLayerType::BackGround);
+
+	// UI
+	mTownCommonUI1 = new TownCommonUI1();
+	AddGameObeject(mTownCommonUI1, eLayerType::UI1);
+
 
 	Scene::Initialize();
 }

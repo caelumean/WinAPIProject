@@ -5,20 +5,11 @@
 class TownBG;
 class TownGround;
 class TownRuins;
+
 //Building
-class AbbeyBuilding;
-class BlacksmithBuilding;
-class GraveyardBuilding;
-class GuildBuilding;
-class MemoirsBuilding;
-class NomadWagonBuilding;
-class SanitariumBuilding;
-class StageCoachBuilding;
-class SurvivalistBuilding;
-class TavernBuilding;
-//UI
-class ProgressionBar;
-class Namesplate;
+class BuildingsObject;
+//UI1
+class TownCommonUI1;
 
 class TownScene : public Scene
 {
@@ -40,20 +31,10 @@ private:
 	TownRuins* mTownRuins;
 
 	// °Ç¹°
-	AbbeyBuilding* mAbbeyBuilding;
-	BlacksmithBuilding* mBlacksmithBuilding;
-	GraveyardBuilding* mGraveyardBuilding;
-	GuildBuilding* mGuildBuilding;
-	MemoirsBuilding* mMemoirsBuilding;
-	NomadWagonBuilding* mNomadWagonBuilding;
-	SanitariumBuilding* mSanitariumBuilding;
-	StageCoachBuilding* mStageCoachBuilding;
-	SurvivalistBuilding* mSurvivalistBuilding;
-	TavernBuilding* mTavernBuilding;
+	BuildingsObject* mBuildingsObject;
 
-	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	//UI1
+	TownCommonUI1* mTownCommonUI1;
 
 };
 

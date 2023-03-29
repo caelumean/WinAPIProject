@@ -2,6 +2,9 @@
 #include "Scene.h"
 
 class ProvisionBG;
+//UI1
+class TownCommonUI1;
+
 class ProvisionScene : public Scene
 {
 public:
@@ -18,5 +21,8 @@ public:
 
 private:
 	ProvisionBG* mProvisionBG;
+
+	//UI1
+	TownCommonUI1* mTownCommonUI1;
 };
 

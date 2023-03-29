@@ -4,8 +4,9 @@
 class MemoirsBG;
 class MemoirsNPCBG;
 class MemoirsNPC;
-class ProgressionBar;
-class Namesplate;
+//UI
+class TownCommonUI1;
+
 class MemoirsScene : public Scene
 {
 public:
@@ -25,7 +26,6 @@ private:
 	MemoirsNPCBG* mMemoirsNPCBG;
 	MemoirsNPC* mMemoirsNPC;
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 };
 

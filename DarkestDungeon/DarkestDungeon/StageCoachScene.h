@@ -4,8 +4,8 @@
 class StageCoachBG;
 class StageCoachNPC;
 class StageCoachNPCBG;
-class ProgressionBar;
-class Namesplate;
+//UI
+class TownCommonUI1;
 class StageCoachScene : public Scene
 {
 public:
@@ -24,8 +24,8 @@ private:
 	StageCoachBG* mStageCoachBG;
 	StageCoachNPCBG* mStageCoachNPCBG;
 	StageCoachNPC* mStageCoachNPC;
+
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;;
 };
 

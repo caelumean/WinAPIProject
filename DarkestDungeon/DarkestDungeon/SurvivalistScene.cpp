@@ -5,10 +5,8 @@
 #include "SurvivalistBG.h"
 #include "SurvivalistNPCBG.h"
 #include "SurvivalistNPC.h"
-
 //UI
-#include "ProgressionBar.h"
-#include "Namesplate.h"
+#include "TownCommonUI1.h"
 
 SurvivalistScene::SurvivalistScene()
 {
@@ -29,11 +27,8 @@ void SurvivalistScene::Initialize()
 	AddGameObeject(mSurvivalistNPC, eLayerType::NPC);
 
 	//UI
-	mProgressionBar = new ProgressionBar();
-	AddGameObeject(mProgressionBar, eLayerType::UI1);
-	mNamesplate = new Namesplate();
-	AddGameObeject(mNamesplate, eLayerType::Sky);
-
+	mTownCommonUI1 = new TownCommonUI1();
+	AddGameObeject(mTownCommonUI1, eLayerType::UI1);
 	Scene::Initialize();
 }
 

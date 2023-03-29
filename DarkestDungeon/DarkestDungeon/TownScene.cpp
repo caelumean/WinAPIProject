@@ -4,19 +4,9 @@
 #include "TownGround.h"
 #include "TownRuins.h"
 // 건물
-#include "AbbeyBuilding.h"
-#include "BlacksmithBuilding.h"
-#include "GraveyardBuilding.h"
-#include "GuildBuilding.h"
-#include "MemoirsBuilding.h"
-#include "NomadWagonBuilding.h"
-#include "SanitariumBuilding.h"
-#include "StageCoachBuilding.h"
-#include "SurvivalistBuilding.h"
-#include "TavernBuilding.h"
+#include "BuildingsObject.h"
 //UI
-#include "ProgressionBar.h"
-#include "Namesplate.h"
+#include "TownCommonUI1.h"
 
 #include "SceneManager.h"
 #include "Input.h"
@@ -39,37 +29,14 @@ void TownScene::Initialize()
 	mTownGround = new TownGround();
 	AddGameObeject(mTownGround, eLayerType::Shadow);
 
-	
 
 	// 건물
-	mAbbeyBuilding = new AbbeyBuilding();
-	AddGameObeject(mAbbeyBuilding, eLayerType::Building);
-	mGuildBuilding = new GuildBuilding();
-	AddGameObeject(mGuildBuilding, eLayerType::Building);
-	mBlacksmithBuilding = new BlacksmithBuilding();
-	AddGameObeject(mBlacksmithBuilding, eLayerType::Building);
-	mGraveyardBuilding = new GraveyardBuilding();
-	AddGameObeject(mGraveyardBuilding, eLayerType::Building);
-	
-	mSanitariumBuilding = new SanitariumBuilding();
-	AddGameObeject(mSanitariumBuilding, eLayerType::Building);
-	mTavernBuilding = new TavernBuilding();
-	AddGameObeject(mTavernBuilding, eLayerType::Building);
-	mStageCoachBuilding = new StageCoachBuilding();
-	AddGameObeject(mStageCoachBuilding, eLayerType::Building);
-	mSurvivalistBuilding = new SurvivalistBuilding();
-	AddGameObeject(mSurvivalistBuilding, eLayerType::Building);
-
-	mMemoirsBuilding = new MemoirsBuilding();
-	AddGameObeject(mMemoirsBuilding, eLayerType::Building);
-	mNomadWagonBuilding = new NomadWagonBuilding();
-	AddGameObeject(mNomadWagonBuilding, eLayerType::Building);
+	mBuildingsObject = new BuildingsObject();
+	AddGameObeject(mBuildingsObject, eLayerType::Building);
 	
 	// UI
-	mProgressionBar = new ProgressionBar();
-	AddGameObeject(mProgressionBar, eLayerType::UI1);
-	mNamesplate = new Namesplate();
-	AddGameObeject(mNamesplate, eLayerType::UI1);
+	mTownCommonUI1 = new TownCommonUI1();
+	AddGameObeject(mTownCommonUI1, eLayerType::UI1);
 
 	Scene::Initialize();
 }

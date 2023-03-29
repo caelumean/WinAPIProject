@@ -5,8 +5,7 @@ class GuildBG;
 class GuildNPCBG;
 class GuildNPC;
 //UI
-class ProgressionBar;
-class Namesplate;
+class TownCommonUI1;
 class GuildScene : public Scene
 {
 public:
@@ -28,8 +27,7 @@ private:
 	GuildNPC* mGuildNPC;
 
 	//UI
-	ProgressionBar* mProgressionBar;
-	Namesplate* mNamesplate;
+	TownCommonUI1* mTownCommonUI1;
 
 };
 
