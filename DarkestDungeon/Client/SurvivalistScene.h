@@ -1,11 +1,11 @@
 #pragma once
 #include "Scene.h"
 
-class TownScene : public Scene
+class SurvivalistScene : public Scene
 {
 public:
-	TownScene();
-	~TownScene();
+	SurvivalistScene();
+	~SurvivalistScene();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -16,6 +16,5 @@ public:
 	virtual void OnExit() override;
 
 private:
-
-
+	
 };

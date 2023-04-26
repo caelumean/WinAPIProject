@@ -3,7 +3,21 @@
 #include "Camera.h"
 
 #include "TitleScene.h"
-#include "PlayScene.h"
+#include "TownScene.h"
+
+#include "AbbeyScene.h"
+#include "BlacksmithScene.h"
+#include "GraveyardScene.h"
+#include "GuildScene.h"
+#include "MemoirsScene.h"
+#include "NomadWagonScene.h"
+#include "SanitariumScene.h"
+#include "StageCoachScene.h"
+#include "SurvivalistScene.h"
+#include "TavernScene.h"
+#include "TownScene.h"
+
+
 
 std::vector<Scene*> SceneManager::mScenes = {};
 // 현재 씬 초기화
@@ -12,12 +26,22 @@ void SceneManager::Initialize()
 {
 	mScenes.resize((UINT)eSceneType::End);
 
-	// eSceneType enum class 안에 있는 Play
-	// Play 1번째
-	// mScenes[(UINT)eSceneType::Play]->SetName(L"PLAYER");
-	// 위와 똑같은 말이다.
+	//Title Scene
 	mScenes[(UINT)eSceneType::Title] = new TitleScene();
-	mScenes[(UINT)eSceneType::Play] = new PlayScene();
+	// Town 
+	mScenes[(UINT)eSceneType::Town] = new TownScene();
+
+	// 타운 건물들 Scene 추가
+	mScenes[(UINT)eSceneType::Abbey] = new AbbeyScene();
+	mScenes[(UINT)eSceneType::Blacksmith] = new BlacksmithScene();
+	mScenes[(UINT)eSceneType::Graveyard] = new GraveyardScene();
+	mScenes[(UINT)eSceneType::Guild] = new GuildScene();
+	mScenes[(UINT)eSceneType::Memoirs] = new MemoirsScene();
+	mScenes[(UINT)eSceneType::NomadWagon] = new NomadWagonScene();
+	mScenes[(UINT)eSceneType::Sanitarium] = new SanitariumScene();
+	mScenes[(UINT)eSceneType::StageCoach] = new StageCoachScene();
+	mScenes[(UINT)eSceneType::Survivalist] = new SurvivalistScene();
+	mScenes[(UINT)eSceneType::Tavern] = new TavernScene();
 
 	// for each문
 	for (Scene* scene : mScenes)

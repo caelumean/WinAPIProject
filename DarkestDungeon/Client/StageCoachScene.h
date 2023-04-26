@@ -1,11 +1,11 @@
 #pragma once
 #include "Scene.h"
 
-class TownScene : public Scene
+class StageCoachScene : public Scene
 {
 public:
-	TownScene();
-	~TownScene();
+	StageCoachScene();
+	~StageCoachScene();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -14,8 +14,6 @@ public:
 
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
-
 private:
-
 
 };

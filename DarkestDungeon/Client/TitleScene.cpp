@@ -41,7 +41,7 @@ void TitleScene::Update()
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
-			SceneManager::LoadScene(eSceneType::Play);
+			SceneManager::LoadScene(eSceneType::Town);
 		}
 	}
 	

@@ -1,21 +1,19 @@
 #pragma once
-#include "Scene.h"
+#include "GameObject.h"
+#include "Image.h"
 
-class TownScene : public Scene
+class TavernBG : public GameObject
 {
 public:
-	TownScene();
-	~TownScene();
+	TavernBG();
+	~TavernBG();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
 	virtual void Render(HDC hdc) override;
 	virtual void Release() override;
 
-	virtual void OnEnter() override;
-	virtual void OnExit() override;
-
 private:
-
-
+	Image* mImage;
 };
+
