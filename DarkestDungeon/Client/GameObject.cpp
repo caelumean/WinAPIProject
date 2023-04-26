@@ -1,0 +1,69 @@
+#include "GameObject.h"
+#include "Transform.h"
+
+GameObject::GameObject()
+	: mState(eState::Active)
+{
+	// component를 미리 공간을 잡아 놓는다.
+	mComponents.resize((UINT)eComponentType::End);
+	AddComponent<Transform>();
+}
+
+GameObject::~GameObject()
+{
+	for (Component* comp : mComponents)
+	{
+		delete comp;
+		comp = nullptr;
+	}
+}
+
+void GameObject::Initialize()
+{
+	for (Component* comp : mComponents)
+	{
+		if (comp == nullptr)
+			continue;
+
+		comp->Initialize();
+	}
+}
+
+void GameObject::Update()
+{
+	for (Component* comp : mComponents)
+	{
+		if (comp == nullptr)
+			continue;
+
+		comp->Update();
+	}
+}
+
+void GameObject::Render(HDC hdc)
+{
+	for (Component* comp : mComponents)
+	{
+		if (comp == nullptr)
+			continue;
+
+		comp->Render(hdc);
+	}
+}
+
+void GameObject::Release()
+{
+	
+}
+
+void GameObject::OnCollisionEnter(Collider* other)
+{
+}
+
+void GameObject::OnCollisionStay(Collider* other)
+{
+}
+
+void GameObject::OnCollisionExit(Collider* other)
+{
+}
