@@ -218,6 +218,7 @@
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="TownBG.h" />
     <ClInclude Include="TownCommonUI1.h" />
+    <ClInclude Include="TownCommonUI2.h" />
     <ClInclude Include="TownGround.h" />
     <ClInclude Include="TownRuins.h" />
     <ClInclude Include="TownScene.h" />
@@ -295,6 +296,7 @@
     <ClCompile Include="TitleScene.cpp" />
     <ClCompile Include="TownBG.cpp" />
     <ClCompile Include="TownCommonUI1.cpp" />
+    <ClCompile Include="TownCommonUI2.cpp" />
     <ClCompile Include="TownGround.cpp" />
     <ClCompile Include="TownRuins.cpp" />
     <ClCompile Include="TownScene.cpp" />
