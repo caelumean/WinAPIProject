@@ -190,6 +190,8 @@
     <ClInclude Include="NomadWagonScene.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="PlayScene.h" />
+    <ClInclude Include="ProvisionBG.h" />
+    <ClInclude Include="ProvisionScene.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Resources.h" />
     <ClInclude Include="SanitariumBG.h" />
@@ -198,6 +200,9 @@
     <ClInclude Include="SanitariumScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SelectDungeonBG.h" />
+    <ClInclude Include="SelectDungeonScene.h" />
+    <ClInclude Include="SelectDungeonUI.h" />
     <ClInclude Include="StageCoachBG.h" />
     <ClInclude Include="StageCoachNPC.h" />
     <ClInclude Include="StageCoachNPCBG.h" />
@@ -271,6 +276,8 @@
     <ClCompile Include="NomadWagonNPCBG.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
     <ClCompile Include="PlayScene.cpp" />
+    <ClCompile Include="ProvisionBG.cpp" />
+    <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="Resources.cpp" />
     <ClCompile Include="SanitariumBG.cpp" />
     <ClCompile Include="SanitariumNPC.cpp" />
@@ -278,6 +285,9 @@
     <ClCompile Include="SanitariumScene.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SelectDungeonBG.cpp" />
+    <ClCompile Include="SelectDungeonScene.cpp" />
+    <ClCompile Include="SelectDungeonUI.cpp" />
     <ClCompile Include="StageCoachBG.cpp" />
     <ClCompile Include="StageCoachNPC.cpp" />
     <ClCompile Include="StageCoachNPCBG.cpp" />

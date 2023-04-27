@@ -15,7 +15,8 @@
 #include "StageCoachScene.h"
 #include "SurvivalistScene.h"
 #include "TavernScene.h"
-#include "TownScene.h"
+#include "SelectDungeonScene.h"
+#include "ProvisionScene.h"
 
 
 
@@ -42,6 +43,8 @@ void SceneManager::Initialize()
 	mScenes[(UINT)eSceneType::StageCoach] = new StageCoachScene();
 	mScenes[(UINT)eSceneType::Survivalist] = new SurvivalistScene();
 	mScenes[(UINT)eSceneType::Tavern] = new TavernScene();
+	mScenes[(UINT)eSceneType::SelectDugeon] = new SelectDungeonScene();
+	mScenes[(UINT)eSceneType::Provision] = new ProvisionScene();
 
 	// for each¹®
 	for (Scene* scene : mScenes)

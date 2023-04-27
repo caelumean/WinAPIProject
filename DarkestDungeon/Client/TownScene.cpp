@@ -122,7 +122,7 @@ void TownScene::Update()
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
-			SceneManager::LoadScene(eSceneType::Tavern);
+			SceneManager::LoadScene(eSceneType::SelectDugeon);
 		}
 	}
 }
