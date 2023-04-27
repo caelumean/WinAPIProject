@@ -159,6 +159,9 @@
     <Filter Include="Contents\Scene\SelectDugeon">
       <UniqueIdentifier>{af7d656a-88ea-46ef-8590-f09c3b688c59}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\Background\SelectDungeon\Provision">
+      <UniqueIdentifier>{a1042b22-3c82-4152-be9d-972a4f6462d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -413,9 +416,6 @@
     <ClInclude Include="TripButton.h">
       <Filter>Contents\Background\Town</Filter>
     </ClInclude>
-    <ClInclude Include="ProvisionBG.h">
-      <Filter>Contents\Background\SelectDungeon</Filter>
-    </ClInclude>
     <ClInclude Include="SelectDungeonBG.h">
       <Filter>Contents\Background\SelectDungeon</Filter>
     </ClInclude>
@@ -427,6 +427,18 @@
     </ClInclude>
     <ClInclude Include="SelectDungeonUI.h">
       <Filter>Contents\Background\SelectDungeon\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ProvisionBG.h">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
+    </ClInclude>
+    <ClInclude Include="ProvisionNPC.h">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
+    </ClInclude>
+    <ClInclude Include="ProvisionInvetory.h">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
+    </ClInclude>
+    <ClInclude Include="ProvisionNPCBG.h">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -661,9 +673,6 @@
     <ClCompile Include="TripButton.cpp">
       <Filter>Contents\Background\Town</Filter>
     </ClCompile>
-    <ClCompile Include="ProvisionBG.cpp">
-      <Filter>Contents\Background\SelectDungeon</Filter>
-    </ClCompile>
     <ClCompile Include="SelectDungeonBG.cpp">
       <Filter>Contents\Background\SelectDungeon</Filter>
     </ClCompile>
@@ -675,6 +684,18 @@
     </ClCompile>
     <ClCompile Include="SelectDungeonUI.cpp">
       <Filter>Contents\Background\SelectDungeon\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ProvisionBG.cpp">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
+    </ClCompile>
+    <ClCompile Include="ProvisionNPC.cpp">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
+    </ClCompile>
+    <ClCompile Include="ProvisionInvetory.cpp">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
+    </ClCompile>
+    <ClCompile Include="ProvisionNPCBG.cpp">
+      <Filter>Contents\Background\SelectDungeon\Provision</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

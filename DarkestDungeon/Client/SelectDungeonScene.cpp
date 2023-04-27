@@ -44,7 +44,6 @@ void SelectDungeonScene::Update()
 			SceneManager::LoadScene(eSceneType::Provision);
 		}
 	}
-	// select quest
 	
 }
 

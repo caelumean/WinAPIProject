@@ -2,6 +2,7 @@
 #include "SceneManager.h"
 #include "Resources.h"
 #include "Transform.h"
+
 AbbeyNPCBG::AbbeyNPCBG()
 {
 }

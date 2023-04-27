@@ -191,6 +191,9 @@
     <ClInclude Include="Object.h" />
     <ClInclude Include="PlayScene.h" />
     <ClInclude Include="ProvisionBG.h" />
+    <ClInclude Include="ProvisionInvetory.h" />
+    <ClInclude Include="ProvisionNPC.h" />
+    <ClInclude Include="ProvisionNPCBG.h" />
     <ClInclude Include="ProvisionScene.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Resources.h" />
@@ -277,6 +280,9 @@
     <ClCompile Include="NomadWagonScene.cpp" />
     <ClCompile Include="PlayScene.cpp" />
     <ClCompile Include="ProvisionBG.cpp" />
+    <ClCompile Include="ProvisionInvetory.cpp" />
+    <ClCompile Include="ProvisionNPC.cpp" />
+    <ClCompile Include="ProvisionNPCBG.cpp" />
     <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="Resources.cpp" />
     <ClCompile Include="SanitariumBG.cpp" />

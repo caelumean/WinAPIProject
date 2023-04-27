@@ -2,7 +2,6 @@
 #include "SceneManager.h"
 #include "Resources.h"
 #include "Transform.h"
-#include "Input.h"
 
 SelectDungeonUI::SelectDungeonUI()
 {
@@ -19,7 +18,6 @@ void SelectDungeonUI::Initialize()
 	mImage[2] = Resources::Load<Image>(L"Weald", L"..\\Resources\\selDungeon\\Weald.bmp");
 	mImage[3] = Resources::Load<Image>(L"Cove", L"..\\Resources\\selDungeon\\Cove.bmp");
 	mImage[4] = Resources::Load<Image>(L"Quest1", L"..\\Resources\\selDungeon\\Quest_select_cleanse.bmp");
-	//mImage[5] = Resources::Load<Image>(L"Quest_Select", L"..\\Resources\\selDungeon\\quest_select.bmp");
 
 	GameObject::Initialize();
 }
@@ -55,3 +53,4 @@ void SelectDungeonUI::Release()
 {
 	GameObject::Release();
 }
+

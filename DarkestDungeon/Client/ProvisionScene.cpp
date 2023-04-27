@@ -6,10 +6,13 @@
 
 //BG
 #include "ProvisionBG.h"
-
+#include "ProvisionNPC.h"
+#include "ProvisionNPCBG.h"
 //UI
 #include "TownCommonUI1.h"
 #include "TripButton.h"
+//#include "ProvisionInvetory.h"
+
 
 ProvisionScene::ProvisionScene()
 {
@@ -24,10 +27,14 @@ void ProvisionScene::Initialize()
 	Scene::Initialize();
 	//BG
 	object::Instantiate<ProvisionBG>(eLayerType::BackGround);
+	object::Instantiate<ProvisionNPCBG>(eLayerType::Shadow);
+	object::Instantiate<ProvisionNPC>(eLayerType::NPC);
 
 	//UI
 	object::Instantiate<TownCommonUI1>(eLayerType::UI1);
+	//object::Instantiate<ProvisionInvetory>(eLayerType::UI1);
 	object::Instantiate<TripButton>(eLayerType::UI2);
+
 }
 
 void ProvisionScene::Update()
