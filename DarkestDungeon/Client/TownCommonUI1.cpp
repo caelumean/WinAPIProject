@@ -13,8 +13,8 @@ TownCommonUI1::~TownCommonUI1()
 
 void TownCommonUI1::Initialize()
 {
-	mImage[0] = Resources::Load<Image>(L"Namesplate", L"..\\Resources\\Town\\CommonUI\\namesplate.bmp");
-	mImage[1] = Resources::Load<Image>(L"Progressionbar", L"..\\Resources\\Town\\CommonUI\\progression_bar.bmp");
+	mImage[0] = Resources::Load<Image>(L"Namesplate", L"..\\Resources\\Town\\CommonUI_1\\namesplate.bmp");
+	mImage[1] = Resources::Load<Image>(L"Progressionbar", L"..\\Resources\\Town\\CommonUI_1\\progression_bar.bmp");
 	GameObject::Initialize();
 }
 
