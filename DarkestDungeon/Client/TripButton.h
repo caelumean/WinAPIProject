@@ -2,12 +2,11 @@
 #include "GameObject.h"
 #include "Image.h"
 
-class TownCommonUI2 : public GameObject
+class TripButton : public GameObject
 {
-
 public:
-	TownCommonUI2();
-	~TownCommonUI2();
+	TripButton();
+	~TripButton();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -15,5 +14,6 @@ public:
 	virtual void Release() override;
 
 private:
-	Image* mImage[11];
+	Image* mImage;
 };
+

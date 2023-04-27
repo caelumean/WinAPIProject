@@ -11,6 +11,7 @@
 
 //UI
 #include "TownCommonUI1.h"
+#include "TownCommonUI2.h"
 #include "BlacksmithFrame.h"
 
 TavernScene::TavernScene()
@@ -31,16 +32,21 @@ void TavernScene::Initialize()
 
 	//UI
 	object::Instantiate<TownCommonUI1>(eLayerType::UI1);
+	object::Instantiate<TownCommonUI2>(eLayerType::UI2);
 }
 
 void TavernScene::Update()
 {
-	if (Input::GetKeyState(eKeyCode::X) == eKeyState::Down)
+	Scene::Update();
+	Vector2 MousePos = Input::GetMousePos();
+	if ((MousePos.x > 1270 && MousePos.x < 1300) && (MousePos.y > 120 && MousePos.y < 150))
 	{
-		SceneManager::LoadScene(eSceneType::Town);
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			SceneManager::LoadScene(eSceneType::Town);
+		}
 	}
 
-	Scene::Update();
 }
 
 void TavernScene::Render(HDC hdc)

@@ -223,6 +223,7 @@
     <ClInclude Include="TownRuins.h" />
     <ClInclude Include="TownScene.h" />
     <ClInclude Include="Transform.h" />
+    <ClInclude Include="TripButton.h" />
     <ClInclude Include="yaResource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +302,7 @@
     <ClCompile Include="TownRuins.cpp" />
     <ClCompile Include="TownScene.cpp" />
     <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="TripButton.cpp" />
     <ClCompile Include="yaResource.cpp" />
   </ItemGroup>
   <ItemGroup>

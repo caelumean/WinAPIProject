@@ -398,6 +398,9 @@
     <ClInclude Include="TownCommonUI2.h">
       <Filter>Contents\Background\CommonUI</Filter>
     </ClInclude>
+    <ClInclude Include="TripButton.h">
+      <Filter>Contents\Background\Town</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -627,6 +630,9 @@
     </ClCompile>
     <ClCompile Include="TownCommonUI2.cpp">
       <Filter>Contents\Background\CommonUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TripButton.cpp">
+      <Filter>Contents\Background\Town</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

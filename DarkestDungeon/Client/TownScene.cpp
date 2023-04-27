@@ -14,6 +14,7 @@
 
 //UI
 #include "TownCommonUI1.h"
+#include "TripButton.h"
 
 
 TownScene::TownScene()
@@ -37,6 +38,7 @@ void TownScene::Initialize()
 
 	//UI
 	object::Instantiate<TownCommonUI1>(eLayerType::UI1);
+	object::Instantiate<TripButton>(eLayerType::UI2);
 }
 
 void TownScene::Update()
@@ -108,6 +110,15 @@ void TownScene::Update()
 		}
 	}
 	if ((MousePos.x > 300 && MousePos.x < 560) && (MousePos.y > 410 && MousePos.y < 680))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			SceneManager::LoadScene(eSceneType::Tavern);
+		}
+	}
+
+	// Trip Button
+	if ((MousePos.x > 680 && MousePos.x < 980) && (MousePos.y > 803 && MousePos.y < 850))
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
