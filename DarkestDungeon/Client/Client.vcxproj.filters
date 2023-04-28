@@ -150,9 +150,6 @@
     <Filter Include="Contents\Background\SelectDungeon">
       <UniqueIdentifier>{8fea6884-22db-4102-a95e-b2a855c73a1c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contents\Background\Dungeon">
-      <UniqueIdentifier>{c3dce59f-eef6-4b6b-a5bf-284ec1f3399e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Contents\Background\SelectDungeon\UI">
       <UniqueIdentifier>{21de79e9-0877-4427-b089-75fbbb945c16}</UniqueIdentifier>
     </Filter>
@@ -161,6 +158,12 @@
     </Filter>
     <Filter Include="Contents\Background\SelectDungeon\Provision">
       <UniqueIdentifier>{a1042b22-3c82-4152-be9d-972a4f6462d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\RuinsDungeon">
+      <UniqueIdentifier>{b83d923d-dfb1-4c17-af92-039cd04d756a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Scene\RuinsDungeon">
+      <UniqueIdentifier>{a4e36f7e-0c8c-4cb7-a53f-7d90125fdb68}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -440,6 +443,12 @@
     <ClInclude Include="ProvisionNPCBG.h">
       <Filter>Contents\Background\SelectDungeon\Provision</Filter>
     </ClInclude>
+    <ClInclude Include="RuinsEntranceScene.h">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="RuinsBG.h">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -696,6 +705,12 @@
     </ClCompile>
     <ClCompile Include="ProvisionNPCBG.cpp">
       <Filter>Contents\Background\SelectDungeon\Provision</Filter>
+    </ClCompile>
+    <ClCompile Include="RuinsEntranceScene.cpp">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="RuinsBG.cpp">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

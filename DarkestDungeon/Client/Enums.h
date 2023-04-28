@@ -30,7 +30,7 @@ enum class eSceneType
 	Memoirs,
 	SelectDugeon,
 	Provision,
-	Play,
+	RuinsEntrance,
 	Ending,
 	End
 };

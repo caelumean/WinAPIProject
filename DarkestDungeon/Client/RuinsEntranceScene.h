@@ -1,11 +1,11 @@
 #pragma once
 #include "Scene.h"
 
-class SelectDungeonScene : public Scene
+class RuinsEntranceScene : public Scene
 {
 public:
-	SelectDungeonScene();
-	~SelectDungeonScene();
+	RuinsEntranceScene();
+	~RuinsEntranceScene();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -16,5 +16,5 @@ public:
 	virtual void OnExit() override;
 
 private:
-	
+
 };

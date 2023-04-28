@@ -1,20 +1,20 @@
 #pragma once
-#include "Scene.h"
+#include "GameObject.h"
+#include "Image.h"
 
-class SelectDungeonScene : public Scene
+class RuinsBG : public GameObject
 {
 public:
-	SelectDungeonScene();
-	~SelectDungeonScene();
+	RuinsBG();
+	~RuinsBG();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
 	virtual void Render(HDC hdc) override;
 	virtual void Release() override;
 
-	virtual void OnEnter() override;
-	virtual void OnExit() override;
-
 private:
-	
+	Image* mImage;
 };
+
+

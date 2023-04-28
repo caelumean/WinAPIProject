@@ -18,7 +18,7 @@
 #include "SelectDungeonScene.h"
 #include "ProvisionScene.h"
 
-
+#include "RuinsEntranceScene.h"
 
 std::vector<Scene*> SceneManager::mScenes = {};
 // 현재 씬 초기화
@@ -45,6 +45,10 @@ void SceneManager::Initialize()
 	mScenes[(UINT)eSceneType::Tavern] = new TavernScene();
 	mScenes[(UINT)eSceneType::SelectDugeon] = new SelectDungeonScene();
 	mScenes[(UINT)eSceneType::Provision] = new ProvisionScene();
+
+	//던전 Scene 추가
+	mScenes[(UINT)eSceneType::RuinsEntrance] = new RuinsEntranceScene();
+
 
 	// for each문
 	for (Scene* scene : mScenes)

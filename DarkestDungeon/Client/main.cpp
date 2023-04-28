@@ -52,11 +52,18 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         return FALSE;
     }
 
+    LPCWSTR cursorFilePath = L"..\\Resources\\arrow_2.cur";
+    // 커서 핸들 생성
+    HCURSOR hCursor = LoadCursorFromFile(cursorFilePath);
+
+    // set the cursor
+    SetCursor(hCursor);
+
     HACCEL hAccelTable = LoadAccelerators(hInstance, MAKEINTRESOURCE(IDC_CLIENT));
 
     MSG msg;
 
-
+    
     while (true)
     {
         if (PeekMessage(&msg, nullptr, 0, 0, PM_REMOVE))
@@ -72,6 +79,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         }
         else
         {
+           // SetCursor(hCursor);
             // 여기서 게임 로직이 돌아가야한다.
             application.Run();
         }

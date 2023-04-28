@@ -197,6 +197,8 @@
     <ClInclude Include="ProvisionScene.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Resources.h" />
+    <ClInclude Include="RuinsBG.h" />
+    <ClInclude Include="RuinsEntranceScene.h" />
     <ClInclude Include="SanitariumBG.h" />
     <ClInclude Include="SanitariumNPC.h" />
     <ClInclude Include="SanitariumNPCBG.h" />
@@ -285,6 +287,8 @@
     <ClCompile Include="ProvisionNPCBG.cpp" />
     <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="Resources.cpp" />
+    <ClCompile Include="RuinsBG.cpp" />
+    <ClCompile Include="RuinsEntranceScene.cpp" />
     <ClCompile Include="SanitariumBG.cpp" />
     <ClCompile Include="SanitariumNPC.cpp" />
     <ClCompile Include="SanitariumNPCBG.cpp" />

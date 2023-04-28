@@ -47,7 +47,7 @@ void ProvisionScene::Update()
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
-			SceneManager::LoadScene(eSceneType::SelectDugeon);
+			SceneManager::LoadScene(eSceneType::RuinsEntrance);
 		}
 	}
 }
