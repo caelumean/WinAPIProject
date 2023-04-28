@@ -1,4 +1,5 @@
 #include "Time.h"
+#include "Input.h"
 #include "Application.h"
 
 extern Application application;
@@ -41,11 +42,13 @@ void Time::Render(HDC hdc)
 	{
 		// application의 handle을 가져온다.
 		HWND hWnd = application.GetHwnd();
-
+		Vector2 MousePos = Input::GetMousePos();
 		wchar_t szFloat[50] = {};
+
 		float FPS = 1.0f / (float)mDeltaTime;
 		// UINT : unsigned int 구조체
-		swprintf_s(szFloat, 50, L"FPS : %d", (UINT)FPS);
+		swprintf_s(szFloat, 50, L"FPS : %d, x : %d, y : %d", (UINT)FPS, (UINT)MousePos.x, (UINT)MousePos.y);
+
 		//int iLen = wcsnlen_s(szFloat, 50);
 		// 지정된 창 제모 표시줄의 텍스트를 변경한다.
 		SetWindowText(hWnd, szFloat);

@@ -2,11 +2,11 @@
 #include "GameObject.h"
 #include "Image.h"
 
-class InfoUIBG : public GameObject
+class CrusaderInfoUI : public GameObject
 {
 public:
-	InfoUIBG();
-	~InfoUIBG();
+	CrusaderInfoUI();
+	~CrusaderInfoUI();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -16,3 +16,4 @@ public:
 private:
 	Image* mImage[3];
 };
+

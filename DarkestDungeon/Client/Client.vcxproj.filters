@@ -165,6 +165,12 @@
     <Filter Include="Contents\Scene\RuinsDungeon">
       <UniqueIdentifier>{a4e36f7e-0c8c-4cb7-a53f-7d90125fdb68}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\Background\InfoUI">
+      <UniqueIdentifier>{97e29123-e11a-4a7c-989f-0c30168d2019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\InfoUI\HeroInfoUI">
+      <UniqueIdentifier>{ca0312cd-638a-4e23-a8b2-ae454d1468d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -449,6 +455,21 @@
     <ClInclude Include="RuinsEntranceBG.h">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClInclude>
+    <ClInclude Include="InfoUIBG.h">
+      <Filter>Contents\Background\InfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroInfoUIBG.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="DGInventoryBG.h">
+      <Filter>Contents\Background\InfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="DGMapBG.h">
+      <Filter>Contents\Background\InfoUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -711,6 +732,21 @@
     </ClCompile>
     <ClCompile Include="RuinsEntranceBG.cpp">
       <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="InfoUIBG.cpp">
+      <Filter>Contents\Background\InfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroInfoUIBG.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DGInventoryBG.cpp">
+      <Filter>Contents\Background\InfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="DGMapBG.cpp">
+      <Filter>Contents\Background\InfoUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
