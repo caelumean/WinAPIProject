@@ -5,7 +5,7 @@
 #include "Object.h"
 
 //BG
-#include "RuinsBG.h"
+#include "RuinsEntranceBG.h"
 
 RuinsEntranceScene::RuinsEntranceScene()
 {
@@ -19,19 +19,22 @@ void RuinsEntranceScene::Initialize()
 {
 	Scene::Initialize();
 	//BG
-	object::Instantiate<RuinsBG>(eLayerType::BackGround);
+	object::Instantiate<RuinsEntranceBG>(eLayerType::BackGround);
 }
 
 void RuinsEntranceScene::Update()
 {
+	Scene::Update();
 }
 
 void RuinsEntranceScene::Render(HDC hdc)
 {
+	Scene::Render(hdc);
 }
 
 void RuinsEntranceScene::Release()
 {
+	Scene::Release();
 }
 
 void RuinsEntranceScene::OnEnter()

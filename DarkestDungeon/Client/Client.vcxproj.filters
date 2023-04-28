@@ -446,7 +446,7 @@
     <ClInclude Include="RuinsEntranceScene.h">
       <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClInclude>
-    <ClInclude Include="RuinsBG.h">
+    <ClInclude Include="RuinsEntranceBG.h">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClInclude>
   </ItemGroup>
@@ -709,7 +709,7 @@
     <ClCompile Include="RuinsEntranceScene.cpp">
       <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClCompile>
-    <ClCompile Include="RuinsBG.cpp">
+    <ClCompile Include="RuinsEntranceBG.cpp">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClCompile>
   </ItemGroup>
