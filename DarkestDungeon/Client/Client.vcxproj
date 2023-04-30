@@ -160,6 +160,7 @@
     <ClInclude Include="CollisionManager.h" />
     <ClInclude Include="CommonInclude.h" />
     <ClInclude Include="Component.h" />
+    <ClInclude Include="Crusader.h" />
     <ClInclude Include="Cuphead.h" />
     <ClInclude Include="DGInventoryBG.h" />
     <ClInclude Include="DGMapBG.h" />
@@ -178,6 +179,7 @@
     <ClInclude Include="GuildScene.h" />
     <ClInclude Include="CrusaderInfoUI.h" />
     <ClInclude Include="HeroInfoUIBG.h" />
+    <ClInclude Include="HighwayMan.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="InfoUIBG.h" />
     <ClInclude Include="Input.h" />
@@ -194,6 +196,7 @@
     <ClInclude Include="NomadWagonNPCBG.h" />
     <ClInclude Include="NomadWagonScene.h" />
     <ClInclude Include="Object.h" />
+    <ClInclude Include="PlagueDoctor.h" />
     <ClInclude Include="PlayScene.h" />
     <ClInclude Include="ProvisionBG.h" />
     <ClInclude Include="ProvisionInvetory.h" />
@@ -239,6 +242,7 @@
     <ClInclude Include="TownScene.h" />
     <ClInclude Include="Transform.h" />
     <ClInclude Include="TripButton.h" />
+    <ClInclude Include="Vestal.h" />
     <ClInclude Include="yaResource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -259,6 +263,7 @@
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Crusader.cpp" />
     <ClCompile Include="Cuphead.cpp" />
     <ClCompile Include="DGInventoryBG.cpp" />
     <ClCompile Include="DGMapBG.cpp" />
@@ -274,6 +279,7 @@
     <ClCompile Include="GuildScene.cpp" />
     <ClCompile Include="CrusaderInfoUI.cpp" />
     <ClCompile Include="HeroInfoUIBG.cpp" />
+    <ClCompile Include="HighwayMan.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="InfoUIBG.cpp" />
     <ClCompile Include="Input.cpp" />
@@ -290,6 +296,7 @@
     <ClCompile Include="NomadWagonNPC.cpp" />
     <ClCompile Include="NomadWagonNPCBG.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
+    <ClCompile Include="PlagueDoctor.cpp" />
     <ClCompile Include="PlayScene.cpp" />
     <ClCompile Include="ProvisionBG.cpp" />
     <ClCompile Include="ProvisionInvetory.cpp" />
@@ -333,6 +340,7 @@
     <ClCompile Include="TownScene.cpp" />
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="TripButton.cpp" />
+    <ClCompile Include="Vestal.cpp" />
     <ClCompile Include="yaResource.cpp" />
   </ItemGroup>
   <ItemGroup>

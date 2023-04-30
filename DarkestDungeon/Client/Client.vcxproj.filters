@@ -470,6 +470,18 @@
     <ClInclude Include="DGMapBG.h">
       <Filter>Contents\Background\InfoUI</Filter>
     </ClInclude>
+    <ClInclude Include="Crusader.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwayMan.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctor.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Vestal.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -747,6 +759,18 @@
     </ClCompile>
     <ClCompile Include="DGMapBG.cpp">
       <Filter>Contents\Background\InfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Vestal.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctor.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayMan.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Crusader.cpp">
+      <Filter>Contents\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
