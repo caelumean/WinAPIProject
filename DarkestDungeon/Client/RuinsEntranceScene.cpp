@@ -10,6 +10,7 @@
 #include "InfoUIBG.h"
 #include "HeroInfoUIBG.h"
 #include "DGMapBG.h"
+#include "DGInventoryBG.h"
 
 
 RuinsEntranceScene::RuinsEntranceScene()
@@ -29,6 +30,7 @@ void RuinsEntranceScene::Initialize()
 
 	//UI
 	object::Instantiate<HeroInfoUIBG>(eLayerType::UI1);
+	//Map
 	object::Instantiate<DGMapBG>(eLayerType::UI1);
 
 }
@@ -36,6 +38,24 @@ void RuinsEntranceScene::Initialize()
 void RuinsEntranceScene::Update()
 {
 	Scene::Update();
+	Vector2 MousePos = Input::GetMousePos();
+	// Map
+	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 717 && MousePos.y < 821))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			object::Instantiate<DGMapBG>(eLayerType::UI1);
+		}
+	}
+	//Inventory
+	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 830 && MousePos.y < 874))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			object::Instantiate<DGInventoryBG>(eLayerType::UI1);
+		}
+		
+	}
 }
 
 void RuinsEntranceScene::Render(HDC hdc)
