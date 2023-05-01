@@ -37,17 +37,17 @@ void Camera::Initialize()
 
 void Camera::Update()
 {
-	if (Input::GetKey(eKeyCode::LEFT))
+	if (Input::GetKey(eKeyCode::A))
 		mLookPosition.x -= 100.0f * Time::DeltaTime();
 
-	if (Input::GetKey(eKeyCode::RIGHT))
+	if (Input::GetKey(eKeyCode::D))
 		mLookPosition.x += 100.0f * Time::DeltaTime();
 
-	if (Input::GetKey(eKeyCode::UP))
-		mLookPosition.y -= 100.0f * Time::DeltaTime();
+	//if (Input::GetKey(eKeyCode::UP))
+	//	mLookPosition.y -= 100.0f * Time::DeltaTime();
 
-	if (Input::GetKey(eKeyCode::DOWN))
-		mLookPosition.y += 100.0f * Time::DeltaTime();
+	//if (Input::GetKey(eKeyCode::DOWN))
+	//	mLookPosition.y += 100.0f * Time::DeltaTime();
 
 	// 타겟이 있으면 
 	// 게임마다 다르다 타켓이 필요한지 안한지
@@ -83,7 +83,7 @@ void Camera::Update()
 
 		}
 	}
-
+	//무조건 LookPosition이 가운대로오게끔
 	mDistance = mLookPosition - (mResolution / 2.0f);
 }
 

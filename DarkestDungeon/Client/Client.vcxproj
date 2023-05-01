@@ -44,6 +44,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -161,7 +162,6 @@
     <ClInclude Include="CommonInclude.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Crusader.h" />
-    <ClInclude Include="Cuphead.h" />
     <ClInclude Include="DGInventoryBG.h" />
     <ClInclude Include="DGMapBG.h" />
     <ClInclude Include="Engine.h" />
@@ -197,7 +197,6 @@
     <ClInclude Include="NomadWagonScene.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="PlagueDoctor.h" />
-    <ClInclude Include="PlayScene.h" />
     <ClInclude Include="ProvisionBG.h" />
     <ClInclude Include="ProvisionInvetory.h" />
     <ClInclude Include="ProvisionNPC.h" />
@@ -207,6 +206,8 @@
     <ClInclude Include="Resources.h" />
     <ClInclude Include="RuinsEntranceBG.h" />
     <ClInclude Include="RuinsEntranceScene.h" />
+    <ClInclude Include="RuinsPassageBG.h" />
+    <ClInclude Include="RuinsPassageScene.h" />
     <ClInclude Include="SanitariumBG.h" />
     <ClInclude Include="SanitariumNPC.h" />
     <ClInclude Include="SanitariumNPCBG.h" />
@@ -264,7 +265,6 @@
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Crusader.cpp" />
-    <ClCompile Include="Cuphead.cpp" />
     <ClCompile Include="DGInventoryBG.cpp" />
     <ClCompile Include="DGMapBG.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -297,7 +297,6 @@
     <ClCompile Include="NomadWagonNPCBG.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
     <ClCompile Include="PlagueDoctor.cpp" />
-    <ClCompile Include="PlayScene.cpp" />
     <ClCompile Include="ProvisionBG.cpp" />
     <ClCompile Include="ProvisionInvetory.cpp" />
     <ClCompile Include="ProvisionNPC.cpp" />
@@ -306,6 +305,8 @@
     <ClCompile Include="Resources.cpp" />
     <ClCompile Include="RuinsEntranceBG.cpp" />
     <ClCompile Include="RuinsEntranceScene.cpp" />
+    <ClCompile Include="RuinsPassageBG.cpp" />
+    <ClCompile Include="RuinsPassageScene.cpp" />
     <ClCompile Include="SanitariumBG.cpp" />
     <ClCompile Include="SanitariumNPC.cpp" />
     <ClCompile Include="SanitariumNPCBG.cpp" />

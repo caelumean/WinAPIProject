@@ -53,6 +53,12 @@ void RuinsEntranceScene::Update()
 	Scene::Update();
 	Vector2 MousePos = Input::GetMousePos();
 
+	if (Input::GetKeyDown(eKeyCode::W))
+	{
+		SceneManager::LoadScene(eSceneType::RuinsPassage);
+	}
+
+
 	// Map
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 717 && MousePos.y < 821))
 	{
@@ -72,7 +78,7 @@ void RuinsEntranceScene::Update()
 			// MapUI 지워주기
 			object::Destory(mDGMapBG);
 		}
-		
+
 	}
 
 	//PlayerInfoUI

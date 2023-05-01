@@ -31,6 +31,7 @@ enum class eSceneType
 	SelectDugeon,
 	Provision,
 	RuinsEntrance,
+	RuinsPassage,
 	Ending,
 	End
 };
@@ -49,6 +50,7 @@ enum class eLayerType
 	Item,
 	UI1,
 	UI2,
+	DungeonObj,
 	Text,
 	End=16,
 };

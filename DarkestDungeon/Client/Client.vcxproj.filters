@@ -218,12 +218,6 @@
     <ClInclude Include="SceneManager.h">
       <Filter>Engine\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="PlayScene.h">
-      <Filter>Contents\Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="Cuphead.h">
-      <Filter>Contents\Player</Filter>
-    </ClInclude>
     <ClInclude Include="Time.h">
       <Filter>Engine\Time</Filter>
     </ClInclude>
@@ -449,9 +443,6 @@
     <ClInclude Include="ProvisionNPCBG.h">
       <Filter>Contents\Background\SelectDungeon\Provision</Filter>
     </ClInclude>
-    <ClInclude Include="RuinsEntranceScene.h">
-      <Filter>Contents\Scene\RuinsDungeon</Filter>
-    </ClInclude>
     <ClInclude Include="RuinsEntranceBG.h">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClInclude>
@@ -482,6 +473,15 @@
     <ClInclude Include="Vestal.h">
       <Filter>Contents\Player</Filter>
     </ClInclude>
+    <ClInclude Include="RuinsPassageBG.h">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="RuinsEntranceScene.h">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="RuinsPassageScene.h">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -507,12 +507,6 @@
     </ClCompile>
     <ClCompile Include="SceneManager.cpp">
       <Filter>Engine\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayScene.cpp">
-      <Filter>Contents\Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="Cuphead.cpp">
-      <Filter>Contents\Player</Filter>
     </ClCompile>
     <ClCompile Include="Time.cpp">
       <Filter>Engine\Time</Filter>
@@ -739,9 +733,6 @@
     <ClCompile Include="ProvisionNPCBG.cpp">
       <Filter>Contents\Background\SelectDungeon\Provision</Filter>
     </ClCompile>
-    <ClCompile Include="RuinsEntranceScene.cpp">
-      <Filter>Contents\Scene\RuinsDungeon</Filter>
-    </ClCompile>
     <ClCompile Include="RuinsEntranceBG.cpp">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClCompile>
@@ -771,6 +762,15 @@
     </ClCompile>
     <ClCompile Include="Crusader.cpp">
       <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="RuinsPassageBG.cpp">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="RuinsEntranceScene.cpp">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="RuinsPassageScene.cpp">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

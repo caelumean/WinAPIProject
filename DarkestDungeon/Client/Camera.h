@@ -23,8 +23,12 @@ public:
 
 	static void SetTarget(GameObject* target) {mTarget = target;}
 
-	// pos를 넣어주면 카메라 좌표계로 전환
 	static Vector2 CaluatePos(Vector2 pos) { return pos - mDistance; }
+	static Vector2 GetDistance() { return mDistance; }
+
+	static Vector2 GetLookPosition() { return mLookPosition; }
+	static float GetAlphaTime() { return mAlphaTime; }
+	static void SetLookPosition(Vector2 pos) { mLookPosition = pos; }
 
 private:
 
@@ -46,5 +50,6 @@ private:
 	static float mAlphaTime;
 	// 끝나는 시간
 	static float mEndTime;
+
 };
 
