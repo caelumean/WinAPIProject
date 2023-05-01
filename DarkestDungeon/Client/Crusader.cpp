@@ -21,7 +21,7 @@ void Crusader::Initialize()
 {
 	Transform* tr = GetComponent<Transform>();
 	tr->SetPos(Vector2(720.0f, 900.0f));
-	tr->SetScale(Vector2{ 0.6f, 0.5f });
+	tr->SetScale(Vector2{ 0.5f, 0.5f });
 
 	Image* Idle = Resources::Load<Image>(L"crusader_Idle", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
 	Image* Move = Resources::Load<Image>(L"crusader_Move", L"..\\Resources\\Heroes\\crusader\\crusader_Walk.bmp");

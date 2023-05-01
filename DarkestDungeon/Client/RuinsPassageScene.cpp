@@ -16,7 +16,11 @@
 #include "DGInventoryBG.h"
 
 //Player
+//Player
 #include "Crusader.h"
+#include "HighwayMan.h"
+#include "PlagueDoctor.h"
+#include "Vestal.h"
 
 //Player Info UI
 #include "CrusaderInfoUI.h"
@@ -45,6 +49,10 @@ void RuinsPassageScene::Initialize()
 
 	//Player
 	mCrusader = object::Instantiate<Crusader>(eLayerType::Player);
+	mHighwayMan = object::Instantiate<HighwayMan>(eLayerType::Player);
+	mPlagueDoctor = object::Instantiate<PlagueDoctor>(eLayerType::Player);
+	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
+
 
 	//PlayerInfoUI
 	mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);

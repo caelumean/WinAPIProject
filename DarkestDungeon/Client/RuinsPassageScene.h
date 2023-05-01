@@ -16,7 +16,11 @@ public:
 	virtual void OnExit() override;
 
 private:
+	// Player
 	class Crusader* mCrusader;
+	class HighwayMan* mHighwayMan;
+	class PlagueDoctor* mPlagueDoctor;
+	class Vestal* mVestal;
 
 	// Map Inventory
 	class DGMapBG* mDGMapBG;
