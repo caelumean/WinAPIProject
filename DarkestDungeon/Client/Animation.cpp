@@ -56,7 +56,7 @@ void Animation::Render(HDC hdc)
     // Unity의 Global 좌표 세팅하는 거라고 생각하면 된다.
     Vector2 pos = tr->GetPos();
     // 카메라 포스 추가
-    pos = Camera::CaluatePos(pos);
+    pos = Camera::CalculatePos(pos);
     pos += mSpriteSheet[mSpriteIndex].offset;
     pos.x -= mSpriteSheet[mSpriteIndex].size.x / 2.0f;
     pos.y -= mSpriteSheet[mSpriteIndex].size.y;

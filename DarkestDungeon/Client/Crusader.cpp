@@ -20,7 +20,7 @@ Crusader::~Crusader()
 void Crusader::Initialize()
 {
 	Transform* tr = GetComponent<Transform>();
-	tr->SetPos(Vector2(800.0f, 900.0f));
+	tr->SetPos(Vector2(720.0f, 900.0f));
 	tr->SetScale(Vector2{ 0.6f, 0.5f });
 
 	Image* Idle = Resources::Load<Image>(L"crusader_Idle", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
@@ -97,10 +97,10 @@ void Crusader::move()
 	Vector2 pos = tr->GetPos();
 
 	if (Input::GetKey(eKeyCode::A))
-		pos.x -= 150.0f * Time::DeltaTime();
+		pos.x -= 200.0f * Time::DeltaTime();
 
 	if (Input::GetKey(eKeyCode::D))
-		pos.x += 150.0f * Time::DeltaTime();
+		pos.x += 200.0f * Time::DeltaTime();
 
 
 	tr->SetPos(pos);

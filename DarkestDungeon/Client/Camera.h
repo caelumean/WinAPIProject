@@ -5,30 +5,18 @@ class GameObject;
 class Camera
 {
 public:
-	// 카메라 이팩트
-	enum class eCameraEffectType
-	{
-		None,
-		FadeIn,
-		FadeOut,
-		//Shake,
-		End,
-	};
 
 	static void Initialize();
 	static void Update();
-	// 카메라이팩트를 할려면 Render에도 개입을 해야하니까
-	static void Render(HDC hdc);
 	static void Clear();
 
-	static void SetTarget(GameObject* target) {mTarget = target;}
-
-	static Vector2 CaluatePos(Vector2 pos) { return pos - mDistance; }
-	static Vector2 GetDistance() { return mDistance; }
-
-	static Vector2 GetLookPosition() { return mLookPosition; }
-	static float GetAlphaTime() { return mAlphaTime; }
+	static void SetTarget(GameObject* target) { mTarget = target; }
+	static Vector2 CalculatePos(Vector2 pos) { return pos - mDistance; }
+	static Vector2 InitializePos(Vector2 pos) { return pos + mDistance; }
 	static void SetLookPosition(Vector2 pos) { mLookPosition = pos; }
+
+	static void SetMinX(float f) { MinX = f; }
+	static void SetMaxX(float f) { MaxX = f; }
 
 private:
 
@@ -41,15 +29,8 @@ private:
 	// 내가 쳐다볼 게임 오브젝트
 	static GameObject* mTarget;
 
-	// 무슨 카메라 임팩트 있는지 알아야하니까
-	static eCameraEffectType mType;
-	// 화면 덮을 까만색 이미지 있어야하니까
-	static class Image* mCutton;
-	static float mCuttonAlpha;
-	// 커튼의 알파값
-	static float mAlphaTime;
-	// 끝나는 시간
-	static float mEndTime;
+	static float MinX;
+	static float MaxX;
 
 };
 

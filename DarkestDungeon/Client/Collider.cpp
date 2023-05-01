@@ -48,7 +48,7 @@ void Collider::Render(HDC hdc)
 	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, brush);
 
 	//카메라 포스 잡아줄것
-	Vector2 pos = Camera::CaluatePos(mPos);
+	Vector2 pos = Camera::CalculatePos(mPos);
 	Rectangle(hdc, pos.x, pos.y, pos.x + mSize.x, pos.y + mSize.y);
 
 	(HPEN)SelectObject(hdc, oldPen);

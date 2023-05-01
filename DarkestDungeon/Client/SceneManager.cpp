@@ -50,6 +50,7 @@ void SceneManager::Initialize()
 	//던전 Scene 추가
 	mScenes[(UINT)eSceneType::RuinsEntrance] = new RuinsEntranceScene();
 	mScenes[(UINT)eSceneType::RuinsPassage] = new RuinsPassageScene();
+	
 
 	// for each문
 	for (Scene* scene : mScenes)

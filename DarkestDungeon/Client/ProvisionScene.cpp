@@ -64,8 +64,10 @@ void ProvisionScene::Release()
 
 void ProvisionScene::OnEnter()
 {
+	Scene::OnEnter();
 }
 
 void ProvisionScene::OnExit()
 {
+	Scene::OnExit();
 }

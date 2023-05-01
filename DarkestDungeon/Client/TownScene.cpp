@@ -139,8 +139,10 @@ void TownScene::Release()
 
 void TownScene::OnEnter()
 {
+	Scene::OnEnter();
 }
 
 void TownScene::OnExit()
 {
+	Scene::OnExit();
 }

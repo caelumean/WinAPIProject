@@ -8,18 +8,15 @@
 
 extern Application application;
 
+const float CameraSpeed = 200.0f;
 // 초기화
 Vector2 Camera::mResolution = Vector2::Zero;
 Vector2 Camera::mLookPosition = Vector2::Zero;
 Vector2 Camera::mDistance = Vector2::Zero;
 GameObject* Camera::mTarget = nullptr;
 
-// statice이니까 다 초기화
-Camera::eCameraEffectType Camera::mType = Camera::eCameraEffectType::None;
-class Image* Camera::mCutton = nullptr;
-float Camera::mCuttonAlpha = 1.0f;
-float Camera::mAlphaTime = 0.0f;
-float Camera::mEndTime = 5.0f;
+float Camera::MinX = 0.0f;
+float Camera::MaxX = 0.0f;
 
 void Camera::Initialize()
 {
@@ -28,20 +25,17 @@ void Camera::Initialize()
 	mResolution.y = application.GetHeight();
 	mLookPosition = (mResolution / 2.0f);
 
-	// Camera FadeIn 효과를 주자
-	// FadeIn 효과를 주기 싫으면 None으로 바꾸면 된다
-	//mType = eCameraEffectType::FadeIn;
-	mType = eCameraEffectType::None;
-	mCutton = Image::Create(L"Cutton", mResolution.x, mResolution.y, RGB(0, 0, 0));
+
 }
 
 void Camera::Update()
 {
+
 	if (Input::GetKey(eKeyCode::A))
-		mLookPosition.x -= 100.0f * Time::DeltaTime();
+		mLookPosition.x -= CameraSpeed * Time::DeltaTime();
 
 	if (Input::GetKey(eKeyCode::D))
-		mLookPosition.x += 100.0f * Time::DeltaTime();
+		mLookPosition.x += CameraSpeed * Time::DeltaTime();
 
 	//if (Input::GetKey(eKeyCode::UP))
 	//	mLookPosition.y -= 100.0f * Time::DeltaTime();
@@ -54,58 +48,19 @@ void Camera::Update()
 	if (mTarget != nullptr)
 	{
 		// 내 캐릭터 따라가겠다.
-		mLookPosition
-			= mTarget->GetComponent<Transform>()->GetPos();
+		mLookPosition = mTarget->GetComponent<Transform>()->GetPos() + Vector2(80.0f, -450.0f);
+		/*mLookPosition
+			= mTarget->GetComponent<Transform>()->GetPos();*/
+
+		// 카메라 최대 이동거리를 넘어가면 조정
+		if (mLookPosition.x <= MinX)
+			mLookPosition.x = MinX;
+		if (mLookPosition.x >= MaxX)
+			mLookPosition.x = MaxX;
 	}
 
-	if (mAlphaTime < mEndTime)
-	{
-		//255 - > 1
-		// 계속 시간을 재준다
-		mAlphaTime += Time::DeltaTime();
-		// 전체가 5초고 현재 1초라면 1/5 은 20%
-		// 계속 올라간다 1에 가까워질 때까지
-		// 비율 값이 나온다.
-		float ratio = (mAlphaTime / mEndTime);
-
-		if (mType == eCameraEffectType::FadeIn)
-		{
-			// 점점 숫자가 0에 가까워 진다.
-			mCuttonAlpha = 1.0f - ratio;
-		}
-		else if (mType == eCameraEffectType::FadeOut)
-		{
-			// 점점 숫자가 1에 가까워진다.
-			mCuttonAlpha = ratio;
-		}
-		else
-		{
-
-		}
-	}
 	//무조건 LookPosition이 가운대로오게끔
 	mDistance = mLookPosition - (mResolution / 2.0f);
-}
-
-void Camera::Render(HDC hdc)
-{
-	if (mAlphaTime < mEndTime
-		&& mType == eCameraEffectType::FadeIn)
-	{
-		BLENDFUNCTION func = {};
-		func.BlendOp = AC_SRC_OVER;
-		func.BlendFlags = 0;
-		func.AlphaFormat = 0;
-		func.SourceConstantAlpha = (BYTE)(255.0f * mCuttonAlpha);
-
-	
-		AlphaBlend(hdc, 0, 0
-			, mResolution.x, mResolution.y
-			, mCutton->GetHdc()
-			, 0, 0
-			, mCutton->GetWidth(), mCutton->GetHeight()
-			, func);
-	}
 }
 
 void Camera::Clear()

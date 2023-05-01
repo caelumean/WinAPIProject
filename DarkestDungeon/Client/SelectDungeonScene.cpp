@@ -60,8 +60,10 @@ void SelectDungeonScene::Release()
 
 void SelectDungeonScene::OnEnter()
 {
+	Scene::OnEnter();
 }
 
 void SelectDungeonScene::OnExit()
 {
+	Scene::OnExit();
 }

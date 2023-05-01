@@ -45,7 +45,7 @@ void RuinsEntranceScene::Initialize()
 	//PlayerInfoUI
 	mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
 
-
+	
 }
 
 void RuinsEntranceScene::Update()
@@ -96,8 +96,10 @@ void RuinsEntranceScene::Release()
 
 void RuinsEntranceScene::OnEnter()
 {
+	Scene::OnEnter();
 }
 
 void RuinsEntranceScene::OnExit()
 {
+	Scene::OnExit();
 }
