@@ -36,12 +36,13 @@ void RuinsEntranceScene::Initialize()
 	//UI
 	object::Instantiate<HeroInfoUIBG>(eLayerType::UI1);
 	//Map
-	mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
+	//mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
 	mDGMapBG = object::Instantiate<DGMapBG>(eLayerType::UI1);
 
 	//Player
 	mCrusader = object::Instantiate<Crusader>(eLayerType::Player);
 
+	//PlayerInfoUI
 	mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
 
 
@@ -51,6 +52,7 @@ void RuinsEntranceScene::Update()
 {
 	Scene::Update();
 	Vector2 MousePos = Input::GetMousePos();
+
 	// Map
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 717 && MousePos.y < 821))
 	{
@@ -72,6 +74,8 @@ void RuinsEntranceScene::Update()
 		}
 		
 	}
+
+	//PlayerInfoUI
 }
 
 void RuinsEntranceScene::Render(HDC hdc)
