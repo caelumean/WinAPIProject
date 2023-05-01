@@ -1,6 +1,8 @@
 #pragma once
 #include "Scene.h"
 
+//class Crusader;
+
 class RuinsEntranceScene : public Scene
 {
 public:
@@ -16,5 +18,13 @@ public:
 	virtual void OnExit() override;
 
 private:
+	class Crusader* mCrusader;
+
+	// Map Inventory
+	class DGMapBG* mDGMapBG;
+	class DGInventoryBG* mDGInventoryBG;
+
+	// Hero Info UI
+	class CrusaderInfoUI* mCrusaderInfoUI;
 
 };

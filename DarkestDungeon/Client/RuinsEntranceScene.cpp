@@ -12,6 +12,11 @@
 #include "DGMapBG.h"
 #include "DGInventoryBG.h"
 
+//Player
+#include "Crusader.h"
+
+//Player Info UI
+#include "CrusaderInfoUI.h"
 
 RuinsEntranceScene::RuinsEntranceScene()
 {
@@ -31,7 +36,14 @@ void RuinsEntranceScene::Initialize()
 	//UI
 	object::Instantiate<HeroInfoUIBG>(eLayerType::UI1);
 	//Map
-	object::Instantiate<DGMapBG>(eLayerType::UI1);
+	mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
+	mDGMapBG = object::Instantiate<DGMapBG>(eLayerType::UI1);
+
+	//Player
+	mCrusader = object::Instantiate<Crusader>(eLayerType::Player);
+
+	mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
+
 
 }
 
@@ -44,7 +56,9 @@ void RuinsEntranceScene::Update()
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
-			object::Instantiate<DGMapBG>(eLayerType::UI1);
+			mDGMapBG = object::Instantiate<DGMapBG>(eLayerType::UI1);
+			// InventoryUI 瘤况林扁
+			object::Destory(mDGInventoryBG);
 		}
 	}
 	//Inventory
@@ -52,7 +66,9 @@ void RuinsEntranceScene::Update()
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
-			object::Instantiate<DGInventoryBG>(eLayerType::UI1);
+			mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
+			// MapUI 瘤况林扁
+			object::Destory(mDGMapBG);
 		}
 		
 	}
