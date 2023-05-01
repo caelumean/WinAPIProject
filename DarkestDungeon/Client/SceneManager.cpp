@@ -20,6 +20,7 @@
 
 #include "RuinsEntranceScene.h"
 #include "RuinsPassageScene.h"
+#include "RuinsBattleScene.h"
 
 std::vector<Scene*> SceneManager::mScenes = {};
 // 현재 씬 초기화
@@ -50,6 +51,7 @@ void SceneManager::Initialize()
 	//던전 Scene 추가
 	mScenes[(UINT)eSceneType::RuinsEntrance] = new RuinsEntranceScene();
 	mScenes[(UINT)eSceneType::RuinsPassage] = new RuinsPassageScene();
+	mScenes[(UINT)eSceneType::RuinsBattle] = new RuinsBattleScene();
 	
 
 	// for each문

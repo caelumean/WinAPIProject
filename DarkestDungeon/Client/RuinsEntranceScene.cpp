@@ -2,6 +2,7 @@
 #include "Input.h"
 #include "SceneManager.h"
 #include "Transform.h"
+#include "Camera.h"
 #include "Object.h"
 
 //BG
@@ -20,6 +21,9 @@
 
 //Player Info UI
 #include "CrusaderInfoUI.h"
+#include "HighwayManInfoUI.h"
+#include "PlagueDoctorInfoUI.h"
+#include "VestalInfoUI.h"
 
 RuinsEntranceScene::RuinsEntranceScene()
 {
@@ -50,14 +54,20 @@ void RuinsEntranceScene::Initialize()
 
 
 	//PlayerInfoUI
-	mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
-
+	//mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
+	//mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
+	mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
+	//mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
 	
 }
 
 void RuinsEntranceScene::Update()
 {
 	Scene::Update();
+	Camera::SetTarget(mCrusader);
+	Camera::SetMinX(500.0f);
+	Camera::SetMaxX(700.0f);
+
 	Vector2 MousePos = Input::GetMousePos();
 
 	if (Input::GetKeyDown(eKeyCode::W))

@@ -30,5 +30,8 @@ private:
 
 	// Hero Info UI
 	class CrusaderInfoUI* mCrusaderInfoUI;
+	class HighwayManInfoUI* mHighwayManInfoUI;
+	class PlagueDoctorInfoUI* mPlagueDoctorInfoUI;
+	class VestalInfoUI* mVestalInfoUI;
 
 };

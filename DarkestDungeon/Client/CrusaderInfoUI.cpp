@@ -22,7 +22,7 @@ void CrusaderInfoUI::Initialize()
 	mImage[3] = Resources::Load<Image>(L"Crusader_Ability_2", L"..\\Resources\\Icons_skill_Crusader\\ability_3.bmp");
 	mImage[4] = Resources::Load<Image>(L"Crusader_Ability_3", L"..\\Resources\\Icons_skill_Crusader\\ability_5.bmp");
 	mImage[5] = Resources::Load<Image>(L"Crusader_Ability_4", L"..\\Resources\\Icons_skill_Crusader\\ability_7.bmp");
-	// 크루세이더 UI이미지 
+	// UI이미지 
 	mImage[6] = Resources::Load<Image>(L"Crusader_Portrait", L"..\\Resources\\Heroes\\crusader_portrait.bmp");
 	GameObject::Initialize();
 
@@ -55,7 +55,7 @@ void CrusaderInfoUI::Render(HDC hdc)
 	TransparentBlt(hdc, pos.x + 622, pos.y + 674, 57, 57
 		, mImage[5]->GetHdc(), 0, 0, 72, 72, RGB(255, 0, 255));
 	
-	//크루세이더 UI이미지
+	//UI이미지
 	TransparentBlt(hdc, pos.x + 235, pos.y + 674, 60, 60
 		, mImage[6]->GetHdc(), 0, 0, 85, 85, RGB(255, 0, 255));
 }

@@ -69,6 +69,11 @@ void RuinsPassageScene::Update()
 
 	Vector2 MousePos = Input::GetMousePos();
 
+	if (Input::GetKeyDown(eKeyCode::W))
+	{
+		SceneManager::LoadScene(eSceneType::RuinsBattle);
+	}
+
 	// Map
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 717 && MousePos.y < 821))
 	{

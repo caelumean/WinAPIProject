@@ -2,7 +2,7 @@
 #include "SceneManager.h"
 #include "Resources.h"
 #include "Transform.h"
-
+#include "Camera.h"
 
 
 RuinsEntranceBG::RuinsEntranceBG()
@@ -16,6 +16,7 @@ RuinsEntranceBG::~RuinsEntranceBG()
 void RuinsEntranceBG::Initialize()
 {
 	mImage = Resources::Load<Image>(L"RuinseEntranceRoomBG", L"..\\Resources\\Dugeon\\Ruins\\Ruins_entrance_room.bmp");
+	tr = AddComponent<Transform>();
 	GameObject::Initialize();
 }
 
@@ -27,11 +28,12 @@ void RuinsEntranceBG::Update()
 void RuinsEntranceBG::Render(HDC hdc)
 {
 	GameObject::Render(hdc);
-	Transform* tr = GetComponent<Transform>();
+	tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
+	pos = Camera::CalculatePos(pos);
+	pos.x -= mImage->GetWidth()/15;
 
-	TransparentBlt(hdc, pos.x -1, pos.y -1, 1600, 650
-		, mImage->GetHdc(), 0, 0, 1920, 720, RGB(255, 0, 255));
+	BitBlt(hdc, pos.x, pos.y, mImage->GetWidth(), mImage->GetHeight(), mImage->GetHdc(), 0, 0, SRCCOPY);
 }
 
 void RuinsEntranceBG::Release()

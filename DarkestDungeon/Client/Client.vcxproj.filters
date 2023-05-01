@@ -482,6 +482,18 @@
     <ClInclude Include="RuinsPassageScene.h">
       <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClInclude>
+    <ClInclude Include="HighwayManInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctorInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="VestalInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="RuinsBattleScene.h">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -770,6 +782,18 @@
       <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClCompile>
     <ClCompile Include="RuinsPassageScene.cpp">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayManInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctorInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="VestalInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="RuinsBattleScene.cpp">
       <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClCompile>
   </ItemGroup>

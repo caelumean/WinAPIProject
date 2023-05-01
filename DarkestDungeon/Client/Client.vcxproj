@@ -180,6 +180,7 @@
     <ClInclude Include="CrusaderInfoUI.h" />
     <ClInclude Include="HeroInfoUIBG.h" />
     <ClInclude Include="HighwayMan.h" />
+    <ClInclude Include="HighwayManInfoUI.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="InfoUIBG.h" />
     <ClInclude Include="Input.h" />
@@ -197,6 +198,7 @@
     <ClInclude Include="NomadWagonScene.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="PlagueDoctor.h" />
+    <ClInclude Include="PlagueDoctorInfoUI.h" />
     <ClInclude Include="ProvisionBG.h" />
     <ClInclude Include="ProvisionInvetory.h" />
     <ClInclude Include="ProvisionNPC.h" />
@@ -204,6 +206,7 @@
     <ClInclude Include="ProvisionScene.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Resources.h" />
+    <ClInclude Include="RuinsBattleScene.h" />
     <ClInclude Include="RuinsEntranceBG.h" />
     <ClInclude Include="RuinsEntranceScene.h" />
     <ClInclude Include="RuinsPassageBG.h" />
@@ -244,6 +247,7 @@
     <ClInclude Include="Transform.h" />
     <ClInclude Include="TripButton.h" />
     <ClInclude Include="Vestal.h" />
+    <ClInclude Include="VestalInfoUI.h" />
     <ClInclude Include="yaResource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -280,6 +284,7 @@
     <ClCompile Include="CrusaderInfoUI.cpp" />
     <ClCompile Include="HeroInfoUIBG.cpp" />
     <ClCompile Include="HighwayMan.cpp" />
+    <ClCompile Include="HighwayManInfoUI.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="InfoUIBG.cpp" />
     <ClCompile Include="Input.cpp" />
@@ -297,12 +302,14 @@
     <ClCompile Include="NomadWagonNPCBG.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
     <ClCompile Include="PlagueDoctor.cpp" />
+    <ClCompile Include="PlagueDoctorInfoUI.cpp" />
     <ClCompile Include="ProvisionBG.cpp" />
     <ClCompile Include="ProvisionInvetory.cpp" />
     <ClCompile Include="ProvisionNPC.cpp" />
     <ClCompile Include="ProvisionNPCBG.cpp" />
     <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="Resources.cpp" />
+    <ClCompile Include="RuinsBattleScene.cpp" />
     <ClCompile Include="RuinsEntranceBG.cpp" />
     <ClCompile Include="RuinsEntranceScene.cpp" />
     <ClCompile Include="RuinsPassageBG.cpp" />
@@ -342,6 +349,7 @@
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="TripButton.cpp" />
     <ClCompile Include="Vestal.cpp" />
+    <ClCompile Include="VestalInfoUI.cpp" />
     <ClCompile Include="yaResource.cpp" />
   </ItemGroup>
   <ItemGroup>

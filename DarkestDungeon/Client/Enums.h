@@ -32,6 +32,7 @@ enum class eSceneType
 	Provision,
 	RuinsEntrance,
 	RuinsPassage,
+	RuinsBattle,
 	Ending,
 	End
 };
