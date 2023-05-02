@@ -50,6 +50,10 @@ void ProvisionScene::Update()
 			SceneManager::LoadScene(eSceneType::RuinsEntrance);
 		}
 	}
+	if (Input::GetKeyState(eKeyCode::ESC) == eKeyState::Down)
+	{
+		SceneManager::LoadScene(eSceneType::SelectDugeon);
+	}
 }
 
 void ProvisionScene::Render(HDC hdc)

@@ -10,6 +10,7 @@ enum class eKeyCode
 
 	UP, DOWN, LEFT, RIGHT, SPACE,
 	LBUTTON, RBUTTON,
+	ESC,
 	END,
 };
 

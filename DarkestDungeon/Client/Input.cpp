@@ -12,6 +12,7 @@ int ASCII[(UINT)eKeyCode::END] =
 	VK_UP, VK_DOWN, VK_LEFT ,VK_RIGHT, VK_SPACE,
 
 	VK_LBUTTON, VK_RBUTTON,
+	VK_ESCAPE,
 };
 
 // 키 초기화

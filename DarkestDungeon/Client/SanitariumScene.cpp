@@ -39,10 +39,14 @@ void SanitariumScene::Update()
 	Vector2 MousePos = Input::GetMousePos();
 	if ((MousePos.x > 1270 && MousePos.x < 1300) && (MousePos.y > 120 && MousePos.y < 150))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Town);
 		}
+	}
+	if (Input::GetKeyState(eKeyCode::ESC) == eKeyState::Down)
+	{
+		SceneManager::LoadScene(eSceneType::Town);
 	}
 
 }

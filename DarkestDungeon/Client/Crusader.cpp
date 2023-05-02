@@ -35,7 +35,8 @@ void Crusader::Initialize()
 	mAnimator->Play(L"crusader_Idle", true);
 
 	Collider* collider = AddComponent<Collider>();
-	collider->SetCenter(Vector2(-150.0f, -580.0f));
+	collider->SetCenter(Vector2(-170.0f, -550.0f));
+	collider->SetSize(Vector2(150.0f, 250.0f));
 
 	mState = eCrusaderState::Idle;
 
