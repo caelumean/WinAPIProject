@@ -7,7 +7,9 @@
 #include "CollisionManager.h"
 
 //BG
-#include"RuinsPassageBG.h"
+#include "RuinsPassageBG.h"
+#include "EntranceDoor.h"
+#include "BattleDoor.h"
 
 //UI
 #include "InfoUIBG.h"
@@ -16,7 +18,6 @@
 #include "DGInventoryBG.h"
 
 //Player
-//Player
 #include "Crusader.h"
 #include "HighwayMan.h"
 #include "PlagueDoctor.h"
@@ -24,7 +25,12 @@
 
 //Player Info UI
 #include "CrusaderInfoUI.h"
+#include "HighwayManInfoUI.h"
+#include "PlagueDoctorInfoUI.h"
+#include "VestalInfoUI.h"
 
+//Player HP Stress UI
+#include "CrusaderHPbar.h"
 
 RuinsPassageScene::RuinsPassageScene()
 {
@@ -40,6 +46,8 @@ void RuinsPassageScene::Initialize()
 	//BG
 	object::Instantiate<RuinsPassageBG>(eLayerType::BackGround);
 	object::Instantiate<InfoUIBG>(eLayerType::BackGround);
+	object::Instantiate<EntranceDoor>(eLayerType::Sky);
+	object::Instantiate<BattleDoor>(eLayerType::Sky);
 
 	//UI
 	object::Instantiate<HeroInfoUIBG>(eLayerType::UI1);
@@ -53,9 +61,8 @@ void RuinsPassageScene::Initialize()
 	mPlagueDoctor = object::Instantiate<PlagueDoctor>(eLayerType::Player);
 	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
 
-
-	//PlayerInfoUI
-	mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
+	//Player HP Stress UI
+	object::Instantiate<CrusaderHPbar>(eLayerType::UI2);
 
 }
 
@@ -94,6 +101,112 @@ void RuinsPassageScene::Update()
 			object::Destory(mDGMapBG);
 		}
 
+	}
+	//PlayerInfoUI
+	if ((MousePos.x > 132 && MousePos.x < 245) && (MousePos.y > 370 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
+			isVestalInfoUI = true;
+
+			// 닥터
+			if (isPlagueDoctorInfoUI)
+			{
+				isPlagueDoctorInfoUI = false;
+				object::Destory(mPlagueDoctorInfoUI);
+			}
+			//하이웨이맨
+			else if (isHighwayManInfoUI)
+			{
+				isHighwayManInfoUI = false;
+				object::Destory(mHighwayManInfoUI);
+			}
+			//크루세이더
+			else if (ismCrusaderInfoUI)
+			{
+				ismCrusaderInfoUI = false;
+				object::Destory(mCrusaderInfoUI);
+			}
+		}
+	}
+	if ((MousePos.x > 278 && MousePos.x < 387) && (MousePos.y > 370 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
+			isPlagueDoctorInfoUI = true;
+
+			// 성녀
+			if (isVestalInfoUI)
+			{
+				isVestalInfoUI = false;
+				object::Destory(mVestalInfoUI);
+			}
+			//하이웨이맨
+			else if (isHighwayManInfoUI)
+			{
+				isHighwayManInfoUI = false;
+				object::Destory(mHighwayManInfoUI);
+			}
+			//크루세이더
+			else if (ismCrusaderInfoUI)
+			{
+				ismCrusaderInfoUI = false;
+				object::Destory(mCrusaderInfoUI);
+			}
+		}
+
+	}
+	if ((MousePos.x > 430 && MousePos.x < 527) && (MousePos.y > 355 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
+			// 성녀
+			if (isVestalInfoUI)
+			{
+				isVestalInfoUI = false;
+				object::Destory(mVestalInfoUI);
+			}
+			// 닥터
+			else if (isPlagueDoctorInfoUI)
+			{
+				isPlagueDoctorInfoUI = false;
+				object::Destory(mPlagueDoctorInfoUI);
+			}
+			//크루세이더
+			else if (ismCrusaderInfoUI)
+			{
+				ismCrusaderInfoUI = false;
+				object::Destory(mCrusaderInfoUI);
+			}
+		}
+	}
+	if ((MousePos.x > 570 && MousePos.x < 670) && (MousePos.y > 352 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
+			// 성녀
+			if (isVestalInfoUI)
+			{
+				isVestalInfoUI = false;
+				object::Destory(mVestalInfoUI);
+			}
+			// 닥터
+			else if (isPlagueDoctorInfoUI)
+			{
+				isPlagueDoctorInfoUI = false;
+				object::Destory(mPlagueDoctorInfoUI);
+			}
+			//하이웨이맨
+			else if (isHighwayManInfoUI)
+			{
+				isHighwayManInfoUI = false;
+				object::Destory(mHighwayManInfoUI);
+			}
+		}
 	}
 }
 

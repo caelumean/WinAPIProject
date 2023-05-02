@@ -25,6 +25,9 @@
 #include "PlagueDoctorInfoUI.h"
 #include "VestalInfoUI.h"
 
+//Player HP Stress UI
+#include "HeroHpUI_1.h"
+
 RuinsEntranceScene::RuinsEntranceScene()
 {
 }
@@ -52,6 +55,8 @@ void RuinsEntranceScene::Initialize()
 	mPlagueDoctor = object::Instantiate<PlagueDoctor>(eLayerType::Player);
 	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
 	
+	//Player HP Stress UI
+	object::Instantiate<HeroHpUI_1>(eLayerType::UI2);
 }
 
 void RuinsEntranceScene::Update()

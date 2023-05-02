@@ -149,6 +149,7 @@
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Animator.h" />
     <ClInclude Include="Application.h" />
+    <ClInclude Include="BattleDoor.h" />
     <ClInclude Include="BlacksmithBG.h" />
     <ClInclude Include="BlacksmithFrame.h" />
     <ClInclude Include="BlacksmithNPC.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="CommonInclude.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Crusader.h" />
+    <ClInclude Include="CrusaderHPbar.h" />
     <ClInclude Include="DGInventoryBG.h" />
     <ClInclude Include="DGMapBG.h" />
     <ClInclude Include="Engine.h" />
@@ -181,6 +183,8 @@
     <ClInclude Include="HeroInfoUIBG.h" />
     <ClInclude Include="HighwayMan.h" />
     <ClInclude Include="HighwayManInfoUI.h" />
+    <ClInclude Include="HeroHpUI_1.h" />
+    <ClInclude Include="HeroHpUI_2.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="InfoUIBG.h" />
     <ClInclude Include="Input.h" />
@@ -207,6 +211,7 @@
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Resources.h" />
     <ClInclude Include="RuinsBattleScene.h" />
+    <ClInclude Include="EntranceDoor.h" />
     <ClInclude Include="RuinsEntranceBG.h" />
     <ClInclude Include="RuinsEntranceScene.h" />
     <ClInclude Include="RuinsPassageBG.h" />
@@ -225,6 +230,7 @@
     <ClInclude Include="StageCoachNPCBG.h" />
     <ClInclude Include="StageCoachScene.h" />
     <ClInclude Include="StartButton.h" />
+    <ClInclude Include="StressUI_1.h" />
     <ClInclude Include="SurvivalistBG.h" />
     <ClInclude Include="SurvivalistNPC.h" />
     <ClInclude Include="SurvivalistNPCBG.h" />
@@ -258,6 +264,7 @@
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Animator.cpp" />
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BattleDoor.cpp" />
     <ClCompile Include="BlacksmithBG.cpp" />
     <ClCompile Include="BlacksmithFrame.cpp" />
     <ClCompile Include="BlacksmithNPC.cpp" />
@@ -269,6 +276,7 @@
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Crusader.cpp" />
+    <ClCompile Include="CrusaderHPbar.cpp" />
     <ClCompile Include="DGInventoryBG.cpp" />
     <ClCompile Include="DGMapBG.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -285,6 +293,8 @@
     <ClCompile Include="HeroInfoUIBG.cpp" />
     <ClCompile Include="HighwayMan.cpp" />
     <ClCompile Include="HighwayManInfoUI.cpp" />
+    <ClCompile Include="HeroHpUI_1.cpp" />
+    <ClCompile Include="HeroHpUI_2.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="InfoUIBG.cpp" />
     <ClCompile Include="Input.cpp" />
@@ -310,6 +320,7 @@
     <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="Resources.cpp" />
     <ClCompile Include="RuinsBattleScene.cpp" />
+    <ClCompile Include="EntranceDoor.cpp" />
     <ClCompile Include="RuinsEntranceBG.cpp" />
     <ClCompile Include="RuinsEntranceScene.cpp" />
     <ClCompile Include="RuinsPassageBG.cpp" />
@@ -328,6 +339,7 @@
     <ClCompile Include="StageCoachNPCBG.cpp" />
     <ClCompile Include="StageCoachScene.cpp" />
     <ClCompile Include="StartButton.cpp" />
+    <ClCompile Include="StressUI_1.cpp" />
     <ClCompile Include="SurvivalistBG.cpp" />
     <ClCompile Include="SurvivalistNPC.cpp" />
     <ClCompile Include="SurvivalistNPCBG.cpp" />

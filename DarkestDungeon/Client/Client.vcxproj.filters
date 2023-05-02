@@ -171,6 +171,9 @@
     <Filter Include="Contents\Background\InfoUI\HeroInfoUI">
       <UniqueIdentifier>{ca0312cd-638a-4e23-a8b2-ae454d1468d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\Background\HeroUI">
+      <UniqueIdentifier>{1d604924-f317-45d5-943f-25e236e4e9a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -494,6 +497,24 @@
     <ClInclude Include="RuinsBattleScene.h">
       <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClInclude>
+    <ClInclude Include="EntranceDoor.h">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleDoor.h">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="StressUI_1.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroHpUI_1.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroHpUI_2.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderHPbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -795,6 +816,24 @@
     </ClCompile>
     <ClCompile Include="RuinsBattleScene.cpp">
       <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="EntranceDoor.cpp">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleDoor.cpp">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroHpUI_1.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HeroHpUI_2.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="StressUI_1.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderHPbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
