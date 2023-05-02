@@ -3,6 +3,8 @@
 #include "SceneManager.h"
 #include "Transform.h"
 #include "Object.h"
+#include "Sound.h"
+#include "Resources.h"
 // BG
 #include "SelectDungeonBG.h"
 
@@ -22,6 +24,8 @@ SelectDungeonScene::~SelectDungeonScene()
 void SelectDungeonScene::Initialize()
 {
 	Scene::Initialize();
+	Towntheme = Resources::Load<Sound>(L"TownTheme", L"..\\Resources\\Sound\\BGM\\Town.wav");
+	Towntheme->Play(true);
 	//BG
 	object::Instantiate<SelectDungeonBG>(eLayerType::BackGround);
 
@@ -63,10 +67,12 @@ void SelectDungeonScene::Release()
 
 void SelectDungeonScene::OnEnter()
 {
+	Towntheme->Play(true);
 	Scene::OnEnter();
 }
 
 void SelectDungeonScene::OnExit()
 {
+	Towntheme->Stop(true);
 	Scene::OnExit();
 }

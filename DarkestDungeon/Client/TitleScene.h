@@ -17,6 +17,6 @@ public:
 	// 내가 씬을 나갈 때
 	virtual void OnExit() override;
 private:
-
+	class Sound* Titletheme;
 };
 

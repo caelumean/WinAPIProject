@@ -3,7 +3,8 @@
 #include "SceneManager.h"
 #include "Transform.h"
 #include "Object.h"
-
+#include "Sound.h"
+#include "Resources.h"
 //BG
 #include "TownBG.h"
 #include "TownGround.h"
@@ -28,6 +29,9 @@ TownScene::~TownScene()
 void TownScene::Initialize()
 {
 	Scene::Initialize();
+	// »ç¿îµå
+	Towntheme = Resources::Load<Sound>(L"TownTheme", L"..\\Resources\\Sound\\BGM\\Town.wav");
+	Towntheme->Play(true);
 	//BG
 	object::Instantiate<TownBG>(eLayerType::BackGround);
 	object::Instantiate<TownRuins>(eLayerType::Shadow);
@@ -139,10 +143,12 @@ void TownScene::Release()
 
 void TownScene::OnEnter()
 {
+	Towntheme->Play(true);
 	Scene::OnEnter();
 }
 
 void TownScene::OnExit()
 {
+	Towntheme->Stop(true);
 	Scene::OnExit();
 }

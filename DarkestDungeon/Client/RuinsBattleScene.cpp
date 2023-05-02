@@ -52,7 +52,8 @@
 RuinsBattleScene::RuinsBattleScene()
 	:HeroMember(4)
 	,MonsterMember(4)
-	, mTime(0.0f)
+	,mTime(0.0f)
+	,End(false)
 {
 }
 
@@ -101,7 +102,7 @@ void RuinsBattleScene::Initialize()
 
 void RuinsBattleScene::Update()
 {
-	
+	Scene::Update();
 	/*Camera::SetTarget(mCrusader);
 	Camera::SetMinX(800.0f);
 	Camera::SetMaxX(800.0f);*/
@@ -129,29 +130,16 @@ void RuinsBattleScene::Update()
 
 	}
 
-	mTime += Time::DeltaTime();
+	if (!End)
+	{
 
-	// 农风技捞歹 剁快扁
-	if (mTime > 1.0f)
-	{
-		mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
+		PlagueDoctorTurn();
+		DeletePlagueDoctorUI();
 	}
-	else if (mTime < 0.5f)
-	{
-		object::Destory(mCrusaderInfoUI);
-	}
-	//object::Destory(mCrusaderInfoUI);
-	/*if (mTime > 0.05f)
-	{
-		object::Destory(mCrusaderInfoUI);
-
-	}*/
-	
-	
 	
 	//mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
 	//mPlagueDoctorSelectUI = object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
-	Scene::Update();
+
 }
 
 void RuinsBattleScene::Render(HDC hdc)
@@ -172,4 +160,34 @@ void RuinsBattleScene::OnEnter()
 void RuinsBattleScene::OnExit()
 {
 	Scene::OnExit();
+}
+
+void RuinsBattleScene::CrusaderTurn()
+{
+
+}
+
+void RuinsBattleScene::HighwayManTurn()
+{
+}
+
+void RuinsBattleScene::PlagueDoctorTurn()
+{
+	mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
+	mPlagueDoctorSelectUI = object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
+}
+
+void RuinsBattleScene::VestalTurn()
+{
+}
+
+void RuinsBattleScene::DeleteCrusaderUI()
+{
+	
+}
+
+void RuinsBattleScene::DeletePlagueDoctorUI()
+{
+	object::Destory(mPlagueDoctorInfoUI);
+	object::Destory(mPlagueDoctorSelectUI);
 }

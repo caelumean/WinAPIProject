@@ -212,9 +212,6 @@
     <ClInclude Include="framework.h">
       <Filter>main</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>main</Filter>
-    </ClInclude>
     <ClInclude Include="Application.h">
       <Filter>Engine\High Level Interface</Filter>
     </ClInclude>
@@ -593,6 +590,15 @@
     <ClInclude Include="CrusaderSword.h">
       <Filter>Contents\Player\Crusader</Filter>
     </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Engine\Resource</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -963,6 +969,12 @@
     </ClCompile>
     <ClCompile Include="CrusaderSword.cpp">
       <Filter>Contents\Player\Crusader</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Engine\Resource</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

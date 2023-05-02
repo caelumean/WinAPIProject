@@ -5,6 +5,7 @@
 #include "Animator.h"
 #include "Collider.h"
 #include "Scene.h"
+#include "Object.h"
 
 BattleDoor::BattleDoor()
 {
@@ -25,6 +26,11 @@ void BattleDoor::Initialize()
 	mAnimator->CreateAnimation(L"Battle_Door", mImage, Vector2::Zero, 1, 1, 1, Vector2::Zero, false);
 
 	mAnimator->Play(L"Battle_Door", true);
+
+	Collider* collider = AddComponent<Collider>();
+	collider->SetCenter(Vector2(-100.0f, -350.0f));
+	collider->SetSize(Vector2(200.0f, 300.0f));
+
 	GameObject::Initialize();
 }
 

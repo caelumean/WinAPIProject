@@ -5,6 +5,8 @@
 #include "Object.h"
 #include "Camera.h"
 #include "CollisionManager.h"
+#include "Sound.h"
+#include "Resources.h"
 
 //BG
 #include "RuinsPassageBG.h"
@@ -51,6 +53,9 @@ RuinsPassageScene::~RuinsPassageScene()
 void RuinsPassageScene::Initialize()
 {
 	Scene::Initialize();
+	//»ç¿îµå
+	Ruins = Resources::Load<Sound>(L"Ruins", L"..\\Resources\\Sound\\BGM\\ruins_base.wav");
+	Ruins->Play(true);
 	//BG
 	object::Instantiate<RuinsPassageBG>(eLayerType::BackGround);
 	object::Instantiate<InfoUIBG>(eLayerType::BackGround);
@@ -245,12 +250,14 @@ void RuinsPassageScene::Release()
 
 void RuinsPassageScene::OnEnter()
 {
+	Ruins->Play(true);
 	Scene::OnEnter();
 
 }
 
 void RuinsPassageScene::OnExit()
 {
+	Ruins->Stop(true);
 	Scene::OnExit();
 	CollisionManager::Clear();
 }

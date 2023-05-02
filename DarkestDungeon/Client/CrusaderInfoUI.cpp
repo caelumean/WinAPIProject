@@ -35,13 +35,6 @@ void CrusaderInfoUI::Update()
 {
 	GameObject::Update();
 
-	//mTime += Time::DeltaTime();
-
-	//if (mTime > 0.05f)
-	//{
-	//	object::Destory(this);
-
-	//}
 }
 
 void CrusaderInfoUI::Render(HDC hdc)

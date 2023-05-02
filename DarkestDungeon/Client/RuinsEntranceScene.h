@@ -45,4 +45,6 @@ private:
 	bool isHighwayManInfoUI;
 	bool ismCrusaderInfoUI;
 
+	class Sound* Ruins;
+
 };

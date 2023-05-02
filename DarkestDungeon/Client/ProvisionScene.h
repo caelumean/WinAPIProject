@@ -16,6 +16,6 @@ public:
 	virtual void OnExit() override;
 
 private:
-
+	class Sound* Towntheme;
 
 };

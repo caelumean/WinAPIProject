@@ -4,6 +4,7 @@
 #include "Input.h"
 #include "CollisionManager.h"
 #include "Camera.h"
+#include "SoundManager.h"
 
 // handle과dc를 가지고 있어야하니까 handle,dc 초기화
 Application::Application()
@@ -57,6 +58,7 @@ void Application::Initialize(HWND hWnd)
 
 	Time::Initialize();
 	Input::Initialize();
+	SoundManager::Initialize();
 	SceneManager::Initialize();
 	// 카메라 추가
 	Camera::Initialize();

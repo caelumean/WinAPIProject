@@ -239,6 +239,8 @@
     <ClInclude Include="SelectDungeonBG.h" />
     <ClInclude Include="SelectDungeonScene.h" />
     <ClInclude Include="SelectDungeonUI.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundManager.h" />
     <ClInclude Include="StageCoachBG.h" />
     <ClInclude Include="StageCoachNPC.h" />
     <ClInclude Include="StageCoachNPCBG.h" />
@@ -365,6 +367,8 @@
     <ClCompile Include="SelectDungeonBG.cpp" />
     <ClCompile Include="SelectDungeonScene.cpp" />
     <ClCompile Include="SelectDungeonUI.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
     <ClCompile Include="StageCoachBG.cpp" />
     <ClCompile Include="StageCoachNPC.cpp" />
     <ClCompile Include="StageCoachNPCBG.cpp" />

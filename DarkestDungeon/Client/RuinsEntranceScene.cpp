@@ -4,6 +4,8 @@
 #include "Transform.h"
 #include "Camera.h"
 #include "Object.h"
+#include "Sound.h"
+#include "Resources.h"
 
 //BG
 #include "RuinsEntranceBG.h"
@@ -49,6 +51,9 @@ RuinsEntranceScene::~RuinsEntranceScene()
 void RuinsEntranceScene::Initialize()
 {
 	Scene::Initialize();
+	//»ç¿îµå
+	Ruins = Resources::Load<Sound>(L"Ruins", L"..\\Resources\\Sound\\BGM\\ruins_base.wav");
+	Ruins->Play(true);
 	//BG
 	object::Instantiate<RuinsEntranceBG>(eLayerType::BackGround);
 	object::Instantiate<InfoUIBG>(eLayerType::BackGround);
@@ -258,10 +263,12 @@ void RuinsEntranceScene::Release()
 
 void RuinsEntranceScene::OnEnter()
 {
+	Ruins->Play(true);
 	Scene::OnEnter();
 }
 
 void RuinsEntranceScene::OnExit()
 {
+	Ruins->Stop(true);
 	Scene::OnExit();
 }

@@ -15,6 +15,14 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 
+	void CrusaderTurn();
+	void HighwayManTurn();
+	void PlagueDoctorTurn();
+	void VestalTurn();
+
+	void DeleteCrusaderUI();
+	void DeletePlagueDoctorUI();
+
 private:
 	// Player
 	class CrusaderCombat* mCrusader;
@@ -47,5 +55,6 @@ private:
 	int HeroMember;
 	int MonsterMember;
 	float mTime;
+	bool End;
 
 };

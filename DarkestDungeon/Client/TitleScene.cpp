@@ -3,6 +3,8 @@
 #include "SceneManager.h"
 #include "Transform.h"
 #include "Object.h"
+#include "Sound.h"
+#include "Resources.h"
 
 #include "Logo.h"
 #include "TitleBG.h"
@@ -21,6 +23,9 @@ void TitleScene::Initialize()
 {
 	Scene::Initialize();
 	
+	// 사운드
+	Titletheme = Resources::Load<Sound>(L"TitleTheme", L"..\\Resources\\Sound\\BGM\\title_theme.wav");
+	Titletheme->Play(true);
 	// 배경
 	object::Instantiate<TitleBG>(eLayerType::BackGround);
 	// house
@@ -42,6 +47,7 @@ void TitleScene::Update()
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
 			SceneManager::LoadScene(eSceneType::Town);
+			
 		}
 	}
 	
@@ -60,9 +66,11 @@ void TitleScene::Release()
 void TitleScene::OnEnter()
 {
 	Scene::OnEnter();
+	Titletheme->Play(true);
 }
 
 void TitleScene::OnExit()
 {
 	Scene::OnExit();
+	Titletheme->Stop(true);
 }
