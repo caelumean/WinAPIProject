@@ -28,6 +28,14 @@ private:
 
 	// Hero Info UI
 	class CrusaderInfoUI* mCrusaderInfoUI;
+	class HighwayManInfoUI* mHighwayManInfoUI;
+	class PlagueDoctorInfoUI* mPlagueDoctorInfoUI;
+	class VestalInfoUI* mVestalInfoUI;
+
+	bool isVestalInfoUI;
+	bool isPlagueDoctorInfoUI;
+	bool isHighwayManInfoUI;
+	bool ismCrusaderInfoUI;
 
 };
 
