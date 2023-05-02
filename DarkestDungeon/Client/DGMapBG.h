@@ -15,4 +15,5 @@ public:
 
 private:
 	Image* mImage;
+	Image* MapIcons[7];
 };
