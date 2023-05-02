@@ -2,8 +2,11 @@
 #include "Input.h"
 #include "SceneManager.h"
 #include "Transform.h"
+#include "Camera.h"
 #include "Object.h"
 
+//BG
+#include "RuinsBattleBG.h"
 //UI
 #include "InfoUIBG.h"
 #include "HeroInfoUIBG.h"
@@ -22,6 +25,17 @@
 #include "PlagueDoctorInfoUI.h"
 #include "VestalInfoUI.h"
 
+//Player HP Stress UI
+#include "CrusaderHPbar.h"
+#include "HighwayManHPbar.h"
+#include "PlagueDoctorHPbar.h"
+#include "VestalHPbar.h"
+#include "CrusaderStressbar.h"
+#include "HighwayStressbar.h"
+#include "PlagueDoctorStressbar.h"
+#include "VestalStressbar.h"
+
+
 RuinsBattleScene::RuinsBattleScene()
 {
 }
@@ -34,6 +48,7 @@ void RuinsBattleScene::Initialize()
 {
 	Scene::Initialize();
 	//BG
+	object::Instantiate<RuinsBattleBG>(eLayerType::BackGround);
 	object::Instantiate<InfoUIBG>(eLayerType::BackGround);
 
 	//UI
@@ -48,11 +63,25 @@ void RuinsBattleScene::Initialize()
 	mPlagueDoctor = object::Instantiate<PlagueDoctor>(eLayerType::Player);
 	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
 
+	//Player HP Stress UI
+	object::Instantiate<CrusaderHPbar>(Vector2(580.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<HighwayManHPbar>(Vector2(440.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<PlagueDoctorHPbar>(Vector2(290.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<VestalHPbar>(Vector2(150.0f, 630.0f), eLayerType::UI2);
+
+	object::Instantiate<CrusaderStressbar>(Vector2(615.0f, 645.0f), eLayerType::UI2);
+	object::Instantiate<HighwayStressbar>(Vector2(475.0f, 645.0f), eLayerType::UI2);
+	object::Instantiate<PlagueDoctorStressbar>(Vector2(325.0f, 645.0f), eLayerType::UI2);
+	object::Instantiate<VestalStressbar>(Vector2(185.0f, 645.0f), eLayerType::UI2);
+
 }
 
 void RuinsBattleScene::Update()
 {
 	Scene::Update();
+	Camera::SetTarget(mCrusader);
+	Camera::SetMinX(800.0f);
+	Camera::SetMaxX(800.0f);
 	Vector2 MousePos = Input::GetMousePos();
 
 	// Map

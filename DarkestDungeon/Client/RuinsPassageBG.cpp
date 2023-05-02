@@ -14,7 +14,7 @@ RuinsPassageBG::~RuinsPassageBG()
 
 void RuinsPassageBG::Initialize()
 {
-	mImage = Resources::Load<Image>(L"RuinsePassageBG", L"..\\Resources\\Dugeon\\Ruins\\Ruins_Passage.bmp");
+	mImage = Resources::Load<Image>(L"RuinsPassageBG", L"..\\Resources\\Dugeon\\Ruins\\Ruins_Passage.bmp");
 	tr = AddComponent<Transform>();
 	GameObject::Initialize();
 }

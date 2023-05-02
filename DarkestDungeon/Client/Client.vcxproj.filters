@@ -536,8 +536,8 @@
     <ClInclude Include="TargetbarUI.h">
       <Filter>Contents\Background\DungeonCommonUI</Filter>
     </ClInclude>
-    <ClInclude Include="TourchUI.h">
-      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    <ClInclude Include="RuinsBattleBG.h">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -823,9 +823,6 @@
     <ClCompile Include="RuinsPassageBG.cpp">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClCompile>
-    <ClCompile Include="RuinsEntranceScene.cpp">
-      <Filter>Contents\Scene\RuinsDungeon</Filter>
-    </ClCompile>
     <ClCompile Include="RuinsPassageScene.cpp">
       <Filter>Contents\Scene\RuinsDungeon</Filter>
     </ClCompile>
@@ -877,8 +874,11 @@
     <ClCompile Include="TargetbarUI.cpp">
       <Filter>Contents\Background\DungeonCommonUI</Filter>
     </ClCompile>
-    <ClCompile Include="TourchUI.cpp">
-      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    <ClCompile Include="RuinsEntranceScene.cpp">
+      <Filter>Contents\Scene\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="RuinsBattleBG.cpp">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

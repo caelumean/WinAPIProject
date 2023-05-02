@@ -213,6 +213,7 @@
     <ClInclude Include="ProvisionScene.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Resources.h" />
+    <ClInclude Include="RuinsBattleBG.h" />
     <ClInclude Include="RuinsBattleScene.h" />
     <ClInclude Include="EntranceDoor.h" />
     <ClInclude Include="RuinsEntranceBG.h" />
@@ -248,7 +249,6 @@
     <ClInclude Include="TitleBG.h" />
     <ClInclude Include="TitleHouse.h" />
     <ClInclude Include="TitleScene.h" />
-    <ClInclude Include="TourchUI.h" />
     <ClInclude Include="TownBG.h" />
     <ClInclude Include="TownCommonUI1.h" />
     <ClInclude Include="TownCommonUI2.h" />
@@ -329,6 +329,7 @@
     <ClCompile Include="ProvisionNPCBG.cpp" />
     <ClCompile Include="ProvisionScene.cpp" />
     <ClCompile Include="Resources.cpp" />
+    <ClCompile Include="RuinsBattleBG.cpp" />
     <ClCompile Include="RuinsBattleScene.cpp" />
     <ClCompile Include="EntranceDoor.cpp" />
     <ClCompile Include="RuinsEntranceBG.cpp" />
@@ -363,7 +364,6 @@
     <ClCompile Include="TitleBG.cpp" />
     <ClCompile Include="TitleHouse.cpp" />
     <ClCompile Include="TitleScene.cpp" />
-    <ClCompile Include="TourchUI.cpp" />
     <ClCompile Include="TownBG.cpp" />
     <ClCompile Include="TownCommonUI1.cpp" />
     <ClCompile Include="TownCommonUI2.cpp" />

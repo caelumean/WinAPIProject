@@ -15,7 +15,7 @@ RuinsEntranceBG::~RuinsEntranceBG()
 
 void RuinsEntranceBG::Initialize()
 {
-	mImage = Resources::Load<Image>(L"RuinseEntranceRoomBG", L"..\\Resources\\Dugeon\\Ruins\\Ruins_entrance_room.bmp");
+	mImage = Resources::Load<Image>(L"RuinsEntranceRoomBG", L"..\\Resources\\Dugeon\\Ruins\\Ruins_entrance_room.bmp");
 	tr = AddComponent<Transform>();
 	GameObject::Initialize();
 }
