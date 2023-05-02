@@ -6,6 +6,8 @@
 #include "Object.h"
 #include "Animator.h"
 #include "Time.h"
+#include "Sound.h"
+#include "Resources.h"
 
 //BG
 #include "RuinsBattleBG.h"
@@ -63,6 +65,8 @@ RuinsBattleScene::~RuinsBattleScene()
 
 void RuinsBattleScene::Initialize()
 {
+	/*CombatTheme = Resources::Load<Sound>(L"Combat", L"..\\Resources\\Sound\\BGM\\Combat.wav");
+	CombatTheme->Play(true);*/
 	Scene::Initialize();
 	//BG
 	object::Instantiate<RuinsBattleBG>(eLayerType::BackGround);
@@ -111,7 +115,7 @@ void RuinsBattleScene::Update()
 	// Map
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 717 && MousePos.y < 821))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mDGMapBG = object::Instantiate<DGMapBG>(eLayerType::UI1);
 			// InventoryUI 瘤况林扁
@@ -121,7 +125,7 @@ void RuinsBattleScene::Update()
 	//Inventory
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 830 && MousePos.y < 874))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
 			// MapUI 瘤况林扁
@@ -129,7 +133,10 @@ void RuinsBattleScene::Update()
 		}
 
 	}
-
+	if (Input::GetKeyState(eKeyCode::X) == eKeyState::Down)
+	{
+		SceneManager::LoadScene(eSceneType::Town);
+	}
 	if (!End)
 	{
 
@@ -154,11 +161,13 @@ void RuinsBattleScene::Release()
 
 void RuinsBattleScene::OnEnter()
 {
+	//CombatTheme->Play(true);
 	Scene::OnEnter();
 }
 
 void RuinsBattleScene::OnExit()
 {
+	//CombatTheme->Stop(true);
 	Scene::OnExit();
 }
 

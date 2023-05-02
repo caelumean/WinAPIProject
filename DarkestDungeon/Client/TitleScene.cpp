@@ -44,7 +44,7 @@ void TitleScene::Update()
 
 	if ((MousePos.x > 650 && MousePos.x < 950) && (MousePos.y > 780 && MousePos.y < 850))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Town);
 			

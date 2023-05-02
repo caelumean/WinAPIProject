@@ -57,4 +57,5 @@ private:
 	float mTime;
 	bool End;
 
+	class Sound* CombatTheme;
 };

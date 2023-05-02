@@ -24,8 +24,8 @@ SelectDungeonScene::~SelectDungeonScene()
 void SelectDungeonScene::Initialize()
 {
 	Scene::Initialize();
-	Towntheme = Resources::Load<Sound>(L"TownTheme", L"..\\Resources\\Sound\\BGM\\Town.wav");
-	Towntheme->Play(true);
+	//Towntheme = Resources::Load<Sound>(L"TownTheme", L"..\\Resources\\Sound\\BGM\\Town.wav");
+	//->Play(true);
 	//BG
 	object::Instantiate<SelectDungeonBG>(eLayerType::BackGround);
 
@@ -67,12 +67,12 @@ void SelectDungeonScene::Release()
 
 void SelectDungeonScene::OnEnter()
 {
-	Towntheme->Play(true);
+	//Towntheme->Play(true);
 	Scene::OnEnter();
 }
 
 void SelectDungeonScene::OnExit()
 {
-	Towntheme->Stop(true);
+	//Towntheme->Stop(true);
 	Scene::OnExit();
 }

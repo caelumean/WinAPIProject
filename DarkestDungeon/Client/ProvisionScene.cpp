@@ -28,7 +28,7 @@ void ProvisionScene::Initialize()
 {
 	Scene::Initialize();
 	Towntheme = Resources::Load<Sound>(L"TownTheme", L"..\\Resources\\Sound\\BGM\\Town.wav");
-	Towntheme->Play(true);
+	//Towntheme->Play(true);
 	//BG
 	object::Instantiate<ProvisionBG>(eLayerType::BackGround);
 	object::Instantiate<ProvisionNPCBG>(eLayerType::Shadow);
@@ -49,8 +49,9 @@ void ProvisionScene::Update()
 	// Trip Button
 	if ((MousePos.x > 680 && MousePos.x < 980) && (MousePos.y > 803 && MousePos.y < 850))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
+			Towntheme->Stop(true);
 			SceneManager::LoadScene(eSceneType::RuinsEntrance);
 		}
 	}
@@ -72,7 +73,7 @@ void ProvisionScene::Release()
 
 void ProvisionScene::OnEnter()
 {
-	Towntheme->Play(true);
+	//Towntheme->Play(true);
 	Scene::OnEnter();
 }
 

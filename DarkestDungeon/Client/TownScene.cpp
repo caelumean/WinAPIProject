@@ -52,70 +52,70 @@ void TownScene::Update()
 
 	if ((MousePos.x > 620 && MousePos.x < 1020) && (MousePos.y > 200 && MousePos.y < 400))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Abbey);
 		}
 	}
 	if ((MousePos.x > 1150 && MousePos.x < 1430) && (MousePos.y > 450 && MousePos.y < 750))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Blacksmith);
 		}
 	}
 	if ((MousePos.x > 610 && MousePos.x < 860) && (MousePos.y > 480 && MousePos.y < 580))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Graveyard);
 		}	
 	}
 	if ((MousePos.x > 960 && MousePos.x < 1260) && (MousePos.y > 300 && MousePos.y < 700))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Guild);
 		}
 	}
 	if ((MousePos.x > 660 && MousePos.x < 810) && (MousePos.y > 530 && MousePos.y < 730))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Memoirs);
 		}
 	}
 	if ((MousePos.x > 780 && MousePos.x < 980) && (MousePos.y > 600 && MousePos.y < 750))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::NomadWagon);
 		}
 	}
 	if ((MousePos.x > 430 && MousePos.x < 730) && (MousePos.y > 150 && MousePos.y < 550))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Sanitarium);
 		}
 	}
 	if ((MousePos.x > 140 && MousePos.x < 340) && (MousePos.y > 580 && MousePos.y < 710))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::StageCoach);
 		}
 	}
 	if ((MousePos.x > 80 && MousePos.x < 240) && (MousePos.y > 380 && MousePos.y < 520))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Survivalist);
 		}
 	}
 	if ((MousePos.x > 300 && MousePos.x < 560) && (MousePos.y > 410 && MousePos.y < 680))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::Tavern);
 		}
@@ -124,7 +124,7 @@ void TownScene::Update()
 	// Trip Button
 	if ((MousePos.x > 680 && MousePos.x < 980) && (MousePos.y > 803 && MousePos.y < 850))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			SceneManager::LoadScene(eSceneType::SelectDugeon);
 		}
@@ -143,12 +143,12 @@ void TownScene::Release()
 
 void TownScene::OnEnter()
 {
-	Towntheme->Play(true);
+	//Towntheme->Play(true);
 	Scene::OnEnter();
 }
 
 void TownScene::OnExit()
 {
-	Towntheme->Stop(true);
+	//Towntheme->Stop(true);
 	Scene::OnExit();
 }

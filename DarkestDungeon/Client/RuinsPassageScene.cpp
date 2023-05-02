@@ -59,8 +59,8 @@ void RuinsPassageScene::Initialize()
 	//BG
 	object::Instantiate<RuinsPassageBG>(eLayerType::BackGround);
 	object::Instantiate<InfoUIBG>(eLayerType::BackGround);
-	object::Instantiate<EntranceDoor>(eLayerType::Sky);
-	object::Instantiate<BattleDoor>(eLayerType::Sky);
+	object::Instantiate<EntranceDoor>(eLayerType::EntranceDoor);
+	object::Instantiate<BattleDoor>(eLayerType::BattleRoomDoor);
 
 	//UI
 	object::Instantiate<HeroInfoUIBG>(eLayerType::UI1);
@@ -105,7 +105,7 @@ void RuinsPassageScene::Update()
 	// Map
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 717 && MousePos.y < 821))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mDGMapBG = object::Instantiate<DGMapBG>(eLayerType::UI1);
 			// InventoryUI 지워주기
@@ -115,7 +115,7 @@ void RuinsPassageScene::Update()
 	//Inventory
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 830 && MousePos.y < 874))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
 			// MapUI 지워주기
@@ -127,7 +127,7 @@ void RuinsPassageScene::Update()
 	//성녀
 	if ((MousePos.x > 132 && MousePos.x < 245) && (MousePos.y > 370 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
 			isVestalInfoUI = true;
@@ -155,7 +155,7 @@ void RuinsPassageScene::Update()
 	//닥터 
 	if ((MousePos.x > 278 && MousePos.x < 387) && (MousePos.y > 375 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
 			isPlagueDoctorInfoUI = true;
@@ -184,7 +184,7 @@ void RuinsPassageScene::Update()
 	//하이웨이맨
 	if ((MousePos.x > 430 && MousePos.x < 527) && (MousePos.y > 355 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);	
 			isHighwayManInfoUI = true;
@@ -212,7 +212,7 @@ void RuinsPassageScene::Update()
 	// 성기사
 	if ((MousePos.x > 570 && MousePos.x < 670) && (MousePos.y > 352 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
 			ismCrusaderInfoUI = true;
@@ -250,14 +250,15 @@ void RuinsPassageScene::Release()
 
 void RuinsPassageScene::OnEnter()
 {
-	Ruins->Play(true);
 	Scene::OnEnter();
+	Ruins->Play(true);
+	CollisionManager::SetLayer(eLayerType::Player, eLayerType::BattleRoomDoor, true);
 
 }
 
 void RuinsPassageScene::OnExit()
 {
-	Ruins->Stop(true);
 	Scene::OnExit();
+	Ruins->Stop(true);
 	CollisionManager::Clear();
 }

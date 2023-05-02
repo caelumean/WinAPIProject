@@ -45,6 +45,8 @@ enum class eLayerType
 	Shadow,
 	Building,
 	NPC,
+	EntranceDoor,
+	BattleRoomDoor,
 	Monster,
 	Player,
 	Effect,

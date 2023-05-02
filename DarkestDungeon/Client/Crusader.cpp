@@ -9,6 +9,7 @@
 #include "Scene.h"
 #include "Object.h"
 
+
 Crusader::Crusader()
 {
 }
@@ -66,6 +67,25 @@ void Crusader::Render(HDC hdc)
 void Crusader::Release()
 {
 	GameObject::Release();
+}
+
+void Crusader::OnCollisionEnter(Collider* other)
+{
+	if (other->GetOwner()->GetLayerType() == eLayerType::BattleRoomDoor)
+	{
+		if (Input::GetKeyState(eKeyCode::W) == eKeyState::Down)
+		{
+			SceneManager::LoadScene(eSceneType::RuinsBattle);
+		}
+	}
+}
+
+void Crusader::OnCollisionStay(Collider* other)
+{
+}
+
+void Crusader::OnCollisionExit(Collider* other)
+{
 }
 
 void Crusader::move()

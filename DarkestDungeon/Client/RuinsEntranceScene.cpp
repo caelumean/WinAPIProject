@@ -101,7 +101,7 @@ void RuinsEntranceScene::Update()
 	// Map
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 717 && MousePos.y < 821))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mDGMapBG = object::Instantiate<DGMapBG>(eLayerType::UI1);
 			// InventoryUI 지워주기
@@ -111,7 +111,7 @@ void RuinsEntranceScene::Update()
 	//Inventory
 	if ((MousePos.x > 1316 && MousePos.x < 1392) && (MousePos.y > 830 && MousePos.y < 874))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
 			// MapUI 지워주기
@@ -122,9 +122,9 @@ void RuinsEntranceScene::Update()
 
 	//PlayerInfoUI
 	//성녀
-	if ((MousePos.x > 255 && MousePos.x < 338) && (MousePos.y > 370 && MousePos.y < 597))
+	if ((MousePos.x > 149 && MousePos.x < 240) && (MousePos.y > 374 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
 			mVestalSelectUI = object::Instantiate<SelectbarUI>(Vector2(274.0f, 665.0f), eLayerType::UI2);
@@ -154,9 +154,9 @@ void RuinsEntranceScene::Update()
 		}
 	}
 	//닥터 
-	if ((MousePos.x > 395 && MousePos.x < 487) && (MousePos.y > 370 && MousePos.y < 597))
+	if ((MousePos.x > 285 && MousePos.x < 385) && (MousePos.y > 377 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
 			mPlagueDoctorSelectUI = object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
@@ -187,9 +187,9 @@ void RuinsEntranceScene::Update()
 
 	}
 	//하이웨이맨
-	if ((MousePos.x > 525 && MousePos.x < 630) && (MousePos.y > 355 && MousePos.y < 597))
+	if ((MousePos.x > 430 && MousePos.x < 522) && (MousePos.y > 365 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
 			mHighwayManSelectUI = object::Instantiate<SelectbarUI>(Vector2(565.0f, 665.0f), eLayerType::UI2);
@@ -219,9 +219,9 @@ void RuinsEntranceScene::Update()
 		}
 	}
 	// 성기사
-	if ((MousePos.x > 672 && MousePos.x < 772) && (MousePos.y > 352 && MousePos.y < 597))
+	if ((MousePos.x > 556 && MousePos.x < 670) && (MousePos.y > 370 && MousePos.y < 597))
 	{
-		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
 		{
 			mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
 			mCrusaderSelectUI = object::Instantiate<SelectbarUI>(Vector2(705.0f, 665.0f), eLayerType::UI2);
