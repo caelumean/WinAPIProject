@@ -23,7 +23,7 @@ void SelectbarUI::Initialize()
 	mImage = Resources::Load<Image>(L"SelectBar", L"..\\Resources\\Dugeon\\UI\\select.bmp");
 
 	mAnimator = AddComponent<Animator>();
-	mAnimator->CreateAnimation(L"SelectBar", mImage, Vector2::Zero, 3, 1, 3, Vector2::Zero, 1.8f);
+	mAnimator->CreateAnimation(L"SelectBar", mImage, Vector2::Zero, 3, 1, 3, Vector2::Zero, 0.8f);
 
 	mAnimator->Play(L"SelectBar", true);
 	GameObject::Initialize();

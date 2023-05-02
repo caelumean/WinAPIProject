@@ -55,6 +55,7 @@ void RuinsEntranceScene::Initialize()
 
 	//UI
 	object::Instantiate<HeroInfoUIBG>(eLayerType::UI1);
+
 	//Map
 	//mDGInventoryBG = object::Instantiate<DGInventoryBG>(eLayerType::UI1);
 	mDGMapBG = object::Instantiate<DGMapBG>(eLayerType::UI1);
@@ -64,7 +65,7 @@ void RuinsEntranceScene::Initialize()
 	mHighwayMan = object::Instantiate<HighwayMan>(eLayerType::Player);
 	mPlagueDoctor = object::Instantiate<PlagueDoctor>(eLayerType::Player);
 	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
-	
+
 	//Player HP Stress UI
 	object::Instantiate<CrusaderHPbar>(Vector2(580.0f, 630.0f), eLayerType::UI2);
 	object::Instantiate<HighwayManHPbar>(Vector2(440.0f, 630.0f), eLayerType::UI2);
@@ -75,9 +76,6 @@ void RuinsEntranceScene::Initialize()
 	object::Instantiate<HighwayStressbar>(Vector2(475.0f, 645.0f), eLayerType::UI2);
 	object::Instantiate<PlagueDoctorStressbar>(Vector2(325.0f, 645.0f), eLayerType::UI2);
 	object::Instantiate<VestalStressbar>(Vector2(185.0f, 645.0f), eLayerType::UI2);
-
-	//Select
-	object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
 }
 
 void RuinsEntranceScene::Update()
@@ -118,116 +116,131 @@ void RuinsEntranceScene::Update()
 	}
 
 	//PlayerInfoUI
+	//¼º³à
 	if ((MousePos.x > 255 && MousePos.x < 338) && (MousePos.y > 370 && MousePos.y < 597))
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
 			mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
+			mVestalSelectUI = object::Instantiate<SelectbarUI>(Vector2(274.0f, 665.0f), eLayerType::UI2);
 			isVestalInfoUI = true;
 
 			// ´ÚÅÍ
 			if (isPlagueDoctorInfoUI)
 			{
-				isPlagueDoctorInfoUI = false;
 				object::Destory(mPlagueDoctorInfoUI);
+				object::Destory(mPlagueDoctorSelectUI);
+				isPlagueDoctorInfoUI = false;
 			}
 			//ÇÏÀÌ¿þÀÌ¸Ç
-			else if (isHighwayManInfoUI)
+			if (isHighwayManInfoUI)
 			{
-				isHighwayManInfoUI = false;
 				object::Destory(mHighwayManInfoUI);
 				object::Destory(mHighwayManSelectUI);
+				isHighwayManInfoUI = false;
 			}
 			//Å©·ç¼¼ÀÌ´õ
-			else if (ismCrusaderInfoUI)
+			if (ismCrusaderInfoUI)
 			{
-				ismCrusaderInfoUI = false;
 				object::Destory(mCrusaderInfoUI);
 				object::Destory(mCrusaderSelectUI);
+				ismCrusaderInfoUI = false;
 			}
 		}
 	}
+	//´ÚÅÍ 
 	if ((MousePos.x > 395 && MousePos.x < 487) && (MousePos.y > 370 && MousePos.y < 597))
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
 			mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
+			mPlagueDoctorSelectUI = object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
 			isPlagueDoctorInfoUI = true;
 
 			// ¼º³à
 			if (isVestalInfoUI)
 			{
-				isVestalInfoUI = false;
 				object::Destory(mVestalInfoUI);
+				object::Destory(mVestalSelectUI);
+				isVestalInfoUI = false;
 			}
 			//ÇÏÀÌ¿þÀÌ¸Ç
-			else if (isHighwayManInfoUI)
+			if (isHighwayManInfoUI)
 			{
-				isHighwayManInfoUI = false;
 				object::Destory(mHighwayManInfoUI);
 				object::Destory(mHighwayManSelectUI);
+				isHighwayManInfoUI = false;
 			}
 			//Å©·ç¼¼ÀÌ´õ
-			else if (ismCrusaderInfoUI)
+			if (ismCrusaderInfoUI)
 			{
-				ismCrusaderInfoUI = false;
 				object::Destory(mCrusaderInfoUI);
 				object::Destory(mCrusaderSelectUI);
+				ismCrusaderInfoUI = false;
 			}
 		}
-		
+
 	}
+	//ÇÏÀÌ¿þÀÌ¸Ç
 	if ((MousePos.x > 525 && MousePos.x < 630) && (MousePos.y > 355 && MousePos.y < 597))
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
 			mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
 			mHighwayManSelectUI = object::Instantiate<SelectbarUI>(Vector2(565.0f, 665.0f), eLayerType::UI2);
+			isHighwayManInfoUI = true;
 			// ¼º³à
 			if (isVestalInfoUI)
 			{
-				isVestalInfoUI = false;
 				object::Destory(mVestalInfoUI);
+				object::Destory(mVestalSelectUI);
+				isVestalInfoUI = false;
 			}
+
 			// ´ÚÅÍ
-			else if (isPlagueDoctorInfoUI)
+			if (isPlagueDoctorInfoUI)
 			{
-				isPlagueDoctorInfoUI = false;
 				object::Destory(mPlagueDoctorInfoUI);
+				object::Destory(mPlagueDoctorSelectUI);
+				isPlagueDoctorInfoUI = false;
 			}
 			//Å©·ç¼¼ÀÌ´õ
-			else if (ismCrusaderInfoUI)
+			if (ismCrusaderInfoUI)
 			{
-				ismCrusaderInfoUI = false;
 				object::Destory(mCrusaderInfoUI);
 				object::Destory(mCrusaderSelectUI);
+				ismCrusaderInfoUI = false;
 			}
 		}
 	}
+	// ¼º±â»ç
 	if ((MousePos.x > 672 && MousePos.x < 772) && (MousePos.y > 352 && MousePos.y < 597))
 	{
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
 			mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
 			mCrusaderSelectUI = object::Instantiate<SelectbarUI>(Vector2(705.0f, 665.0f), eLayerType::UI2);
+			ismCrusaderInfoUI = true;
 			// ¼º³à
 			if (isVestalInfoUI)
 			{
-				isVestalInfoUI = false;
 				object::Destory(mVestalInfoUI);
+				object::Destory(mVestalSelectUI);
+				isVestalInfoUI = false;
 			}
 			// ´ÚÅÍ
-			else if (isPlagueDoctorInfoUI)
+			if (isPlagueDoctorInfoUI)
 			{
-				isPlagueDoctorInfoUI = false;
 				object::Destory(mPlagueDoctorInfoUI);
+				object::Destory(mPlagueDoctorSelectUI);
+				isPlagueDoctorInfoUI = false;
 			}
 			//ÇÏÀÌ¿þÀÌ¸Ç
-			else if (isHighwayManInfoUI)
+			if (isHighwayManInfoUI)
 			{
-				isHighwayManInfoUI = false;
 				object::Destory(mHighwayManInfoUI);
 				object::Destory(mHighwayManSelectUI);
+				isHighwayManInfoUI = false;
 			}
 		}
 	}
