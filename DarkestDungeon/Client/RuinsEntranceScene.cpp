@@ -51,13 +51,6 @@ void RuinsEntranceScene::Initialize()
 	mHighwayMan = object::Instantiate<HighwayMan>(eLayerType::Player);
 	mPlagueDoctor = object::Instantiate<PlagueDoctor>(eLayerType::Player);
 	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
-
-
-	//PlayerInfoUI
-	//mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
-	//mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
-	//mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
-	//mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
 	
 }
 
