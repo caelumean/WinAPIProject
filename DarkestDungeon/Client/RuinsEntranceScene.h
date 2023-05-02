@@ -34,4 +34,9 @@ private:
 	class PlagueDoctorInfoUI* mPlagueDoctorInfoUI;
 	class VestalInfoUI* mVestalInfoUI;
 
+	bool isVestalInfoUI;
+	bool isPlagueDoctorInfoUI;
+	bool isHighwayManInfoUI;
+	bool ismCrusaderInfoUI;
+
 };

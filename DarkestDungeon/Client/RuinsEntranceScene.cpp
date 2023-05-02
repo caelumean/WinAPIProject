@@ -56,7 +56,7 @@ void RuinsEntranceScene::Initialize()
 	//PlayerInfoUI
 	//mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
 	//mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
-	mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
+	//mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
 	//mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
 	
 }
@@ -98,7 +98,115 @@ void RuinsEntranceScene::Update()
 
 	}
 
+	//object::Destory(mCrusaderInfoUI);
+	//object::Destory(mHighwayManInfoUI);
+	//object::Destory(mPlagueDoctorInfoUI);
 	//PlayerInfoUI
+	if ((MousePos.x > 255 && MousePos.x < 338) && (MousePos.y > 370 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mVestalInfoUI = object::Instantiate<VestalInfoUI>(eLayerType::UI2);
+			isVestalInfoUI = true;
+
+			// 닥터
+			if (isPlagueDoctorInfoUI)
+			{
+				isPlagueDoctorInfoUI = false;
+				object::Destory(mPlagueDoctorInfoUI);
+			}
+			//하이웨이맨
+			else if (isHighwayManInfoUI)
+			{
+				isHighwayManInfoUI = false;
+				object::Destory(mHighwayManInfoUI);
+			}
+			//크루세이더
+			else if (ismCrusaderInfoUI)
+			{
+				ismCrusaderInfoUI = false;
+				object::Destory(mCrusaderInfoUI);
+			}
+		}
+	}
+	if ((MousePos.x > 395 && MousePos.x < 487) && (MousePos.y > 370 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
+			isPlagueDoctorInfoUI = true;
+
+			// 성녀
+			if (isVestalInfoUI)
+			{
+				isVestalInfoUI = false;
+				object::Destory(mVestalInfoUI);
+			}
+			//하이웨이맨
+			else if (isHighwayManInfoUI)
+			{
+				isHighwayManInfoUI = false;
+				object::Destory(mHighwayManInfoUI);
+			}
+			//크루세이더
+			else if (ismCrusaderInfoUI)
+			{
+				ismCrusaderInfoUI = false;
+				object::Destory(mCrusaderInfoUI);
+			}
+		}
+		
+	}
+	if ((MousePos.x > 525 && MousePos.x < 630) && (MousePos.y > 355 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
+			// 성녀
+			if (isVestalInfoUI)
+			{
+				isVestalInfoUI = false;
+				object::Destory(mVestalInfoUI);
+			}
+			// 닥터
+			else if (isPlagueDoctorInfoUI)
+			{
+				isPlagueDoctorInfoUI = false;
+				object::Destory(mPlagueDoctorInfoUI);
+			}
+			//크루세이더
+			else if (ismCrusaderInfoUI)
+			{
+				ismCrusaderInfoUI = false;
+				object::Destory(mCrusaderInfoUI);
+			}
+		}
+	}
+	if ((MousePos.x > 672 && MousePos.x < 772) && (MousePos.y > 352 && MousePos.y < 597))
+	{
+		if (Input::GetKeyDown(eKeyCode::LBUTTON))
+		{
+			mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
+			// 성녀
+			if (isVestalInfoUI)
+			{
+				isVestalInfoUI = false;
+				object::Destory(mVestalInfoUI);
+			}
+			// 닥터
+			else if (isPlagueDoctorInfoUI)
+			{
+				isPlagueDoctorInfoUI = false;
+				object::Destory(mPlagueDoctorInfoUI);
+			}
+			//하이웨이맨
+			else if (isHighwayManInfoUI)
+			{
+				isHighwayManInfoUI = false;
+				object::Destory(mHighwayManInfoUI);
+			}
+		}
+	}
 }
 
 void RuinsEntranceScene::Render(HDC hdc)
