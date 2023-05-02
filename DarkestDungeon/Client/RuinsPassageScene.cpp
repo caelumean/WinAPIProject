@@ -62,7 +62,7 @@ void RuinsPassageScene::Initialize()
 	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
 
 	//Player HP Stress UI
-	object::Instantiate<CrusaderHPbar>(eLayerType::UI2);
+	object::Instantiate<CrusaderHPbar>(Vector2(580.0f,620.0f),eLayerType::UI2);
 
 }
 
@@ -71,7 +71,7 @@ void RuinsPassageScene::Update()
 	Scene::Update();
 	// 카메라 최대 이동거리를 넘어가면 조정
 	Camera::SetTarget(mCrusader);
-	Camera::SetMinX(550.0f);
+	Camera::SetMinX(660.0f);
 	Camera::SetMaxX(2800.0f);
 
 	Vector2 MousePos = Input::GetMousePos();

@@ -182,6 +182,7 @@
     <ClInclude Include="CrusaderInfoUI.h" />
     <ClInclude Include="HeroInfoUIBG.h" />
     <ClInclude Include="HighwayMan.h" />
+    <ClInclude Include="HighwayManHPbar.h" />
     <ClInclude Include="HighwayManInfoUI.h" />
     <ClInclude Include="HeroHpUI_1.h" />
     <ClInclude Include="HeroHpUI_2.h" />
@@ -202,6 +203,7 @@
     <ClInclude Include="NomadWagonScene.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="PlagueDoctor.h" />
+    <ClInclude Include="PlagueDoctorHPbar.h" />
     <ClInclude Include="PlagueDoctorInfoUI.h" />
     <ClInclude Include="ProvisionBG.h" />
     <ClInclude Include="ProvisionInvetory.h" />
@@ -253,6 +255,7 @@
     <ClInclude Include="Transform.h" />
     <ClInclude Include="TripButton.h" />
     <ClInclude Include="Vestal.h" />
+    <ClInclude Include="VestalHPbar.h" />
     <ClInclude Include="VestalInfoUI.h" />
     <ClInclude Include="yaResource.h" />
   </ItemGroup>
@@ -292,6 +295,7 @@
     <ClCompile Include="CrusaderInfoUI.cpp" />
     <ClCompile Include="HeroInfoUIBG.cpp" />
     <ClCompile Include="HighwayMan.cpp" />
+    <ClCompile Include="HighwayManHPbar.cpp" />
     <ClCompile Include="HighwayManInfoUI.cpp" />
     <ClCompile Include="HeroHpUI_1.cpp" />
     <ClCompile Include="HeroHpUI_2.cpp" />
@@ -312,6 +316,7 @@
     <ClCompile Include="NomadWagonNPCBG.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
     <ClCompile Include="PlagueDoctor.cpp" />
+    <ClCompile Include="PlagueDoctorHPbar.cpp" />
     <ClCompile Include="PlagueDoctorInfoUI.cpp" />
     <ClCompile Include="ProvisionBG.cpp" />
     <ClCompile Include="ProvisionInvetory.cpp" />
@@ -361,6 +366,7 @@
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="TripButton.cpp" />
     <ClCompile Include="Vestal.cpp" />
+    <ClCompile Include="VestalHPbar.cpp" />
     <ClCompile Include="VestalInfoUI.cpp" />
     <ClCompile Include="yaResource.cpp" />
   </ItemGroup>

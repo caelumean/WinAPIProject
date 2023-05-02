@@ -2,12 +2,12 @@
 #include "GameObject.h"
 #include "Image.h"
 
-class HeroHpUI_1 : public GameObject
+class Animator;
+class HighwayManHPbar : public GameObject
 {
-
 public:
-	HeroHpUI_1();
-	~HeroHpUI_1();
+	HighwayManHPbar();
+	~HighwayManHPbar();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -15,5 +15,11 @@ public:
 	virtual void Release() override;
 
 private:
-	Image* mImage[4];
+	Image* mImage;
+	Animator* mAnimator;
+	Transform* tr;
+
 };
+{
+};
+

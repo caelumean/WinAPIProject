@@ -1,4 +1,4 @@
-#include "CrusaderHPbar.h"
+#include "VestalHPbar.h"
 #include "Time.h"
 #include "SceneManager.h"
 #include "Input.h"
@@ -7,29 +7,29 @@
 #include "Animator.h"
 #include "Scene.h"
 
-CrusaderHPbar::CrusaderHPbar()
+VestalHPbar::VestalHPbar()
 {
 }
 
-CrusaderHPbar::~CrusaderHPbar()
+VestalHPbar::~VestalHPbar()
 {
 }
 
-void CrusaderHPbar::Initialize()
+void VestalHPbar::Initialize()
 {
 	tr = GetComponent<Transform>();
 	//tr->SetPos(Vector2(580.0f, 620.0f));
 	tr->SetScale(Vector2{ 11.0f, 1.0f });
-	mImage = Resources::Load<Image>(L"CrusaderHP", L"..\\Resources\\Heroes\\Health\\health_pip_full.bmp");
+	mImage = Resources::Load<Image>(L"VestalHP", L"..\\Resources\\Heroes\\Health\\health_pip_full.bmp");
 
 	mAnimator = AddComponent<Animator>();
-	mAnimator->CreateAnimation(L"CrusaderHP", mImage, Vector2::Zero, 1, 1, 1, Vector2::Zero, false);
+	mAnimator->CreateAnimation(L"VestalHP", mImage, Vector2::Zero, 1, 1, 1, Vector2::Zero, false);
 
-	mAnimator->Play(L"CrusaderHP", true);
+	mAnimator->Play(L"VestalHP", true);
 	GameObject::Initialize();
 }
 
-void CrusaderHPbar::Update()
+void VestalHPbar::Update()
 {
 	GameObject::Update();
 
@@ -46,12 +46,12 @@ void CrusaderHPbar::Update()
 	tr->SetPos(pos);
 }
 
-void CrusaderHPbar::Render(HDC hdc)
+void VestalHPbar::Render(HDC hdc)
 {
 	GameObject::Render(hdc);
 }
 
-void CrusaderHPbar::Release()
+void VestalHPbar::Release()
 {
 	GameObject::Release();
 }

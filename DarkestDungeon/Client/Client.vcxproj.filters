@@ -515,6 +515,15 @@
     <ClInclude Include="CrusaderHPbar.h">
       <Filter>Contents\Background\HeroUI</Filter>
     </ClInclude>
+    <ClInclude Include="HighwayManHPbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctorHPbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="VestalHPbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -833,6 +842,15 @@
       <Filter>Contents\Background\HeroUI</Filter>
     </ClCompile>
     <ClCompile Include="CrusaderHPbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayManHPbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctorHPbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="VestalHPbar.cpp">
       <Filter>Contents\Background\HeroUI</Filter>
     </ClCompile>
   </ItemGroup>
