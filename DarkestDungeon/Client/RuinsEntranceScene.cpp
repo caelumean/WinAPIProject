@@ -98,9 +98,6 @@ void RuinsEntranceScene::Update()
 
 	}
 
-	//object::Destory(mCrusaderInfoUI);
-	//object::Destory(mHighwayManInfoUI);
-	//object::Destory(mPlagueDoctorInfoUI);
 	//PlayerInfoUI
 	if ((MousePos.x > 255 && MousePos.x < 338) && (MousePos.y > 370 && MousePos.y < 597))
 	{
