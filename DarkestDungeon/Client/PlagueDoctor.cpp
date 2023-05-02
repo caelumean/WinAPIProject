@@ -25,12 +25,10 @@ void PlagueDoctor::Initialize()
 	//D:\WinAPIProject\DarkestDungeon\Resources\Heroes\plague_doctor
 	Image* Idle = Resources::Load<Image>(L"plaguedoctor_Idle", L"..\\Resources\\Heroes\\plague_doctor\\plague_doctor_Idle.bmp");
 	Image* Move = Resources::Load<Image>(L"plaguedoctor_Move", L"..\\Resources\\Heroes\\plague_doctor\\plague_doctor_Walk.bmp");
-	Image* Combat = Resources::Load<Image>(L"plaguedoctor_Combat", L"..\\Resources\\Heroes\\plague_doctor\\plague_doctor_Combat.bmp");
 
 	mAnimator = AddComponent<Animator>();
 	mAnimator->CreateAnimation(L"plaguedoctor_Idle", Idle, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
 	mAnimator->CreateAnimation(L"plaguedoctor_Move", Move, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.08f);
-	mAnimator->CreateAnimation(L"plaguedoctor_Combat", Combat, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
 
 	mAnimator->Play(L"plaguedoctor_Idle", true);
 

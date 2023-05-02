@@ -25,13 +25,11 @@ void Vestal::Initialize()
 	//D:\WinAPIProject\DarkestDungeon\Resources\Heroes\vestal
 	Image* Idle = Resources::Load<Image>(L"vestal_Idle", L"..\\Resources\\Heroes\\vestal\\Vestal_Idle.bmp");
 	Image* Move = Resources::Load<Image>(L"vestal_Move", L"..\\Resources\\Heroes\\vestal\\Vestal_Walk.bmp");
-	Image* Combat = Resources::Load<Image>(L"vestal_Combat", L"..\\Resources\\Heroes\\vestal\\Vestal_Combat.bmp");
-
+	
 	mAnimator = AddComponent<Animator>();
 	mAnimator->CreateAnimation(L"vestal_Idle", Idle, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
 	mAnimator->CreateAnimation(L"vestal_Move", Move, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.08f);
-	mAnimator->CreateAnimation(L"vestal_Combat", Combat, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
-
+	
 	mAnimator->Play(L"vestal_Idle", true);
 
 	mState = eVestalState::Idle;
@@ -48,9 +46,6 @@ void Vestal::Update()
 	{
 	case Vestal::eVestalState::Move:
 		move();
-		break;
-	case Vestal::eVestalState::Combat:
-		combat();
 		break;
 	case Vestal::eVestalState::Idle:
 		idle();
@@ -101,10 +96,6 @@ void Vestal::idle()
 		mState = eVestalState::Move;
 		mAnimator->Play(L"vestal_Move", true);
 	}
-}
-
-void Vestal::combat()
-{
 }
 
 void Vestal::death()

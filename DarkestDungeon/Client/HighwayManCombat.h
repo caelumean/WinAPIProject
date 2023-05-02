@@ -3,17 +3,16 @@
 #include "Image.h"
 
 class Animator;
-class HighwayMan : public GameObject
+class HighwayManCombat : public GameObject
 {
 public:
-	enum class eHighwayManState
+	enum class eCrusaderState
 	{
-		Move,
-		Idle,
+		Combat,
 		Death
 	};
-	HighwayMan();
-	~HighwayMan();
+	HighwayManCombat();
+	~HighwayManCombat();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -21,12 +20,10 @@ public:
 	virtual void Release() override;
 
 private:
-	void move();
-	void idle();
 	void death();
 
 private:
-	eHighwayManState mState;
+	eCrusaderState mState;
 	Animator* mAnimator;
-};
 
+};

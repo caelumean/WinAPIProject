@@ -24,12 +24,10 @@ void HighwayMan::Initialize()
 
 	Image* Idle = Resources::Load<Image>(L"highwayman_Idle", L"..\\Resources\\Heroes\\highwayman\\highwayMan_Idle.bmp");
 	Image* Move = Resources::Load<Image>(L"highwayman_Move", L"..\\Resources\\Heroes\\highwayman\\highwayMan_Walk.bmp");
-	Image* Combat = Resources::Load<Image>(L"highwayman_Combat", L"..\\Resources\\Heroes\\highwayman\\highwayMan_Combat.bmp");
 
 	mAnimator = AddComponent<Animator>();
 	mAnimator->CreateAnimation(L"highwayman_Idle", Idle, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
 	mAnimator->CreateAnimation(L"highwayman_Move", Move, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.08f);
-	mAnimator->CreateAnimation(L"highwayman_Combat", Combat, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
 
 	mAnimator->Play(L"highwayman_Idle", true);
 
@@ -46,9 +44,6 @@ void HighwayMan::Update()
 	{
 	case HighwayMan::eHighwayManState::Move:
 		move();
-		break;
-	case HighwayMan::eHighwayManState::Combat:
-		combat();
 		break;
 	case HighwayMan::eHighwayManState::Idle:
 		idle();
@@ -98,10 +93,6 @@ void HighwayMan::idle()
 		mState = eHighwayManState::Move;
 		mAnimator->Play(L"highwayman_Move", true);
 	}
-}
-
-void HighwayMan::combat()
-{
 }
 
 void HighwayMan::death()

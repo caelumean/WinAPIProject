@@ -10,7 +10,6 @@ public:
 	{
 		Move,
 		Idle,
-		Combat,
 		Death
 	};
 	Vestal();
@@ -25,7 +24,6 @@ public:
 private:
 	void move();
 	void idle();
-	void combat();
 	void death();
 
 private:

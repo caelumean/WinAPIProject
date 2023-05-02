@@ -17,10 +17,10 @@ public:
 
 private:
 	// Player
-	class Crusader* mCrusader;
-	class HighwayMan* mHighwayMan;
-	class PlagueDoctor* mPlagueDoctor;
-	class Vestal* mVestal;
+	class CrusaderCombat* mCrusader;
+	class HighwayManCombat* mHighwayMan;
+	class PlagueDoctorCombat* mPlagueDoctor;
+	class VestalCombat* mVestal;
 
 	// Map Inventory
 	class DGMapBG* mDGMapBG;
@@ -31,5 +31,21 @@ private:
 	class HighwayManInfoUI* mHighwayManInfoUI;
 	class PlagueDoctorInfoUI* mPlagueDoctorInfoUI;
 	class VestalInfoUI* mVestalInfoUI;
+
+	// Select UI
+	class SelectbarUI* mCrusaderSelectUI;
+	class SelectbarUI* mHighwayManSelectUI;
+	class SelectbarUI* mPlagueDoctorSelectUI;
+	class SelectbarUI* mVestalSelectUI;
+
+	//Monster
+	class BoneDefender* mBoneDefender;
+	class BoneSoldier* mBoneSoldier;
+	class BoneCourtier* mBoneCourtier;
+	class BoneArbalest* mBoneArbalest;
+
+	int HeroMember;
+	int MonsterMember;
+	float mTime;
 
 };

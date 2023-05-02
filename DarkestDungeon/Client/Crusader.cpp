@@ -25,12 +25,10 @@ void Crusader::Initialize()
 
 	Image* Idle = Resources::Load<Image>(L"crusader_Idle", L"..\\Resources\\Heroes\\crusader\\crusader_Idle.bmp");
 	Image* Move = Resources::Load<Image>(L"crusader_Move", L"..\\Resources\\Heroes\\crusader\\crusader_Walk.bmp");
-	Image* Combat = Resources::Load<Image>(L"crusader_Combat", L"..\\Resources\\Heroes\\crusader\\crusader_Combat.bmp");
-
 	mAnimator = AddComponent<Animator>();
 	mAnimator->CreateAnimation(L"crusader_Idle", Idle, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
 	mAnimator->CreateAnimation(L"crusader_Move", Move, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.08f);
-	mAnimator->CreateAnimation(L"crusader_Combat", Combat, Vector2::Zero, 12, 1, 12, Vector2::Zero, 0.1f);
+
 
 	mAnimator->Play(L"crusader_Idle", true);
 
@@ -52,9 +50,6 @@ void Crusader::Update()
 	case Crusader::eCrusaderState::Move:
 		move();
 		break;
-	case Crusader::eCrusaderState::Combat:
-		combat();
-		break;
 	case Crusader::eCrusaderState::Idle:
 		idle();
 		break;
@@ -71,18 +66,6 @@ void Crusader::Render(HDC hdc)
 void Crusader::Release()
 {
 	GameObject::Release();
-}
-
-void Crusader::OnCollisionEnter(Collider* other)
-{
-}
-
-void Crusader::OnCollisionStay(Collider* other)
-{
-}
-
-void Crusader::OnCollisionExit(Collider* other)
-{
 }
 
 void Crusader::move()
@@ -115,10 +98,6 @@ void Crusader::idle()
 		mState = eCrusaderState::Move;
 		mAnimator->Play(L"crusader_Move", true);
 	}
-}
-
-void Crusader::combat()
-{
 }
 
 void Crusader::death()

@@ -45,7 +45,7 @@ enum class eLayerType
 	Shadow,
 	Building,
 	NPC,
-	Enemy,
+	Monster,
 	Player,
 	Effect,
 	Item,

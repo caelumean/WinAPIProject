@@ -3,8 +3,11 @@
 #include "SceneManager.h"
 #include "Resources.h"
 #include "Transform.h"
+#include "Time.h"
+#include "Object.h"
 
 CrusaderInfoUI::CrusaderInfoUI()
+	:mTime(0.0f)
 {
 }
 
@@ -31,6 +34,14 @@ void CrusaderInfoUI::Initialize()
 void CrusaderInfoUI::Update()
 {
 	GameObject::Update();
+
+	//mTime += Time::DeltaTime();
+
+	//if (mTime > 0.05f)
+	//{
+	//	object::Destory(this);
+
+	//}
 }
 
 void CrusaderInfoUI::Render(HDC hdc)

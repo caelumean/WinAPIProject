@@ -177,6 +177,30 @@
     <Filter Include="Contents\Background\DungeonCommonUI">
       <UniqueIdentifier>{e18f20eb-c9c9-445d-b4ca-e8a516c86f41}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\Monster\BoneArbalest">
+      <UniqueIdentifier>{c942114a-1d9b-4c81-85ed-52513e934e27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Monster\BoneCourtier">
+      <UniqueIdentifier>{2f059792-c8e1-4e9b-af6f-424be3806d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Monster\BoneDefender">
+      <UniqueIdentifier>{eca61313-c84a-4591-8769-e964e902e64b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Monster\BoneSoldier">
+      <UniqueIdentifier>{1228d4c5-c082-4113-8276-e62a807238c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Player\Crusader">
+      <UniqueIdentifier>{74c3f98d-63df-4cef-ac4c-78b35397b2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Player\HighwayMan">
+      <UniqueIdentifier>{13ddb5a0-bcde-4374-9e29-e6b78def59de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Player\PlagueDoctor">
+      <UniqueIdentifier>{35995792-8258-4cbe-b569-4321cd1f91a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Player\Vestal">
+      <UniqueIdentifier>{d630df94-278a-4e12-8ba9-65794bcca931}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -241,9 +265,6 @@
     </ClInclude>
     <ClInclude Include="Collider.h">
       <Filter>Engine\Component\Collider</Filter>
-    </ClInclude>
-    <ClInclude Include="Monster.h">
-      <Filter>Contents\Monster</Filter>
     </ClInclude>
     <ClInclude Include="CollisionManager.h">
       <Filter>Engine\Component\Collider</Filter>
@@ -467,18 +488,6 @@
     <ClInclude Include="DGMapBG.h">
       <Filter>Contents\Background\InfoUI</Filter>
     </ClInclude>
-    <ClInclude Include="Crusader.h">
-      <Filter>Contents\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="HighwayMan.h">
-      <Filter>Contents\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="PlagueDoctor.h">
-      <Filter>Contents\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Vestal.h">
-      <Filter>Contents\Player</Filter>
-    </ClInclude>
     <ClInclude Include="RuinsPassageBG.h">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClInclude>
@@ -539,6 +548,51 @@
     <ClInclude Include="RuinsBattleBG.h">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClInclude>
+    <ClInclude Include="BoneArbalest.h">
+      <Filter>Contents\Monster\BoneArbalest</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneCourtier.h">
+      <Filter>Contents\Monster\BoneCourtier</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneDefender.h">
+      <Filter>Contents\Monster\BoneDefender</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneSoldier.h">
+      <Filter>Contents\Monster\BoneSoldier</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneDefenderAttack.h">
+      <Filter>Contents\Monster\BoneDefender</Filter>
+    </ClInclude>
+    <ClInclude Include="Crusader.h">
+      <Filter>Contents\Player\Crusader</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderCombat.h">
+      <Filter>Contents\Player\Crusader</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwayMan.h">
+      <Filter>Contents\Player\HighwayMan</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwayManCombat.h">
+      <Filter>Contents\Player\HighwayMan</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctor.h">
+      <Filter>Contents\Player\PlagueDoctor</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctorCombat.h">
+      <Filter>Contents\Player\PlagueDoctor</Filter>
+    </ClInclude>
+    <ClInclude Include="Vestal.h">
+      <Filter>Contents\Player\Vestal</Filter>
+    </ClInclude>
+    <ClInclude Include="VestalCombat.h">
+      <Filter>Contents\Player\Vestal</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderDefend.h">
+      <Filter>Contents\Player\Crusader</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderSword.h">
+      <Filter>Contents\Player\Crusader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -582,9 +636,6 @@
     </ClCompile>
     <ClCompile Include="Collider.cpp">
       <Filter>Engine\Component\Collider</Filter>
-    </ClCompile>
-    <ClCompile Include="Monster.cpp">
-      <Filter>Contents\Monster</Filter>
     </ClCompile>
     <ClCompile Include="CollisionManager.cpp">
       <Filter>Engine\Component\Collider</Filter>
@@ -808,18 +859,6 @@
     <ClCompile Include="DGMapBG.cpp">
       <Filter>Contents\Background\InfoUI</Filter>
     </ClCompile>
-    <ClCompile Include="Vestal.cpp">
-      <Filter>Contents\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="PlagueDoctor.cpp">
-      <Filter>Contents\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="HighwayMan.cpp">
-      <Filter>Contents\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Crusader.cpp">
-      <Filter>Contents\Player</Filter>
-    </ClCompile>
     <ClCompile Include="RuinsPassageBG.cpp">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClCompile>
@@ -879,6 +918,51 @@
     </ClCompile>
     <ClCompile Include="RuinsBattleBG.cpp">
       <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneArbalest.cpp">
+      <Filter>Contents\Monster\BoneArbalest</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneCourtier.cpp">
+      <Filter>Contents\Monster\BoneCourtier</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneDefender.cpp">
+      <Filter>Contents\Monster\BoneDefender</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneSoldier.cpp">
+      <Filter>Contents\Monster\BoneSoldier</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneDefenderAttack.cpp">
+      <Filter>Contents\Monster\BoneDefender</Filter>
+    </ClCompile>
+    <ClCompile Include="Crusader.cpp">
+      <Filter>Contents\Player\Crusader</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderCombat.cpp">
+      <Filter>Contents\Player\Crusader</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayMan.cpp">
+      <Filter>Contents\Player\HighwayMan</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayManCombat.cpp">
+      <Filter>Contents\Player\HighwayMan</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctor.cpp">
+      <Filter>Contents\Player\PlagueDoctor</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctorCombat.cpp">
+      <Filter>Contents\Player\PlagueDoctor</Filter>
+    </ClCompile>
+    <ClCompile Include="Vestal.cpp">
+      <Filter>Contents\Player\Vestal</Filter>
+    </ClCompile>
+    <ClCompile Include="VestalCombat.cpp">
+      <Filter>Contents\Player\Vestal</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderDefend.cpp">
+      <Filter>Contents\Player\Crusader</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderSword.cpp">
+      <Filter>Contents\Player\Crusader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
