@@ -225,6 +225,7 @@
     <ClInclude Include="SanitariumScene.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SelectbarUI.h" />
     <ClInclude Include="SelectDungeonBG.h" />
     <ClInclude Include="SelectDungeonScene.h" />
     <ClInclude Include="SelectDungeonUI.h" />
@@ -237,6 +238,7 @@
     <ClInclude Include="SurvivalistNPC.h" />
     <ClInclude Include="SurvivalistNPCBG.h" />
     <ClInclude Include="SurvivalistScene.h" />
+    <ClInclude Include="TargetbarUI.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TavernBG.h" />
     <ClInclude Include="TavernNPC.h" />
@@ -246,6 +248,7 @@
     <ClInclude Include="TitleBG.h" />
     <ClInclude Include="TitleHouse.h" />
     <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="TourchUI.h" />
     <ClInclude Include="TownBG.h" />
     <ClInclude Include="TownCommonUI1.h" />
     <ClInclude Include="TownCommonUI2.h" />
@@ -338,6 +341,7 @@
     <ClCompile Include="SanitariumScene.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SelectbarUI.cpp" />
     <ClCompile Include="SelectDungeonBG.cpp" />
     <ClCompile Include="SelectDungeonScene.cpp" />
     <ClCompile Include="SelectDungeonUI.cpp" />
@@ -350,6 +354,7 @@
     <ClCompile Include="SurvivalistNPC.cpp" />
     <ClCompile Include="SurvivalistNPCBG.cpp" />
     <ClCompile Include="SurvivalistScene.cpp" />
+    <ClCompile Include="TargetbarUI.cpp" />
     <ClCompile Include="TavernBG.cpp" />
     <ClCompile Include="TavernNPC.cpp" />
     <ClCompile Include="TavernNPCBG.cpp" />
@@ -358,6 +363,7 @@
     <ClCompile Include="TitleBG.cpp" />
     <ClCompile Include="TitleHouse.cpp" />
     <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="TourchUI.cpp" />
     <ClCompile Include="TownBG.cpp" />
     <ClCompile Include="TownCommonUI1.cpp" />
     <ClCompile Include="TownCommonUI2.cpp" />

@@ -84,9 +84,6 @@
     <Filter Include="Contents\Background\Building">
       <UniqueIdentifier>{f62ef826-38eb-434d-ab35-ac4bfa018ab1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Contents\Background\CommonUI">
-      <UniqueIdentifier>{1c87aa25-cdd1-42c3-93b9-392be6967318}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Contents\Background\Town\Abbey">
       <UniqueIdentifier>{0e610e88-3bf3-41dc-a3ca-aab9e536cd40}</UniqueIdentifier>
     </Filter>
@@ -173,6 +170,12 @@
     </Filter>
     <Filter Include="Contents\Background\HeroUI">
       <UniqueIdentifier>{1d604924-f317-45d5-943f-25e236e4e9a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\TownCommonUI">
+      <UniqueIdentifier>{1c87aa25-cdd1-42c3-93b9-392be6967318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Background\DungeonCommonUI">
+      <UniqueIdentifier>{e18f20eb-c9c9-445d-b4ca-e8a516c86f41}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -291,7 +294,7 @@
       <Filter>Contents\Background\Building</Filter>
     </ClInclude>
     <ClInclude Include="TownCommonUI1.h">
-      <Filter>Contents\Background\CommonUI</Filter>
+      <Filter>Contents\Background\TownCommonUI</Filter>
     </ClInclude>
     <ClInclude Include="AbbeyNPC.h">
       <Filter>Contents\Background\Town\Abbey\UI</Filter>
@@ -417,7 +420,7 @@
       <Filter>Contents\Scene\Building</Filter>
     </ClInclude>
     <ClInclude Include="TownCommonUI2.h">
-      <Filter>Contents\Background\CommonUI</Filter>
+      <Filter>Contents\Background\TownCommonUI</Filter>
     </ClInclude>
     <ClInclude Include="TripButton.h">
       <Filter>Contents\Background\Town</Filter>
@@ -527,6 +530,15 @@
     <ClInclude Include="VestalStressbar.h">
       <Filter>Contents\Background\HeroUI</Filter>
     </ClInclude>
+    <ClInclude Include="SelectbarUI.h">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TargetbarUI.h">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TourchUI.h">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -620,7 +632,7 @@
       <Filter>Contents\Background\Building</Filter>
     </ClCompile>
     <ClCompile Include="TownCommonUI1.cpp">
-      <Filter>Contents\Background\CommonUI</Filter>
+      <Filter>Contents\Background\TownCommonUI</Filter>
     </ClCompile>
     <ClCompile Include="AbbeyNPC.cpp">
       <Filter>Contents\Background\Town\Abbey\UI</Filter>
@@ -749,7 +761,7 @@
       <Filter>main</Filter>
     </ClCompile>
     <ClCompile Include="TownCommonUI2.cpp">
-      <Filter>Contents\Background\CommonUI</Filter>
+      <Filter>Contents\Background\TownCommonUI</Filter>
     </ClCompile>
     <ClCompile Include="TripButton.cpp">
       <Filter>Contents\Background\Town</Filter>
@@ -858,6 +870,15 @@
     </ClCompile>
     <ClCompile Include="HighwayStressbar.cpp">
       <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectbarUI.cpp">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetbarUI.cpp">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TourchUI.cpp">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

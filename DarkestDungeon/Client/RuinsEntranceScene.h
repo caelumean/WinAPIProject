@@ -34,6 +34,12 @@ private:
 	class PlagueDoctorInfoUI* mPlagueDoctorInfoUI;
 	class VestalInfoUI* mVestalInfoUI;
 
+	// Select UI
+	class SelectbarUI* mCrusaderSelectUI;
+	class SelectbarUI* mHighwayManSelectUI;
+	class SelectbarUI* mPlagueDoctorSelectUI;
+	class SelectbarUI* mVestalSelectUI;
+
 	bool isVestalInfoUI;
 	bool isPlagueDoctorInfoUI;
 	bool isHighwayManInfoUI;

@@ -35,6 +35,8 @@
 #include "PlagueDoctorStressbar.h"
 #include "VestalStressbar.h"
 
+//SelectUI
+#include "SelectbarUI.h"
 
 RuinsEntranceScene::RuinsEntranceScene()
 {
@@ -73,6 +75,9 @@ void RuinsEntranceScene::Initialize()
 	object::Instantiate<HighwayStressbar>(Vector2(475.0f, 645.0f), eLayerType::UI2);
 	object::Instantiate<PlagueDoctorStressbar>(Vector2(325.0f, 645.0f), eLayerType::UI2);
 	object::Instantiate<VestalStressbar>(Vector2(185.0f, 645.0f), eLayerType::UI2);
+
+	//Select
+	object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
 }
 
 void RuinsEntranceScene::Update()
@@ -131,12 +136,14 @@ void RuinsEntranceScene::Update()
 			{
 				isHighwayManInfoUI = false;
 				object::Destory(mHighwayManInfoUI);
+				object::Destory(mHighwayManSelectUI);
 			}
 			//农风技捞歹
 			else if (ismCrusaderInfoUI)
 			{
 				ismCrusaderInfoUI = false;
 				object::Destory(mCrusaderInfoUI);
+				object::Destory(mCrusaderSelectUI);
 			}
 		}
 	}
@@ -158,12 +165,14 @@ void RuinsEntranceScene::Update()
 			{
 				isHighwayManInfoUI = false;
 				object::Destory(mHighwayManInfoUI);
+				object::Destory(mHighwayManSelectUI);
 			}
 			//农风技捞歹
 			else if (ismCrusaderInfoUI)
 			{
 				ismCrusaderInfoUI = false;
 				object::Destory(mCrusaderInfoUI);
+				object::Destory(mCrusaderSelectUI);
 			}
 		}
 		
@@ -173,6 +182,7 @@ void RuinsEntranceScene::Update()
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
 			mHighwayManInfoUI = object::Instantiate<HighwayManInfoUI>(eLayerType::UI2);
+			mHighwayManSelectUI = object::Instantiate<SelectbarUI>(Vector2(565.0f, 665.0f), eLayerType::UI2);
 			// 己赤
 			if (isVestalInfoUI)
 			{
@@ -190,6 +200,7 @@ void RuinsEntranceScene::Update()
 			{
 				ismCrusaderInfoUI = false;
 				object::Destory(mCrusaderInfoUI);
+				object::Destory(mCrusaderSelectUI);
 			}
 		}
 	}
@@ -198,6 +209,7 @@ void RuinsEntranceScene::Update()
 		if (Input::GetKeyDown(eKeyCode::LBUTTON))
 		{
 			mCrusaderInfoUI = object::Instantiate<CrusaderInfoUI>(eLayerType::UI2);
+			mCrusaderSelectUI = object::Instantiate<SelectbarUI>(Vector2(705.0f, 665.0f), eLayerType::UI2);
 			// 己赤
 			if (isVestalInfoUI)
 			{
@@ -215,6 +227,7 @@ void RuinsEntranceScene::Update()
 			{
 				isHighwayManInfoUI = false;
 				object::Destory(mHighwayManInfoUI);
+				object::Destory(mHighwayManSelectUI);
 			}
 		}
 	}
