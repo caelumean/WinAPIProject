@@ -26,7 +26,15 @@
 #include "VestalInfoUI.h"
 
 //Player HP Stress UI
-#include "HeroHpUI_1.h"
+#include "CrusaderHPbar.h"
+#include "HighwayManHPbar.h"
+#include "PlagueDoctorHPbar.h"
+#include "VestalHPbar.h"
+#include "CrusaderStressbar.h"
+#include "HighwayStressbar.h"
+#include "PlagueDoctorStressbar.h"
+#include "VestalStressbar.h"
+
 
 RuinsEntranceScene::RuinsEntranceScene()
 {
@@ -56,7 +64,15 @@ void RuinsEntranceScene::Initialize()
 	mVestal = object::Instantiate<Vestal>(eLayerType::Player);
 	
 	//Player HP Stress UI
-	object::Instantiate<HeroHpUI_1>(eLayerType::UI2);
+	object::Instantiate<CrusaderHPbar>(Vector2(580.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<HighwayManHPbar>(Vector2(440.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<PlagueDoctorHPbar>(Vector2(290.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<VestalHPbar>(Vector2(150.0f, 630.0f), eLayerType::UI2);
+
+	object::Instantiate<CrusaderStressbar>(Vector2(615.0f, 645.0f), eLayerType::UI2);
+	object::Instantiate<HighwayStressbar>(Vector2(475.0f, 645.0f), eLayerType::UI2);
+	object::Instantiate<PlagueDoctorStressbar>(Vector2(325.0f, 645.0f), eLayerType::UI2);
+	object::Instantiate<VestalStressbar>(Vector2(185.0f, 645.0f), eLayerType::UI2);
 }
 
 void RuinsEntranceScene::Update()

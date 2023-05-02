@@ -20,6 +20,4 @@ private:
 	Transform* tr;
 
 };
-{
-};
 

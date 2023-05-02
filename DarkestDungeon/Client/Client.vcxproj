@@ -164,6 +164,7 @@
     <ClInclude Include="Component.h" />
     <ClInclude Include="Crusader.h" />
     <ClInclude Include="CrusaderHPbar.h" />
+    <ClInclude Include="CrusaderStressbar.h" />
     <ClInclude Include="DGInventoryBG.h" />
     <ClInclude Include="DGMapBG.h" />
     <ClInclude Include="Engine.h" />
@@ -184,8 +185,7 @@
     <ClInclude Include="HighwayMan.h" />
     <ClInclude Include="HighwayManHPbar.h" />
     <ClInclude Include="HighwayManInfoUI.h" />
-    <ClInclude Include="HeroHpUI_1.h" />
-    <ClInclude Include="HeroHpUI_2.h" />
+    <ClInclude Include="HighwayStressbar.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="InfoUIBG.h" />
     <ClInclude Include="Input.h" />
@@ -205,6 +205,7 @@
     <ClInclude Include="PlagueDoctor.h" />
     <ClInclude Include="PlagueDoctorHPbar.h" />
     <ClInclude Include="PlagueDoctorInfoUI.h" />
+    <ClInclude Include="PlagueDoctorStressbar.h" />
     <ClInclude Include="ProvisionBG.h" />
     <ClInclude Include="ProvisionInvetory.h" />
     <ClInclude Include="ProvisionNPC.h" />
@@ -232,7 +233,6 @@
     <ClInclude Include="StageCoachNPCBG.h" />
     <ClInclude Include="StageCoachScene.h" />
     <ClInclude Include="StartButton.h" />
-    <ClInclude Include="StressUI_1.h" />
     <ClInclude Include="SurvivalistBG.h" />
     <ClInclude Include="SurvivalistNPC.h" />
     <ClInclude Include="SurvivalistNPCBG.h" />
@@ -257,6 +257,7 @@
     <ClInclude Include="Vestal.h" />
     <ClInclude Include="VestalHPbar.h" />
     <ClInclude Include="VestalInfoUI.h" />
+    <ClInclude Include="VestalStressbar.h" />
     <ClInclude Include="yaResource.h" />
   </ItemGroup>
   <ItemGroup>
@@ -280,6 +281,7 @@
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Crusader.cpp" />
     <ClCompile Include="CrusaderHPbar.cpp" />
+    <ClCompile Include="CrusaderStressbar.cpp" />
     <ClCompile Include="DGInventoryBG.cpp" />
     <ClCompile Include="DGMapBG.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -297,8 +299,7 @@
     <ClCompile Include="HighwayMan.cpp" />
     <ClCompile Include="HighwayManHPbar.cpp" />
     <ClCompile Include="HighwayManInfoUI.cpp" />
-    <ClCompile Include="HeroHpUI_1.cpp" />
-    <ClCompile Include="HeroHpUI_2.cpp" />
+    <ClCompile Include="HighwayStressbar.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="InfoUIBG.cpp" />
     <ClCompile Include="Input.cpp" />
@@ -318,6 +319,7 @@
     <ClCompile Include="PlagueDoctor.cpp" />
     <ClCompile Include="PlagueDoctorHPbar.cpp" />
     <ClCompile Include="PlagueDoctorInfoUI.cpp" />
+    <ClCompile Include="PlagueDoctorStressbar.cpp" />
     <ClCompile Include="ProvisionBG.cpp" />
     <ClCompile Include="ProvisionInvetory.cpp" />
     <ClCompile Include="ProvisionNPC.cpp" />
@@ -344,7 +346,6 @@
     <ClCompile Include="StageCoachNPCBG.cpp" />
     <ClCompile Include="StageCoachScene.cpp" />
     <ClCompile Include="StartButton.cpp" />
-    <ClCompile Include="StressUI_1.cpp" />
     <ClCompile Include="SurvivalistBG.cpp" />
     <ClCompile Include="SurvivalistNPC.cpp" />
     <ClCompile Include="SurvivalistNPCBG.cpp" />
@@ -368,6 +369,7 @@
     <ClCompile Include="Vestal.cpp" />
     <ClCompile Include="VestalHPbar.cpp" />
     <ClCompile Include="VestalInfoUI.cpp" />
+    <ClCompile Include="VestalStressbar.cpp" />
     <ClCompile Include="yaResource.cpp" />
   </ItemGroup>
   <ItemGroup>

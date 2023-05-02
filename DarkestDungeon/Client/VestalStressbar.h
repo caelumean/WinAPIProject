@@ -3,11 +3,11 @@
 #include "Image.h"
 
 class Animator;
-class HighwayManHPbar : public GameObject
+class VestalStressbar : public GameObject
 {
 public:
-	HighwayManHPbar();
-	~HighwayManHPbar();
+	VestalStressbar();
+	~VestalStressbar();
 
 	virtual void Initialize() override;
 	virtual void Update() override;

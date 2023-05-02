@@ -503,15 +503,6 @@
     <ClInclude Include="BattleDoor.h">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClInclude>
-    <ClInclude Include="StressUI_1.h">
-      <Filter>Contents\Background\HeroUI</Filter>
-    </ClInclude>
-    <ClInclude Include="HeroHpUI_1.h">
-      <Filter>Contents\Background\HeroUI</Filter>
-    </ClInclude>
-    <ClInclude Include="HeroHpUI_2.h">
-      <Filter>Contents\Background\HeroUI</Filter>
-    </ClInclude>
     <ClInclude Include="CrusaderHPbar.h">
       <Filter>Contents\Background\HeroUI</Filter>
     </ClInclude>
@@ -522,6 +513,18 @@
       <Filter>Contents\Background\HeroUI</Filter>
     </ClInclude>
     <ClInclude Include="VestalHPbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderStressbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwayStressbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctorStressbar.h">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClInclude>
+    <ClInclude Include="VestalStressbar.h">
       <Filter>Contents\Background\HeroUI</Filter>
     </ClInclude>
   </ItemGroup>
@@ -832,15 +835,6 @@
     <ClCompile Include="BattleDoor.cpp">
       <Filter>Contents\Background\RuinsDungeon</Filter>
     </ClCompile>
-    <ClCompile Include="HeroHpUI_1.cpp">
-      <Filter>Contents\Background\HeroUI</Filter>
-    </ClCompile>
-    <ClCompile Include="HeroHpUI_2.cpp">
-      <Filter>Contents\Background\HeroUI</Filter>
-    </ClCompile>
-    <ClCompile Include="StressUI_1.cpp">
-      <Filter>Contents\Background\HeroUI</Filter>
-    </ClCompile>
     <ClCompile Include="CrusaderHPbar.cpp">
       <Filter>Contents\Background\HeroUI</Filter>
     </ClCompile>
@@ -851,6 +845,18 @@
       <Filter>Contents\Background\HeroUI</Filter>
     </ClCompile>
     <ClCompile Include="VestalHPbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderStressbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="VestalStressbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctorStressbar.cpp">
+      <Filter>Contents\Background\HeroUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayStressbar.cpp">
       <Filter>Contents\Background\HeroUI</Filter>
     </ClCompile>
   </ItemGroup>

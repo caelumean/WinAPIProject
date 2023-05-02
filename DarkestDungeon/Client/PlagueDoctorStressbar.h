@@ -3,11 +3,11 @@
 #include "Image.h"
 
 class Animator;
-class HighwayManHPbar : public GameObject
+class PlagueDoctorStressbar : public GameObject
 {
 public:
-	HighwayManHPbar();
-	~HighwayManHPbar();
+	PlagueDoctorStressbar();
+	~PlagueDoctorStressbar();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -20,5 +20,3 @@ private:
 	Transform* tr;
 
 };
-
-
