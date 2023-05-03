@@ -151,12 +151,14 @@ void RuinsBattleScene::Update()
 			if ((MousePos.x > 439 && MousePos.x < 487) && (MousePos.y > 676 && MousePos.y < 725) && (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down))
 			{
 				//mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
-				isSkillClick = true;
+				//isSkillClick = true;
 
 				if (isSkillClick)
 				{
 					// 첫번째 몬스터 클릭
-					if ((MousePos.x > 900 && MousePos.x < 993) && (MousePos.y > 363 && MousePos.y < 593) && (Input::GetKeyDown(eKeyCode::LBUTTON)))
+					// 다른 버튼도 안먹힘 도대체 왜일까?
+					//if문 안에 if문 왜 안되는지 모르겠네
+					if ((MousePos.x > 900 && MousePos.x < 993) && (MousePos.y > 363 && MousePos.y < 593) && (Input::GetKeyState(eKeyCode::RBUTTON) == eKeyState::Down))
 					{
 
 						// 스킬이미지 
@@ -171,14 +173,14 @@ void RuinsBattleScene::Update()
 				
 			}
 			// 크루세이더 이미지 다 삭제
-			if (HiwayManturn == true)
-			{	
-				// 테스트
-				mCrusaderDefend = object::Instantiate<CrusaderDefend>(eLayerType::UI2);
-				//흐음?
-				object::Destory(mCrusaderSword);
-				object::Destory(mCrusaderInfoUI);
-			}
+			//if (HiwayManturn == true)
+			//{	
+			//	// 테스트
+			//	mCrusaderDefend = object::Instantiate<CrusaderDefend>(eLayerType::UI2);
+			//	//흐음?
+			//	object::Destory(mCrusaderSword);
+			//	object::Destory(mCrusaderInfoUI);
+			//}
 			
 		}
 	}
