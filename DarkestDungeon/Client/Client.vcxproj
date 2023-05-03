@@ -160,6 +160,7 @@
     <ClInclude Include="BoneCourtier.h" />
     <ClInclude Include="BoneDefender.h" />
     <ClInclude Include="BoneDefenderAttack.h" />
+    <ClInclude Include="BoneDefenderDefend.h" />
     <ClInclude Include="BoneSoldier.h" />
     <ClInclude Include="BuildingsObject.h" />
     <ClInclude Include="Camera.h" />
@@ -301,6 +302,7 @@
     <ClCompile Include="BoneCourtier.cpp" />
     <ClCompile Include="BoneDefender.cpp" />
     <ClCompile Include="BoneDefenderAttack.cpp" />
+    <ClCompile Include="BoneDefenderDefend.cpp" />
     <ClCompile Include="BoneSoldier.cpp" />
     <ClCompile Include="BuildingsObject.cpp" />
     <ClCompile Include="Camera.cpp" />

@@ -37,7 +37,7 @@ void CrusaderBattleInfoUI::Update()
 	mTime += Time::DeltaTime();
 
 	// 시간이 지나면 삭제
-	if (mTime > 2.0f)
+	if (mTime > 0.5f)
 	{
 		object::Destory(this);
 	}

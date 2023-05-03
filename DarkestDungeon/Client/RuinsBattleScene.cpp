@@ -51,6 +51,8 @@
 #include "BoneCourtier.h"
 #include "BoneArbalest.h"
 
+#include "BoneDefenderDefend.h"
+
 
 RuinsBattleScene::RuinsBattleScene()
 	:HeroMember(4)
@@ -139,6 +141,7 @@ void RuinsBattleScene::Update()
 	{
 		SceneManager::LoadScene(eSceneType::Town);
 	}
+
 	if (!End)
 	{
 		Crusaderturn = true;
@@ -150,38 +153,39 @@ void RuinsBattleScene::Update()
 			//스킬 1번 클릭하고 
 			if ((MousePos.x > 439 && MousePos.x < 487) && (MousePos.y > 676 && MousePos.y < 725) && (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down))
 			{
-				//mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
-				//isSkillClick = true;
-
-				if (isSkillClick)
-				{
-					// 첫번째 몬스터 클릭
-					// 다른 버튼도 안먹힘 도대체 왜일까?
-					//if문 안에 if문 왜 안되는지 모르겠네
-					if ((MousePos.x > 900 && MousePos.x < 993) && (MousePos.y > 363 && MousePos.y < 593) && (Input::GetKeyState(eKeyCode::RBUTTON) == eKeyState::Down))
-					{
-
-						// 스킬이미지 
-						mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
-
-						//Crusaderturn = false;
-						//HiwayManturn = true;
-						
-
-					}
-				}
+				isSkillClick = true;			
 				
 			}
-			// 크루세이더 이미지 다 삭제
-			//if (HiwayManturn == true)
-			//{	
-			//	// 테스트
-			//	mCrusaderDefend = object::Instantiate<CrusaderDefend>(eLayerType::UI2);
-			//	//흐음?
-			//	object::Destory(mCrusaderSword);
-			//	object::Destory(mCrusaderInfoUI);
-			//}
-			
+			if (isSkillClick)
+			{
+				// 첫번째 몬스터 클릭
+				if ((MousePos.x > 900 && MousePos.x < 993) && (MousePos.y > 363 && MousePos.y < 593) && (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down))
+				{
+
+					// 스킬이미지 
+					mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
+					mBoneDefenderDefend = object::Instantiate< BoneDefenderDefend>(eLayerType::UI2);
+					isSkillClick = false;
+					CrusaderturnEnd = true;
+					
+				}
+			}
+			if (CrusaderturnEnd)
+			{
+				//mCrusaderDefend = object::Instantiate<CrusaderDefend>(eLayerType::UI2);
+				Crusaderturn = false;
+			}			
+		} //크루세이더 턴 끝
+
+		
+		// 크루세이더 이미지 다 삭제
+		if (HiwayManturn == true)
+		{
+			// 테스트
+			mCrusaderDefend = object::Instantiate<CrusaderDefend>(eLayerType::UI2);
+			//흐음?
+			object::Destory(mCrusaderSword);
+			object::Destory(mCrusaderInfoUI);
 		}
 		
 	}

@@ -620,6 +620,9 @@
     <ClInclude Include="VestalBattleInfoUI.h">
       <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
     </ClInclude>
+    <ClInclude Include="BoneDefenderDefend.h">
+      <Filter>Contents\Monster\BoneDefender</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -1017,6 +1020,9 @@
     </ClCompile>
     <ClCompile Include="HighwayManBattleInfoUI.cpp">
       <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneDefenderDefend.cpp">
+      <Filter>Contents\Monster\BoneDefender</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -47,13 +47,17 @@ private:
 	class BoneCourtier* mBoneCourtier;
 	class BoneArbalest* mBoneArbalest;
 
+	class BoneDefenderDefend* mBoneDefenderDefend;
+
 	int HeroMember;
 	int MonsterMember;
 	float mTime;
 	float mEndTime;
 	bool End;
 	bool Crusaderturn = false;
+	bool CrusaderturnEnd = false;
 	bool HiwayManturn = false;
+
 
 	bool isSkillClick = false;
 
