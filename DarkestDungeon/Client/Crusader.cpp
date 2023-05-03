@@ -74,14 +74,14 @@ void Crusader::Release()
 
 void Crusader::OnCollisionEnter(Collider* other)
 {
-	if (other->GetOwner()->GetLayerType() == eLayerType::BattleRoomDoor)
-	{
-		//if (Input::GetKeyState(eKeyCode::W) == eKeyState::Down)
-		//{
-		//	SceneManager::LoadScene(eSceneType::RuinsBattle);
-		//	
-		//}
-	}
+	//if (other->GetOwner()->GetLayerType() == eLayerType::BattleRoomDoor)
+	//{
+	//	if (Input::GetKeyState(eKeyCode::W) == eKeyState::Down)
+	//	{
+	//		SceneManager::LoadScene(eSceneType::RuinsBattle);
+	//		
+	//	}
+	//}
 }
 
 void Crusader::OnCollisionStay(Collider* other)

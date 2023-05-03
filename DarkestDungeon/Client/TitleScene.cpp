@@ -65,12 +65,12 @@ void TitleScene::Release()
 
 void TitleScene::OnEnter()
 {
+	//Titletheme->Play(true);
 	Scene::OnEnter();
-	Titletheme->Play(true);
 }
 
 void TitleScene::OnExit()
 {
-	Scene::OnExit();
 	Titletheme->Stop(true);
+	Scene::OnExit();
 }

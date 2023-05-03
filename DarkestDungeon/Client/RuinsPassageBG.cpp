@@ -32,6 +32,7 @@ void RuinsPassageBG::Render(HDC hdc)
 	Vector2 pos = tr->GetPos();
 	pos = Camera::CalculatePos(pos);
 	pos.x -= mImage->GetWidth() / 28;
+	pos.y -= mImage->GetHeight() / 400;
 
 	BitBlt(hdc, pos.x, pos.y, mImage->GetWidth(), mImage->GetHeight(), mImage->GetHdc(), 0, 0, SRCCOPY);
 }

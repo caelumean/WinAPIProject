@@ -17,6 +17,8 @@ public:
 
 	static void SetMinX(float f) { MinX = f; }
 	static void SetMaxX(float f) { MaxX = f; }
+	static void SetMinY(float f) { MinY = f; }
+	static void SetMaxY(float f) { MaxY = f; }
 
 private:
 
@@ -31,6 +33,8 @@ private:
 
 	static float MinX;
 	static float MaxX;
+	static float MinY;
+	static float MaxY;
 
 };
 

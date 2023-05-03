@@ -86,9 +86,8 @@ void RuinsEntranceScene::Initialize()
 void RuinsEntranceScene::Update()
 {
 	Scene::Update();
-	Camera::SetTarget(mCrusader);
-	Camera::SetMinX(800.0f);
-	Camera::SetMaxX(800.0f);
+	
+
 
 	Vector2 MousePos = Input::GetMousePos();
 
@@ -265,6 +264,12 @@ void RuinsEntranceScene::OnEnter()
 {
 	Ruins->Play(true);
 	Scene::OnEnter();
+	Camera::SetTarget(mCrusader);
+	Camera::SetMinX(800.0f);
+	Camera::SetMaxX(800.0f);
+	Camera::SetMinY(450.0f);
+	Camera::SetMaxY(450.0f);
+	
 }
 
 void RuinsEntranceScene::OnExit()

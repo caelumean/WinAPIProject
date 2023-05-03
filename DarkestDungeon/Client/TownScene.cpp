@@ -31,7 +31,6 @@ void TownScene::Initialize()
 	Scene::Initialize();
 	// »ç¿îµå
 	Towntheme = Resources::Load<Sound>(L"TownTheme", L"..\\Resources\\Sound\\BGM\\Town.wav");
-	Towntheme->Play(true);
 	//BG
 	object::Instantiate<TownBG>(eLayerType::BackGround);
 	object::Instantiate<TownRuins>(eLayerType::Shadow);
@@ -143,7 +142,7 @@ void TownScene::Release()
 
 void TownScene::OnEnter()
 {
-	//Towntheme->Play(true);
+	Towntheme->Play(true);
 	Scene::OnEnter();
 }
 

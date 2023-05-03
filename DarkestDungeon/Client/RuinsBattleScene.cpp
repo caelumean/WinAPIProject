@@ -2,7 +2,7 @@
 #include "Input.h"
 #include "SceneManager.h"
 #include "Transform.h"
-//#include "Camera.h"
+#include "Camera.h"
 #include "Object.h"
 #include "Animator.h"
 #include "Time.h"
@@ -67,9 +67,11 @@ RuinsBattleScene::~RuinsBattleScene()
 
 void RuinsBattleScene::Initialize()
 {
-	/*CombatTheme = Resources::Load<Sound>(L"Combat", L"..\\Resources\\Sound\\BGM\\Combat.wav");
-	CombatTheme->Play(true);*/
 	Scene::Initialize();
+	Scene* scene = SceneManager::GetActiveScene();
+
+	CombatTheme = Resources::Load<Sound>(L"Combat", L"..\\Resources\\Sound\\BGM\\Combat.wav");
+	
 	//BG
 	object::Instantiate<RuinsBattleBG>(eLayerType::BackGround);
 	object::Instantiate<InfoUIBG>(eLayerType::BackGround);
@@ -109,9 +111,7 @@ void RuinsBattleScene::Initialize()
 void RuinsBattleScene::Update()
 {
 	Scene::Update();
-	/*Camera::SetTarget(mCrusader);
-	Camera::SetMinX(800.0f);
-	Camera::SetMaxX(800.0f);*/
+
 	Vector2 MousePos = Input::GetMousePos();
 	
 	// Map
@@ -148,26 +148,30 @@ void RuinsBattleScene::Update()
 			mCrusaderInfoUI = object::Instantiate<CrusaderBattleInfoUI>(eLayerType::UI2);
 
 			//스킬 1번 클릭하고 
-			if ((MousePos.x > 439 && MousePos.x < 487) && (MousePos.y > 676 && MousePos.y < 725))
+			if ((MousePos.x > 439 && MousePos.x < 487) && (MousePos.y > 676 && MousePos.y < 725) && (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down))
 			{
-				if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
+				//mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
+				isSkillClick = true;
+
+				if (isSkillClick)
 				{
 					// 첫번째 몬스터 클릭
-					if ((MousePos.x > 900 && MousePos.x < 993) && (MousePos.y > 363 && MousePos.y < 593))
+					if ((MousePos.x > 900 && MousePos.x < 993) && (MousePos.y > 363 && MousePos.y < 593) && (Input::GetKeyDown(eKeyCode::LBUTTON)))
 					{
-						if(Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
-						{
-							// 스킬이미지 
-							mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
-							Crusaderturn = false;
 
-						}
+						// 스킬이미지 
+						mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
+
+						//Crusaderturn = false;
+						//HiwayManturn = true;
+
+
 					}
 				}
-
+				
 			}
 			// 크루세이더 이미지 다 삭제
-			if (Crusaderturn == false)
+			if (HiwayManturn == true)
 			{	
 				// 테스트
 				mCrusaderDefend = object::Instantiate<CrusaderDefend>(eLayerType::UI2);
@@ -193,12 +197,17 @@ void RuinsBattleScene::Release()
 
 void RuinsBattleScene::OnEnter()
 {
-	//CombatTheme->Play(true);
+	CombatTheme->Play(true);
 	Scene::OnEnter();
+	Camera::SetTarget(mCrusader);
+	Camera::SetMinX(800.0f);
+	Camera::SetMaxX(800.0f);
+	Camera::SetMinY(450.0f);
+	Camera::SetMaxY(450.0f);
 }
 
 void RuinsBattleScene::OnExit()
 {
-	//CombatTheme->Stop(true);
+	CombatTheme->Stop(true);
 	Scene::OnExit();
 }

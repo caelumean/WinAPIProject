@@ -2,7 +2,7 @@
 #include "SceneManager.h"
 #include "Resources.h"
 #include "Transform.h"
-//#include "Camera.h"
+#include "Camera.h"
 
 RuinsBattleBG::RuinsBattleBG()
 {
@@ -29,8 +29,10 @@ void RuinsBattleBG::Render(HDC hdc)
 	GameObject::Render(hdc);
 	tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
-	//pos = Camera::CalculatePos(pos);
-	//pos.x -= mImage->GetWidth() / 15;
+	pos = Camera::CalculatePos(pos);
+	pos.x -= mImage->GetWidth() / 15;
+	pos.y -= mImage->GetHeight() / 400;
+
 
 	BitBlt(hdc, pos.x, pos.y, mImage->GetWidth(), mImage->GetHeight(), mImage->GetHdc(), 0, 0, SRCCOPY);
 }

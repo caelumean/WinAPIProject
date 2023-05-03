@@ -53,6 +53,9 @@ private:
 	float mEndTime;
 	bool End;
 	bool Crusaderturn = false;
+	bool HiwayManturn = false;
+
+	bool isSkillClick = false;
 
 	// »ç¿îµå
 	class Sound* CombatTheme;

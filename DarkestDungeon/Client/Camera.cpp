@@ -17,6 +17,8 @@ GameObject* Camera::mTarget = nullptr;
 
 float Camera::MinX = 0.0f;
 float Camera::MaxX = 0.0f;
+float Camera::MinY = 0.0f;
+float Camera::MaxY = 0.0f;
 
 void Camera::Initialize()
 {
@@ -24,7 +26,6 @@ void Camera::Initialize()
 	mResolution.x = application.GetWidth();
 	mResolution.y = application.GetHeight();
 	mLookPosition = (mResolution / 2.0f);
-
 
 }
 
@@ -57,6 +58,10 @@ void Camera::Update()
 			mLookPosition.x = MinX;
 		if (mLookPosition.x >= MaxX)
 			mLookPosition.x = MaxX;
+		if (mLookPosition.y >= MinY)
+			mLookPosition.y = MinY;
+		if (mLookPosition.y <= MaxY)
+			mLookPosition.y = MaxY;
 	}
 
 	//무조건 LookPosition이 가운대로오게끔

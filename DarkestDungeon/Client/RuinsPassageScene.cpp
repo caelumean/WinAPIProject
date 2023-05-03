@@ -97,11 +97,7 @@ void RuinsPassageScene::Initialize()
 void RuinsPassageScene::Update()
 {
 	Scene::Update();
-	// 카메라 최대 이동거리를 넘어가면 조정
-	Camera::SetTarget(mCrusader);
-	Camera::SetMinX(660.0f);
-	Camera::SetMaxX(2800.0f);
-
+	
 	Vector2 MousePos = Input::GetMousePos();
 
 	if (Input::GetKeyDown(eKeyCode::W))
@@ -258,8 +254,15 @@ void RuinsPassageScene::Release()
 void RuinsPassageScene::OnEnter()
 {
 	Scene::OnEnter();
-	Ruins->Play(true);
+	//Ruins->Play(true);
 	CollisionManager::SetLayer(eLayerType::Player, eLayerType::BattleRoomDoor, true);
+	// 카메라 최대 이동거리를 넘어가면 조정
+	Camera::SetTarget(mCrusader);
+	Camera::SetMinX(660.0f);
+	Camera::SetMaxX(2800.0f);
+	Camera::SetMinY(450.0f);
+	Camera::SetMaxY(450.0f);
+
 
 }
 
@@ -267,5 +270,5 @@ void RuinsPassageScene::OnExit()
 {
 	Scene::OnExit();
 	Ruins->Stop(true);
-	CollisionManager::Clear();
+	//CollisionManager::Clear();
 }
