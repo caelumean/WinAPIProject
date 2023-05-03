@@ -2,12 +2,12 @@
 #include "GameObject.h"
 #include "Image.h"
 
-class Animator;
-class PlagueDoctorStressbar : public GameObject
+class CrusaderBattleInfoUI : public GameObject
 {
 public:
-	PlagueDoctorStressbar();
-	~PlagueDoctorStressbar();
+	CrusaderBattleInfoUI();
+	~CrusaderBattleInfoUI();
+
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -15,8 +15,8 @@ public:
 	virtual void Release() override;
 
 private:
-	Image* mImage;
-	Animator* mAnimator;
-	class Transform* tr;
+	Image* mImage[7];
+	float mTime;
 
 };
+

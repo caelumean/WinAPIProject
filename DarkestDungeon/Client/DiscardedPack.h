@@ -3,11 +3,11 @@
 #include "Image.h"
 
 class Animator;
-class PlagueDoctorStressbar : public GameObject
+class DiscardedPack : public GameObject
 {
 public:
-	PlagueDoctorStressbar();
-	~PlagueDoctorStressbar();
+	DiscardedPack();
+	~DiscardedPack();
 
 	virtual void Initialize() override;
 	virtual void Update() override;

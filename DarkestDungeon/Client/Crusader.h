@@ -32,6 +32,6 @@ private:
 private:
 	eCrusaderState mState;
 	Animator* mAnimator;
-
+	//class Sound* MoveBGM;
 };
 

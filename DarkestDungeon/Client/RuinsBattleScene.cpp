@@ -24,12 +24,13 @@
 #include "VestalCombat.h"
 
 //Player Info UI
-#include "CrusaderInfoUI.h"
+#include "CrusaderBattleInfoUI.h"
 #include "HighwayManInfoUI.h"
 #include "PlagueDoctorInfoUI.h"
 #include "VestalInfoUI.h"
 
 // Player Attak and Denfend
+#include "CrusaderSword.h"
 #include "CrusaderDefend.h"
 //Player HP Stress UI
 #include "CrusaderHPbar.h"
@@ -42,7 +43,7 @@
 #include "VestalStressbar.h"
 
 //SelectUI
-#include "SelectbarUI.h"
+#include "BattleSelectbarUI.h"
 
 //Monster
 #include "BoneDefender.h"
@@ -55,6 +56,7 @@ RuinsBattleScene::RuinsBattleScene()
 	:HeroMember(4)
 	,MonsterMember(4)
 	,mTime(0.0f)
+	, mEndTime(0.12f)
 	,End(false)
 {
 }
@@ -139,9 +141,42 @@ void RuinsBattleScene::Update()
 	}
 	if (!End)
 	{
+		Crusaderturn = true;
+		// 크루세이더 턴
+		if (Crusaderturn == true)
+		{
+			mCrusaderInfoUI = object::Instantiate<CrusaderBattleInfoUI>(eLayerType::UI2);
 
-		PlagueDoctorTurn();
-		DeletePlagueDoctorUI();
+			//스킬 1번 클릭하고 
+			if ((MousePos.x > 439 && MousePos.x < 487) && (MousePos.y > 676 && MousePos.y < 725))
+			{
+				if (Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
+				{
+					// 첫번째 몬스터 클릭
+					if ((MousePos.x > 900 && MousePos.x < 993) && (MousePos.y > 363 && MousePos.y < 593))
+					{
+						if(Input::GetKeyState(eKeyCode::LBUTTON) == eKeyState::Down)
+						{
+							// 스킬이미지 
+							mCrusaderSword = object::Instantiate<CrusaderSword>(eLayerType::UI2);
+							Crusaderturn = false;
+
+						}
+					}
+				}
+
+			}
+			// 크루세이더 이미지 다 삭제
+			if (Crusaderturn == false)
+			{	
+				// 테스트
+				mCrusaderDefend = object::Instantiate<CrusaderDefend>(eLayerType::UI2);
+				//흐음?
+				object::Destory(mCrusaderSword);
+				object::Destory(mCrusaderInfoUI);
+			}
+			
+		}
 	}
 	
 	//mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
@@ -169,34 +204,4 @@ void RuinsBattleScene::OnExit()
 {
 	//CombatTheme->Stop(true);
 	Scene::OnExit();
-}
-
-void RuinsBattleScene::CrusaderTurn()
-{
-
-}
-
-void RuinsBattleScene::HighwayManTurn()
-{
-}
-
-void RuinsBattleScene::PlagueDoctorTurn()
-{
-	mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
-	mPlagueDoctorSelectUI = object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
-}
-
-void RuinsBattleScene::VestalTurn()
-{
-}
-
-void RuinsBattleScene::DeleteCrusaderUI()
-{
-	
-}
-
-void RuinsBattleScene::DeletePlagueDoctorUI()
-{
-	object::Destory(mPlagueDoctorInfoUI);
-	object::Destory(mPlagueDoctorSelectUI);
 }

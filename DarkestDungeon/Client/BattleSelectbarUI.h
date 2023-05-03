@@ -3,11 +3,11 @@
 #include "Image.h"
 
 class Animator;
-class PlagueDoctorStressbar : public GameObject
+class BattleSelectbarUI : public GameObject
 {
 public:
-	PlagueDoctorStressbar();
-	~PlagueDoctorStressbar();
+	BattleSelectbarUI();
+	~BattleSelectbarUI();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
@@ -18,5 +18,5 @@ private:
 	Image* mImage;
 	Animator* mAnimator;
 	class Transform* tr;
-
+	float mTime;
 };

@@ -17,7 +17,7 @@ public:
 private:
 	Image* mImage;
 	Animator* mAnimator;
-	Transform* tr;
+	class Transform* tr;
 	
 };
 

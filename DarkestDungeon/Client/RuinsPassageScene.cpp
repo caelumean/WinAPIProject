@@ -41,6 +41,10 @@
 #include "PlagueDoctorStressbar.h"
 #include "VestalStressbar.h"
 
+//DungeonObj
+#include "DiscardedPack.h"
+#include "StackofBooks.h"
+
 
 RuinsPassageScene::RuinsPassageScene()
 {
@@ -85,6 +89,9 @@ void RuinsPassageScene::Initialize()
 	object::Instantiate<PlagueDoctorStressbar>(Vector2(325.0f, 645.0f), eLayerType::UI2);
 	object::Instantiate<VestalStressbar>(Vector2(185.0f, 645.0f), eLayerType::UI2);
 
+	//DungeonObk
+	object::Instantiate<DiscardedPack>(eLayerType::DungeonObj);
+	object::Instantiate<StackofBooks>(eLayerType::DungeonObj);
 }
 
 void RuinsPassageScene::Update()

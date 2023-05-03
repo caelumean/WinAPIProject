@@ -8,14 +8,6 @@ public:
 	CrusaderInfoUI();
 	~CrusaderInfoUI();
 
-	static CrusaderInfoUI* GetInstance()
-	{
-		if (instance == nullptr)
-			instance = new CrusaderInfoUI();
-
-		return instance;
-	}
-
 	virtual void Initialize() override;
 	virtual void Update() override;
 	virtual void Render(HDC hdc) override;
@@ -24,7 +16,5 @@ public:
 private:
 	Image* mImage[7];
 	float mTime;
-
-	static CrusaderInfoUI* instance;
 };
 

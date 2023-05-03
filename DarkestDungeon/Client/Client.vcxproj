@@ -150,6 +150,7 @@
     <ClInclude Include="Animator.h" />
     <ClInclude Include="Application.h" />
     <ClInclude Include="BattleDoor.h" />
+    <ClInclude Include="BattleSelectbarUI.h" />
     <ClInclude Include="BlacksmithBG.h" />
     <ClInclude Include="BlacksmithFrame.h" />
     <ClInclude Include="BlacksmithNPC.h" />
@@ -168,6 +169,7 @@
     <ClInclude Include="CommonInclude.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="Crusader.h" />
+    <ClInclude Include="CrusaderBattleInfoUI.h" />
     <ClInclude Include="CrusaderCombat.h" />
     <ClInclude Include="CrusaderDefend.h" />
     <ClInclude Include="CrusaderHPbar.h" />
@@ -175,6 +177,7 @@
     <ClInclude Include="CrusaderSword.h" />
     <ClInclude Include="DGInventoryBG.h" />
     <ClInclude Include="DGMapBG.h" />
+    <ClInclude Include="DiscardedPack.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Enums.h" />
@@ -191,6 +194,7 @@
     <ClInclude Include="CrusaderInfoUI.h" />
     <ClInclude Include="HeroInfoUIBG.h" />
     <ClInclude Include="HighwayMan.h" />
+    <ClInclude Include="HighwayManBattleInfoUI.h" />
     <ClInclude Include="HighwayManCombat.h" />
     <ClInclude Include="HighwayManHPbar.h" />
     <ClInclude Include="HighwayManInfoUI.h" />
@@ -211,6 +215,7 @@
     <ClInclude Include="NomadWagonScene.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="PlagueDoctor.h" />
+    <ClInclude Include="PlagueDoctorBattleInfoUI.h" />
     <ClInclude Include="PlagueDoctorCombat.h" />
     <ClInclude Include="PlagueDoctorHPbar.h" />
     <ClInclude Include="PlagueDoctorInfoUI.h" />
@@ -241,6 +246,7 @@
     <ClInclude Include="SelectDungeonUI.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="StackofBooks.h" />
     <ClInclude Include="StageCoachBG.h" />
     <ClInclude Include="StageCoachNPC.h" />
     <ClInclude Include="StageCoachNPCBG.h" />
@@ -269,6 +275,7 @@
     <ClInclude Include="Transform.h" />
     <ClInclude Include="TripButton.h" />
     <ClInclude Include="Vestal.h" />
+    <ClInclude Include="VestalBattleInfoUI.h" />
     <ClInclude Include="VestalCombat.h" />
     <ClInclude Include="VestalHPbar.h" />
     <ClInclude Include="VestalInfoUI.h" />
@@ -284,6 +291,7 @@
     <ClCompile Include="Animator.cpp" />
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="BattleDoor.cpp" />
+    <ClCompile Include="BattleSelectbarUI.cpp" />
     <ClCompile Include="BlacksmithBG.cpp" />
     <ClCompile Include="BlacksmithFrame.cpp" />
     <ClCompile Include="BlacksmithNPC.cpp" />
@@ -300,6 +308,7 @@
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Crusader.cpp" />
+    <ClCompile Include="CrusaderBattleInfoUI.cpp" />
     <ClCompile Include="CrusaderCombat.cpp" />
     <ClCompile Include="CrusaderDefend.cpp" />
     <ClCompile Include="CrusaderHPbar.cpp" />
@@ -307,6 +316,7 @@
     <ClCompile Include="CrusaderSword.cpp" />
     <ClCompile Include="DGInventoryBG.cpp" />
     <ClCompile Include="DGMapBG.cpp" />
+    <ClCompile Include="DiscardedPack.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GraveyardBG.cpp" />
@@ -320,6 +330,7 @@
     <ClCompile Include="CrusaderInfoUI.cpp" />
     <ClCompile Include="HeroInfoUIBG.cpp" />
     <ClCompile Include="HighwayMan.cpp" />
+    <ClCompile Include="HighwayManBattleInfoUI.cpp" />
     <ClCompile Include="HighwayManCombat.cpp" />
     <ClCompile Include="HighwayManHPbar.cpp" />
     <ClCompile Include="HighwayManInfoUI.cpp" />
@@ -340,6 +351,7 @@
     <ClCompile Include="NomadWagonNPCBG.cpp" />
     <ClCompile Include="NomadWagonScene.cpp" />
     <ClCompile Include="PlagueDoctor.cpp" />
+    <ClCompile Include="PlagueDoctorBattleInfoUI.cpp" />
     <ClCompile Include="PlagueDoctorCombat.cpp" />
     <ClCompile Include="PlagueDoctorHPbar.cpp" />
     <ClCompile Include="PlagueDoctorInfoUI.cpp" />
@@ -369,6 +381,7 @@
     <ClCompile Include="SelectDungeonUI.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="StackofBooks.cpp" />
     <ClCompile Include="StageCoachBG.cpp" />
     <ClCompile Include="StageCoachNPC.cpp" />
     <ClCompile Include="StageCoachNPCBG.cpp" />
@@ -396,6 +409,7 @@
     <ClCompile Include="Transform.cpp" />
     <ClCompile Include="TripButton.cpp" />
     <ClCompile Include="Vestal.cpp" />
+    <ClCompile Include="VestalBattleInfoUI.cpp" />
     <ClCompile Include="VestalCombat.cpp" />
     <ClCompile Include="VestalHPbar.cpp" />
     <ClCompile Include="VestalInfoUI.cpp" />

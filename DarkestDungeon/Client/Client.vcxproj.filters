@@ -599,6 +599,27 @@
     <ClInclude Include="SoundManager.h">
       <Filter>Engine\Resource</Filter>
     </ClInclude>
+    <ClInclude Include="DiscardedPack.h">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="StackofBooks.h">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleSelectbarUI.h">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    </ClInclude>
+    <ClInclude Include="CrusaderBattleInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwayManBattleInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="PlagueDoctorBattleInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
+    <ClInclude Include="VestalBattleInfoUI.h">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -975,6 +996,27 @@
     </ClCompile>
     <ClCompile Include="Sound.cpp">
       <Filter>Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="StackofBooks.cpp">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscardedPack.cpp">
+      <Filter>Contents\Background\RuinsDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleSelectbarUI.cpp">
+      <Filter>Contents\Background\DungeonCommonUI</Filter>
+    </ClCompile>
+    <ClCompile Include="CrusaderBattleInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="VestalBattleInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlagueDoctorBattleInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayManBattleInfoUI.cpp">
+      <Filter>Contents\Background\InfoUI\HeroInfoUI</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

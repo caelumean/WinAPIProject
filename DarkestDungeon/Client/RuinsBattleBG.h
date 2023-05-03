@@ -15,6 +15,6 @@ public:
 
 private:
 	Image* mImage;
-	Transform* tr;
+	class Transform* tr;
 };
 

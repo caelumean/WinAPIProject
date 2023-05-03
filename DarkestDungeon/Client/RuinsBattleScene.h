@@ -15,14 +15,6 @@ public:
 	virtual void OnEnter() override;
 	virtual void OnExit() override;
 
-	void CrusaderTurn();
-	void HighwayManTurn();
-	void PlagueDoctorTurn();
-	void VestalTurn();
-
-	void DeleteCrusaderUI();
-	void DeletePlagueDoctorUI();
-
 private:
 	// Player
 	class CrusaderCombat* mCrusader;
@@ -35,16 +27,19 @@ private:
 	class DGInventoryBG* mDGInventoryBG;
 
 	// Hero Info UI
-	class CrusaderInfoUI* mCrusaderInfoUI;
+	class CrusaderBattleInfoUI* mCrusaderInfoUI;
 	class HighwayManInfoUI* mHighwayManInfoUI;
 	class PlagueDoctorInfoUI* mPlagueDoctorInfoUI;
 	class VestalInfoUI* mVestalInfoUI;
 
 	// Select UI
-	class SelectbarUI* mCrusaderSelectUI;
-	class SelectbarUI* mHighwayManSelectUI;
-	class SelectbarUI* mPlagueDoctorSelectUI;
-	class SelectbarUI* mVestalSelectUI;
+	class BattleSelectbarUI* mCrusaderSelectUI;
+	//class SelectbarUI* mHighwayManSelectUI;
+	//class SelectbarUI* mPlagueDoctorSelectUI;
+	//class SelectbarUI* mVestalSelectUI;
+
+	class CrusaderDefend* mCrusaderDefend;
+	class CrusaderSword* mCrusaderSword;
 
 	//Monster
 	class BoneDefender* mBoneDefender;
@@ -55,7 +50,11 @@ private:
 	int HeroMember;
 	int MonsterMember;
 	float mTime;
+	float mEndTime;
 	bool End;
+	bool Crusaderturn = false;
 
+	// »ç¿îµå
 	class Sound* CombatTheme;
+
 };

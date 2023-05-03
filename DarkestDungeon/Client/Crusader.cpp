@@ -8,6 +8,7 @@
 #include "Collider.h"
 #include "Scene.h"
 #include "Object.h"
+#include "Sound.h"
 
 
 Crusader::Crusader()
@@ -20,6 +21,8 @@ Crusader::~Crusader()
 
 void Crusader::Initialize()
 {
+	//D:\WinAPIProject\DarkestDungeon\Resources\Sound\SoundEffect\Footstep
+	//MoveBGM = Resources::Load<Sound>(L"Combat", L"..\\Resources\\Sound\\SoundEffect\\Footstep\\party_foot_grass.wav");
 	Transform* tr = GetComponent<Transform>();
 	tr->SetPos(Vector2(720.0f, 900.0f));
 	tr->SetScale(Vector2{ 0.5f, 0.5f });
@@ -73,10 +76,11 @@ void Crusader::OnCollisionEnter(Collider* other)
 {
 	if (other->GetOwner()->GetLayerType() == eLayerType::BattleRoomDoor)
 	{
-		if (Input::GetKeyState(eKeyCode::W) == eKeyState::Down)
-		{
-			SceneManager::LoadScene(eSceneType::RuinsBattle);
-		}
+		//if (Input::GetKeyState(eKeyCode::W) == eKeyState::Down)
+		//{
+		//	SceneManager::LoadScene(eSceneType::RuinsBattle);
+		//	
+		//}
 	}
 }
 
@@ -90,6 +94,8 @@ void Crusader::OnCollisionExit(Collider* other)
 
 void Crusader::move()
 {
+	//MoveBGM->Play(true);
+
 	if (Input::GetKeyUp(eKeyCode::A)
 		|| Input::GetKeyUp(eKeyCode::D))
 	{
@@ -112,6 +118,7 @@ void Crusader::move()
 
 void Crusader::idle()
 {
+	//MoveBGM->Stop(true);
 	if (Input::GetKeyDown(eKeyCode::A)
 		|| Input::GetKeyDown(eKeyCode::D))
 	{

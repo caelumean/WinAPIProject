@@ -13,7 +13,7 @@ CrusaderSword::~CrusaderSword()
 
 void CrusaderSword::Initialize()
 {
-	mImage = Resources::Load<Image>(L"CrusaderDefend", L"..\\Resources\\Heroes\\crusader\\crusader_defend.bmp");
+	mImage = Resources::Load<Image>(L"CrusaderSword", L"..\\Resources\\Heroes\\crusader\\crusader_sword.bmp");
 }
 
 void CrusaderSword::Update()
@@ -27,8 +27,8 @@ void CrusaderSword::Render(HDC hdc)
 	Transform* tr = GetComponent<Transform>();
 	Vector2 pos = tr->GetPos();
 
-	TransparentBlt(hdc, pos.x + 620, pos.y + 200, 400, 400
-		, mImage->GetHdc(), 0, 0, 800, 986, RGB(255, 0, 255));
+	TransparentBlt(hdc, pos.x + 620, pos.y + 200, 600, 400
+		, mImage->GetHdc(), 0, 0, 619, 580, RGB(255, 0, 255));
 }
 
 void CrusaderSword::Release()
