@@ -179,9 +179,6 @@ void RuinsBattleScene::Update()
 		}
 	}
 	
-	//mPlagueDoctorInfoUI = object::Instantiate<PlagueDoctorInfoUI>(eLayerType::UI2);
-	//mPlagueDoctorSelectUI = object::Instantiate<SelectbarUI>(Vector2(414.0f, 665.0f), eLayerType::UI2);
-
 }
 
 void RuinsBattleScene::Render(HDC hdc)
