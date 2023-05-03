@@ -164,7 +164,7 @@ void RuinsBattleScene::Update()
 
 						//Crusaderturn = false;
 						//HiwayManturn = true;
-
+						
 
 					}
 				}
@@ -181,8 +181,8 @@ void RuinsBattleScene::Update()
 			}
 			
 		}
+		
 	}
-	
 }
 
 void RuinsBattleScene::Render(HDC hdc)
