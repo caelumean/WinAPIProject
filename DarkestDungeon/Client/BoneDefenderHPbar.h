@@ -2,19 +2,22 @@
 #include "GameObject.h"
 #include "Image.h"
 
-class VestalBattleInfoUI : public GameObject
+class Animator;
+class BoneDefenderHPbar : public GameObject
 {
 public:
-	VestalBattleInfoUI();
-	~VestalBattleInfoUI();
+	BoneDefenderHPbar();
+	~BoneDefenderHPbar();
 
 	virtual void Initialize() override;
 	virtual void Update() override;
 	virtual void Render(HDC hdc) override;
 	virtual void Release() override;
 
-
 private:
-	Image* mImage[7];
-	float mTime;
+	Image* mImage;
+	Animator* mAnimator;
+	class Transform* tr;
+
 };
+

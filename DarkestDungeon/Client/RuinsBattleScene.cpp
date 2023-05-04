@@ -53,6 +53,12 @@
 
 #include "BoneDefenderDefend.h"
 
+//Monster HP
+#include "BoneDefenderHPbar.h"
+#include "BoneSoldierHPbar.h"
+#include "BoneCourtierHPbar.h"
+#include "BoneArbalestHPbar.h"
+
 
 RuinsBattleScene::RuinsBattleScene()
 	:HeroMember(4)
@@ -107,6 +113,11 @@ void RuinsBattleScene::Initialize()
 	mBoneCourtier = object::Instantiate<BoneCourtier>(Vector2(1310.0f, 851.0f), eLayerType::Monster);
 	mBoneArbalest = object::Instantiate<BoneArbalest>(Vector2(1350.0f, 650.0f), eLayerType::Monster);
 
+	//Monster HP
+	object::Instantiate<BoneDefenderHPbar>(Vector2(910.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<BoneSoldierHPbar>(Vector2(1050.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<BoneCourtierHPbar>(Vector2(1180.0f, 630.0f), eLayerType::UI2);
+	object::Instantiate<BoneArbalestHPbar>(Vector2(1320.0f, 630.0f), eLayerType::UI2);
 	//object::Instantiate<CrusaderDefend>(eLayerType::UI2);
 }
 

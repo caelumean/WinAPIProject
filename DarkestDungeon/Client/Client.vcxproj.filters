@@ -201,6 +201,9 @@
     <Filter Include="Contents\Player\Vestal">
       <UniqueIdentifier>{d630df94-278a-4e12-8ba9-65794bcca931}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\Background\MonsterUI">
+      <UniqueIdentifier>{ef074a90-b299-4558-94f4-480c5f1998e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="targetver.h">
@@ -623,6 +626,21 @@
     <ClInclude Include="BoneDefenderDefend.h">
       <Filter>Contents\Monster\BoneDefender</Filter>
     </ClInclude>
+    <ClInclude Include="BoneArbalestHPbar.h">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneCourtierHPbar.h">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneDefenderHPbar.h">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClInclude>
+    <ClInclude Include="BoneSoldierHPbar.h">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClInclude>
+    <ClInclude Include="HighwayManDefend.h">
+      <Filter>Contents\Player\HighwayMan</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -1023,6 +1041,21 @@
     </ClCompile>
     <ClCompile Include="BoneDefenderDefend.cpp">
       <Filter>Contents\Monster\BoneDefender</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneArbalestHPbar.cpp">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneCourtierHPbar.cpp">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneDefenderHPbar.cpp">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClCompile>
+    <ClCompile Include="BoneSoldierHPbar.cpp">
+      <Filter>Contents\Background\MonsterUI</Filter>
+    </ClCompile>
+    <ClCompile Include="HighwayManDefend.cpp">
+      <Filter>Contents\Player\HighwayMan</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

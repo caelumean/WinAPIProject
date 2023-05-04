@@ -157,11 +157,15 @@
     <ClInclude Include="BlacksmithNPCBG.h" />
     <ClInclude Include="BlacksmithScene.h" />
     <ClInclude Include="BoneArbalest.h" />
+    <ClInclude Include="BoneArbalestHPbar.h" />
     <ClInclude Include="BoneCourtier.h" />
+    <ClInclude Include="BoneCourtierHPbar.h" />
     <ClInclude Include="BoneDefender.h" />
     <ClInclude Include="BoneDefenderAttack.h" />
     <ClInclude Include="BoneDefenderDefend.h" />
+    <ClInclude Include="BoneDefenderHPbar.h" />
     <ClInclude Include="BoneSoldier.h" />
+    <ClInclude Include="BoneSoldierHPbar.h" />
     <ClInclude Include="BuildingsObject.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Client.h" />
@@ -197,6 +201,7 @@
     <ClInclude Include="HighwayMan.h" />
     <ClInclude Include="HighwayManBattleInfoUI.h" />
     <ClInclude Include="HighwayManCombat.h" />
+    <ClInclude Include="HighwayManDefend.h" />
     <ClInclude Include="HighwayManHPbar.h" />
     <ClInclude Include="HighwayManInfoUI.h" />
     <ClInclude Include="HighwayStressbar.h" />
@@ -299,11 +304,15 @@
     <ClCompile Include="BlacksmithNPCBG.cpp" />
     <ClCompile Include="BlacksmithScene.cpp" />
     <ClCompile Include="BoneArbalest.cpp" />
+    <ClCompile Include="BoneArbalestHPbar.cpp" />
     <ClCompile Include="BoneCourtier.cpp" />
+    <ClCompile Include="BoneCourtierHPbar.cpp" />
     <ClCompile Include="BoneDefender.cpp" />
     <ClCompile Include="BoneDefenderAttack.cpp" />
     <ClCompile Include="BoneDefenderDefend.cpp" />
+    <ClCompile Include="BoneDefenderHPbar.cpp" />
     <ClCompile Include="BoneSoldier.cpp" />
+    <ClCompile Include="BoneSoldierHPbar.cpp" />
     <ClCompile Include="BuildingsObject.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Collider.cpp" />
@@ -334,6 +343,7 @@
     <ClCompile Include="HighwayMan.cpp" />
     <ClCompile Include="HighwayManBattleInfoUI.cpp" />
     <ClCompile Include="HighwayManCombat.cpp" />
+    <ClCompile Include="HighwayManDefend.cpp" />
     <ClCompile Include="HighwayManHPbar.cpp" />
     <ClCompile Include="HighwayManInfoUI.cpp" />
     <ClCompile Include="HighwayStressbar.cpp" />
