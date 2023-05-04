@@ -25,9 +25,9 @@
 
 //Player Info UI
 #include "CrusaderBattleInfoUI.h"
-#include "HighwayManInfoUI.h"
-#include "PlagueDoctorInfoUI.h"
-#include "VestalInfoUI.h"
+#include "HighwayManBattleInfoUI.h"
+#include "PlagueDoctorBattleInfoUI.h"
+#include "VestalBattleInfoUI.h"
 
 // Player Attak and Denfend
 #include "CrusaderSword.h"
