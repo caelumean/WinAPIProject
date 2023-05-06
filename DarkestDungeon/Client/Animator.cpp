@@ -151,8 +151,7 @@ void Animator::CreateAnimations(const std::wstring& path, Vector2 offset, float 
 	// 이미지 갯수는 index++하면 됨
 	// row는 우선 1로
 	// 실제 이미지 사용될 갯수 index
-	// offset : 두 변수 또는 데이터 구조의 메모리 주소 사이의 거리
-	//			다음 이미지와의 거리?
+	// offset : 두 변수 또는 다음 이미지와의 거리?
 	// duration : 단위로 측정된 시간의 길이.
 	CreateAnimation(key, mSpriteSheet, Vector2::Zero, index, 1, index, offset, duration);
 }
